@@ -1,0 +1,25 @@
+# HorizontalPodAutoscaler para o Deployment php-apache.
+# Politica: manter a utilizacao media de CPU dos pods em torno de 50% do valor pedido
+# em "resources.requests.cpu" (deployment.yaml). Acima disso, o HPA cria novos pods
+# (ate maxReplicas); abaixo, retrai o numero de pods (ate minReplicas), respeitando
+# o periodo de estabilizacao padrao do controller (evita oscilacao/"flapping").
+# Requer o metrics-server instalado e funcional no cluster (fonte dos dados de uso de CPU).
+apiVersion: autoscaling/v2
+kind: HorizontalPodAutoscaler
+metadata:
+  name: php-apache
+  namespace: tf-hpa
+spec:
+  scaleTargetRef:
+    apiVersion: apps/v1
+    kind: Deployment
+    name: php-apache
+  minReplicas: 1
+  maxReplicas: 10
+  metrics:
+    - type: Resource
+      resource:
+        name: cpu
+        target:
+          type: Utilization
+          averageUtilization: 50

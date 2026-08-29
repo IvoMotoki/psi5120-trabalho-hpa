@@ -1,0 +1,17 @@
+\begin{thebibliography}{}
+
+\bibitem[{Amazon Web Services} 2026]{aws-eks-hpa}
+{Amazon Web Services} (2026).
+\newblock Scale pod deployments with horizontal pod autoscaler.
+\newblock
+  \url{https://docs.aws.amazon.com/eks/latest/userguide/horizontal-pod-autoscaler.html}.
+\newblock Acesso em: 2026.
+
+\bibitem[{Kubernetes Authors} 2026]{k8s-hpa-walkthrough}
+{Kubernetes Authors} (2026).
+\newblock Horizontal pod autoscaler walkthrough.
+\newblock
+  \url{https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale-walkthrough/}.
+\newblock Acesso em: 2026.
+
+\end{thebibliography}

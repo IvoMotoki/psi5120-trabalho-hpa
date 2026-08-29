@@ -1,0 +1,53 @@
+# Deployment do servidor web alvo do HPA.
+# Usa a imagem oficial de exemplo do walkthrough do Kubernetes (registry.k8s.io/hpa-example):
+# um servidor PHP/Apache com um endpoint que realiza calculo intensivo de CPU sob demanda,
+# permitindo gerar carga controlada e observar o autoescalamento de forma previsivel.
+# Este mesmo manifesto e aplicado tanto no Minikube quanto no EKS, para que a comparacao
+# entre as duas implantacoes use exatamente a mesma carga de trabalho.
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: tf-hpa
+  labels:
+    disciplina: psi5120
+    trabalho: hpa
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: php-apache
+  namespace: tf-hpa
+  labels:
+    app: php-apache
+spec:
+  # Replica inicial baixa: o HPA e quem deve elevar esse numero sob carga.
+  replicas: 1
+  selector:
+    matchLabels:
+      app: php-apache
+  template:
+    metadata:
+      labels:
+        app: php-apache
+    spec:
+      containers:
+        - name: php-apache
+          image: registry.k8s.io/hpa-example
+          ports:
+            - containerPort: 80
+          resources:
+            # "requests.cpu" e a base sobre a qual o HPA calcula o percentual de utilizacao
+            # (utilizacao = uso atual / request). Sem requests definidos, o HPA nao funciona.
+            requests:
+              cpu: 200m
+              memory: 64Mi
+            limits:
+              cpu: 500m
+              memory: 128Mi
+          readinessProbe:
+            httpGet:
+              path: /
+              port: 80
+            initialDelaySeconds: 3
+            periodSeconds: 5

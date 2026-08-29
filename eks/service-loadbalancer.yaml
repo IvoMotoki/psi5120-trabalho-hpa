@@ -1,0 +1,24 @@
+# Service adicional so para a Implantacao B (EKS): expoe o mesmo Deployment php-apache
+# (definido em manifests/deployment.yaml) publicamente via um Elastic Load Balancer,
+# para que o gerador de carga (scripts/load_test.sh) consiga alcancar o servico de fora
+# do cluster - o que nao existe no Minikube local.
+# Baseado em 6. Aula 6/psi5120_a06_software_2026/psi5120_a06_11_service_loadbalancer.yaml.
+# Sem o AWS Load Balancer Controller instalado, o resultado esperado e um Classic Load
+# Balancer (CLB) provisionado automaticamente pelo controller in-tree do EKS.
+# IMPORTANTE: excluir este Service (kubectl delete -f eks/service-loadbalancer.yaml)
+# ANTES de excluir o cluster - senao o CLB pode ficar orfao e continuar gerando custo.
+apiVersion: v1
+kind: Service
+metadata:
+  name: php-apache-lb
+  namespace: tf-hpa
+  labels:
+    app: php-apache
+spec:
+  type: LoadBalancer
+  selector:
+    app: php-apache
+  ports:
+    - name: http
+      port: 80
+      targetPort: 80

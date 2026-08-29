@@ -1,0 +1,45 @@
+# Definicao do cluster EKS para a Implantacao B (nuvem), via eksctl.
+# Baseado no cluster didatico da Aula 6 (6. Aula 6/psi5120_a06_software_2026/psi5120_a06_20_eksctl_cluster.yaml),
+# com o node group dimensionado para 2 nos em vez de 1: o teste de HPA precisa de capacidade
+# de CPU suficiente para acomodar ate maxReplicas (10) pods de 200m de request cada,
+# alem dos daemonsets/overhead do proprio EKS.
+#
+# CUSTO: cada no e cobrado por hora enquanto o cluster existir, alem da taxa
+# fixa do control plane gerenciado (~USD 0.10/hora). Criar apenas pelo tempo do experimento
+# e excluir o cluster (eksctl delete cluster -f eks/cluster.yaml) imediatamente apos
+# capturar as evidencias — ver scripts/cleanup.sh.
+#
+# NOTA: instanceType fixado em t3.micro porque a conta usada (IAM "Atv.1", criada para
+# uma atividade especifica de outra aula) esta restrita a instancias elegiveis para
+# Free Tier - t3.medium falhou com "InvalidParameterCombination: not eligible for Free
+# Tier".
+#
+# NOTA 2: t3.micro suporta no maximo 4 pods por no (limite de IPs por ENI da VPC CNI,
+# nao e limite de CPU/memoria). Os daemonsets do sistema (aws-node, kube-proxy) ja usam
+# 1 slot cada por no, sobrando so 2 slots uteis por no. Com 2 nos (o planejado
+# originalmente), os proprios pods de sistema (coredns x2, metrics-server x2) ja
+# preenchem 100% da capacidade e NENHUMA replica do php-apache consegue ser agendada.
+# Por isso o node group foi ampliado para 4 nos (8 slots totais: 4 para pods de sistema,
+# 4 de folga para o HPA escalar o php-apache) - o teto de ~4 replicas (bem abaixo do
+# maxReplicas=10 do HPA) e por si só um dado relevante para a comparacao com o Minikube,
+# que nao tem esse limite de IPs por no.
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+metadata:
+  name: psi5120-tf-hpa-eks
+  region: us-east-1
+accessConfig:
+  authenticationMode: API
+  bootstrapClusterCreatorAdminPermissions: true
+managedNodeGroups:
+  - name: psi5120-tf-hpa-ng
+    instanceType: t3.micro
+    desiredCapacity: 4
+    minSize: 4
+    maxSize: 4
+    volumeSize: 20
+    privateNetworking: false
+    tags:
+      Disciplina: PSI5120
+      Trabalho: HPA
+      Ambiente: didatico

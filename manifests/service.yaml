@@ -1,0 +1,20 @@
+# Service ClusterIP para a Implantacao A (Minikube).
+# Uso local: acessado via "kubectl port-forward" ou "minikube service", sem expor
+# um endereco publico (nao ha LoadBalancer de nuvem disponivel no cluster local).
+# Para a Implantacao B (EKS), ver eks/service-loadbalancer.yaml, que expõe o mesmo
+# Deployment publicamente atraves de um Elastic Load Balancer.
+apiVersion: v1
+kind: Service
+metadata:
+  name: php-apache
+  namespace: tf-hpa
+  labels:
+    app: php-apache
+spec:
+  type: ClusterIP
+  selector:
+    app: php-apache
+  ports:
+    - name: http
+      port: 80
+      targetPort: 80

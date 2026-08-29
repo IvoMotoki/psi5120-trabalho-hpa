@@ -1,0 +1,20 @@
+# O metrics-server nao e criado por um manifesto proprio deste projeto: ele e instalado
+# a partir do manifesto oficial upstream (ver comando abaixo), pois manter uma copia local
+# desatualizada seria um risco. Este arquivo documenta a UNICA alteracao necessaria em
+# alguns ambientes (como o EKS gerenciado por eksctl, dependendo da CNI/certificados):
+# o metrics-server por padrao valida o certificado TLS do kubelet, o que pode falhar
+# em clusters de laboratorio. A flag abaixo desativa essa validacao (aceitavel em
+# ambiente didatico, NAO recomendado em producao).
+#
+# Instalacao (Minikube): "minikube addons enable metrics-server" (ja aplica o patch
+# necessário internamente — nao usar este arquivo no Minikube).
+#
+# Instalacao (EKS):
+#   kubectl apply -f https://github.com/kubernetes-sigs/metrics-server/releases/latest/download/components.yaml
+#   kubectl patch deployment metrics-server -n kube-system --type=json \
+#     -p "$(cat metrics-server-patch.yaml | yq -o=json '.patch')"
+# (ou aplicar manualmente o argumento abaixo em "spec.template.spec.containers[0].args")
+patch:
+  - op: add
+    path: /spec/template/spec/containers/0/args/-
+    value: --kubelet-insecure-tls

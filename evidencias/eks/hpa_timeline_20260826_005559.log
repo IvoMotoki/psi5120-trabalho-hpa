@@ -1,0 +1,574 @@
+---- 2026-08-26 00:56:01 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 8%/50%   1         10        1          9m3s
+NAME                              READY   STATUS              RESTARTS   AGE    IP               NODE                             NOMINATED NODE   READINESS GATES
+load-generator-7f8684cc8f-2dmkq   0/1     ContainerCreating   0          3s     <none>           ip-192-168-28-221.ec2.internal   <none>           <none>
+load-generator-7f8684cc8f-bgvvd   1/1     Running             0          3s     192.168.37.68    ip-192-168-39-22.ec2.internal    <none>           <none>
+load-generator-7f8684cc8f-ct5sb   0/1     Pending             0          3s     <none>           <none>                           <none>           <none>
+load-generator-7f8684cc8f-dp69v   0/1     Pending             0          3s     <none>           <none>                           <none>           <none>
+load-generator-7f8684cc8f-fgfft   0/1     Pending             0          3s     <none>           <none>                           <none>           <none>
+load-generator-7f8684cc8f-g88j9   1/1     Running             0          3s     192.168.21.196   ip-192-168-28-221.ec2.internal   <none>           <none>
+php-apache-56cf58f979-lpzp4       1/1     Running             0          9m8s   192.168.61.156   ip-192-168-39-22.ec2.internal    <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-56cf58f979-lpzp4   16m          16Mi            
+
+---- 2026-08-26 00:56:17 ----
+NAME         REFERENCE               TARGETS        MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 12%/50%   1         10        1          9m20s
+NAME                              READY   STATUS    RESTARTS   AGE     IP               NODE                             NOMINATED NODE   READINESS GATES
+load-generator-7f8684cc8f-2dmkq   1/1     Running   0          20s     192.168.7.1      ip-192-168-28-221.ec2.internal   <none>           <none>
+load-generator-7f8684cc8f-bgvvd   1/1     Running   0          20s     192.168.37.68    ip-192-168-39-22.ec2.internal    <none>           <none>
+load-generator-7f8684cc8f-ct5sb   0/1     Pending   0          20s     <none>           <none>                           <none>           <none>
+load-generator-7f8684cc8f-dp69v   0/1     Pending   0          20s     <none>           <none>                           <none>           <none>
+load-generator-7f8684cc8f-fgfft   0/1     Pending   0          20s     <none>           <none>                           <none>           <none>
+load-generator-7f8684cc8f-g88j9   1/1     Running   0          20s     192.168.21.196   ip-192-168-28-221.ec2.internal   <none>           <none>
+php-apache-56cf58f979-lpzp4       1/1     Running   0          9m25s   192.168.61.156   ip-192-168-39-22.ec2.internal    <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-56cf58f979-lpzp4   24m          16Mi            
+
+---- 2026-08-26 00:56:34 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 9%/50%   1         10        1          9m37s
+NAME                              READY   STATUS    RESTARTS   AGE     IP               NODE                             NOMINATED NODE   READINESS GATES
+load-generator-7f8684cc8f-2dmkq   1/1     Running   0          36s     192.168.7.1      ip-192-168-28-221.ec2.internal   <none>           <none>
+load-generator-7f8684cc8f-bgvvd   1/1     Running   0          36s     192.168.37.68    ip-192-168-39-22.ec2.internal    <none>           <none>
+load-generator-7f8684cc8f-ct5sb   0/1     Pending   0          36s     <none>           <none>                           <none>           <none>
+load-generator-7f8684cc8f-dp69v   0/1     Pending   0          36s     <none>           <none>                           <none>           <none>
+load-generator-7f8684cc8f-fgfft   0/1     Pending   0          36s     <none>           <none>                           <none>           <none>
+load-generator-7f8684cc8f-g88j9   1/1     Running   0          36s     192.168.21.196   ip-192-168-28-221.ec2.internal   <none>           <none>
+php-apache-56cf58f979-lpzp4       1/1     Running   0          9m41s   192.168.61.156   ip-192-168-39-22.ec2.internal    <none>           <none>
+NAME                              CPU(cores)   MEMORY(bytes)   
+load-generator-7f8684cc8f-2dmkq   249m         0Mi             
+load-generator-7f8684cc8f-bgvvd   404m         1Mi             
+load-generator-7f8684cc8f-g88j9   244m         1Mi             
+php-apache-56cf58f979-lpzp4       31m          16Mi            
+
+---- 2026-08-26 00:56:50 ----
+NAME         REFERENCE               TARGETS        MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 15%/50%   1         10        1          9m53s
+NAME                              READY   STATUS    RESTARTS   AGE     IP               NODE                             NOMINATED NODE   READINESS GATES
+load-generator-7f8684cc8f-2dmkq   1/1     Running   0          53s     192.168.7.1      ip-192-168-28-221.ec2.internal   <none>           <none>
+load-generator-7f8684cc8f-bgvvd   1/1     Running   0          53s     192.168.37.68    ip-192-168-39-22.ec2.internal    <none>           <none>
+load-generator-7f8684cc8f-ct5sb   0/1     Pending   0          53s     <none>           <none>                           <none>           <none>
+load-generator-7f8684cc8f-dp69v   0/1     Pending   0          53s     <none>           <none>                           <none>           <none>
+load-generator-7f8684cc8f-fgfft   0/1     Pending   0          53s     <none>           <none>                           <none>           <none>
+load-generator-7f8684cc8f-g88j9   1/1     Running   0          53s     192.168.21.196   ip-192-168-28-221.ec2.internal   <none>           <none>
+php-apache-56cf58f979-lpzp4       1/1     Running   0          9m58s   192.168.61.156   ip-192-168-39-22.ec2.internal    <none>           <none>
+NAME                              CPU(cores)   MEMORY(bytes)   
+load-generator-7f8684cc8f-2dmkq   3m           0Mi             
+load-generator-7f8684cc8f-bgvvd   78m          0Mi             
+load-generator-7f8684cc8f-g88j9   244m         1Mi             
+php-apache-56cf58f979-lpzp4       31m          16Mi            
+
+---- 2026-08-26 00:57:07 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 9%/50%   1         10        1          10m
+NAME                              READY   STATUS    RESTARTS   AGE   IP               NODE                             NOMINATED NODE   READINESS GATES
+load-generator-7f8684cc8f-2dmkq   1/1     Running   0          69s   192.168.7.1      ip-192-168-28-221.ec2.internal   <none>           <none>
+load-generator-7f8684cc8f-bgvvd   1/1     Running   0          69s   192.168.37.68    ip-192-168-39-22.ec2.internal    <none>           <none>
+load-generator-7f8684cc8f-ct5sb   0/1     Pending   0          69s   <none>           <none>                           <none>           <none>
+load-generator-7f8684cc8f-dp69v   0/1     Pending   0          69s   <none>           <none>                           <none>           <none>
+load-generator-7f8684cc8f-fgfft   0/1     Pending   0          69s   <none>           <none>                           <none>           <none>
+load-generator-7f8684cc8f-g88j9   1/1     Running   0          69s   192.168.21.196   ip-192-168-28-221.ec2.internal   <none>           <none>
+php-apache-56cf58f979-lpzp4       1/1     Running   0          10m   192.168.61.156   ip-192-168-39-22.ec2.internal    <none>           <none>
+NAME                              CPU(cores)   MEMORY(bytes)   
+load-generator-7f8684cc8f-2dmkq   3m           0Mi             
+load-generator-7f8684cc8f-bgvvd   78m          0Mi             
+load-generator-7f8684cc8f-g88j9   22m          0Mi             
+php-apache-56cf58f979-lpzp4       19m          16Mi            
+
+---- 2026-08-26 00:57:23 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 8%/50%   1         10        1          10m
+NAME                              READY   STATUS    RESTARTS   AGE   IP               NODE                             NOMINATED NODE   READINESS GATES
+load-generator-7f8684cc8f-2dmkq   1/1     Running   0          86s   192.168.7.1      ip-192-168-28-221.ec2.internal   <none>           <none>
+load-generator-7f8684cc8f-bgvvd   1/1     Running   0          86s   192.168.37.68    ip-192-168-39-22.ec2.internal    <none>           <none>
+load-generator-7f8684cc8f-ct5sb   0/1     Pending   0          86s   <none>           <none>                           <none>           <none>
+load-generator-7f8684cc8f-dp69v   0/1     Pending   0          86s   <none>           <none>                           <none>           <none>
+load-generator-7f8684cc8f-fgfft   0/1     Pending   0          86s   <none>           <none>                           <none>           <none>
+load-generator-7f8684cc8f-g88j9   1/1     Running   0          86s   192.168.21.196   ip-192-168-28-221.ec2.internal   <none>           <none>
+php-apache-56cf58f979-lpzp4       1/1     Running   0          10m   192.168.61.156   ip-192-168-39-22.ec2.internal    <none>           <none>
+NAME                              CPU(cores)   MEMORY(bytes)   
+load-generator-7f8684cc8f-2dmkq   1m           0Mi             
+load-generator-7f8684cc8f-bgvvd   1m           0Mi             
+load-generator-7f8684cc8f-g88j9   1m           0Mi             
+php-apache-56cf58f979-lpzp4       14m          16Mi            
+
+---- 2026-08-26 00:57:40 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 7%/50%   1         10        1          10m
+NAME                              READY   STATUS    RESTARTS   AGE    IP               NODE                             NOMINATED NODE   READINESS GATES
+load-generator-7f8684cc8f-2dmkq   1/1     Running   0          102s   192.168.7.1      ip-192-168-28-221.ec2.internal   <none>           <none>
+load-generator-7f8684cc8f-bgvvd   1/1     Running   0          102s   192.168.37.68    ip-192-168-39-22.ec2.internal    <none>           <none>
+load-generator-7f8684cc8f-ct5sb   0/1     Pending   0          102s   <none>           <none>                           <none>           <none>
+load-generator-7f8684cc8f-dp69v   0/1     Pending   0          102s   <none>           <none>                           <none>           <none>
+load-generator-7f8684cc8f-fgfft   0/1     Pending   0          102s   <none>           <none>                           <none>           <none>
+load-generator-7f8684cc8f-g88j9   1/1     Running   0          102s   192.168.21.196   ip-192-168-28-221.ec2.internal   <none>           <none>
+php-apache-56cf58f979-lpzp4       1/1     Running   0          10m    192.168.61.156   ip-192-168-39-22.ec2.internal    <none>           <none>
+NAME                              CPU(cores)   MEMORY(bytes)   
+load-generator-7f8684cc8f-2dmkq   1m           0Mi             
+load-generator-7f8684cc8f-bgvvd   1m           0Mi             
+load-generator-7f8684cc8f-g88j9   1m           0Mi             
+php-apache-56cf58f979-lpzp4       18m          16Mi            
+
+---- 2026-08-26 00:57:56 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 7%/50%   1         10        1          11m
+NAME                              READY   STATUS    RESTARTS   AGE    IP               NODE                             NOMINATED NODE   READINESS GATES
+load-generator-7f8684cc8f-2dmkq   1/1     Running   0          119s   192.168.7.1      ip-192-168-28-221.ec2.internal   <none>           <none>
+load-generator-7f8684cc8f-bgvvd   1/1     Running   0          119s   192.168.37.68    ip-192-168-39-22.ec2.internal    <none>           <none>
+load-generator-7f8684cc8f-ct5sb   0/1     Pending   0          119s   <none>           <none>                           <none>           <none>
+load-generator-7f8684cc8f-dp69v   0/1     Pending   0          119s   <none>           <none>                           <none>           <none>
+load-generator-7f8684cc8f-fgfft   0/1     Pending   0          119s   <none>           <none>                           <none>           <none>
+load-generator-7f8684cc8f-g88j9   1/1     Running   0          119s   192.168.21.196   ip-192-168-28-221.ec2.internal   <none>           <none>
+php-apache-56cf58f979-lpzp4       1/1     Running   0          11m    192.168.61.156   ip-192-168-39-22.ec2.internal    <none>           <none>
+NAME                              CPU(cores)   MEMORY(bytes)   
+load-generator-7f8684cc8f-2dmkq   1m           0Mi             
+load-generator-7f8684cc8f-bgvvd   1m           0Mi             
+load-generator-7f8684cc8f-g88j9   1m           0Mi             
+php-apache-56cf58f979-lpzp4       18m          16Mi            
+
+---- 2026-08-26 00:58:14 ----
+NAME         REFERENCE               TARGETS        MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 10%/50%   1         10        1          11m
+NAME                              READY   STATUS    RESTARTS   AGE     IP               NODE                             NOMINATED NODE   READINESS GATES
+load-generator-7f8684cc8f-2dmkq   1/1     Running   0          2m16s   192.168.7.1      ip-192-168-28-221.ec2.internal   <none>           <none>
+load-generator-7f8684cc8f-bgvvd   1/1     Running   0          2m16s   192.168.37.68    ip-192-168-39-22.ec2.internal    <none>           <none>
+load-generator-7f8684cc8f-ct5sb   0/1     Pending   0          2m16s   <none>           <none>                           <none>           <none>
+load-generator-7f8684cc8f-dp69v   0/1     Pending   0          2m16s   <none>           <none>                           <none>           <none>
+load-generator-7f8684cc8f-fgfft   0/1     Pending   0          2m16s   <none>           <none>                           <none>           <none>
+load-generator-7f8684cc8f-g88j9   1/1     Running   0          2m16s   192.168.21.196   ip-192-168-28-221.ec2.internal   <none>           <none>
+php-apache-56cf58f979-lpzp4       1/1     Running   0          11m     192.168.61.156   ip-192-168-39-22.ec2.internal    <none>           <none>
+NAME                              CPU(cores)   MEMORY(bytes)   
+load-generator-7f8684cc8f-2dmkq   1m           0Mi             
+load-generator-7f8684cc8f-bgvvd   1m           0Mi             
+load-generator-7f8684cc8f-g88j9   1m           0Mi             
+php-apache-56cf58f979-lpzp4       21m          16Mi            
+
+---- 2026-08-26 00:58:30 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 7%/50%   1         10        1          11m
+NAME                              READY   STATUS    RESTARTS   AGE     IP               NODE                             NOMINATED NODE   READINESS GATES
+load-generator-7f8684cc8f-2dmkq   1/1     Running   0          2m33s   192.168.7.1      ip-192-168-28-221.ec2.internal   <none>           <none>
+load-generator-7f8684cc8f-bgvvd   1/1     Running   0          2m33s   192.168.37.68    ip-192-168-39-22.ec2.internal    <none>           <none>
+load-generator-7f8684cc8f-ct5sb   0/1     Pending   0          2m33s   <none>           <none>                           <none>           <none>
+load-generator-7f8684cc8f-dp69v   0/1     Pending   0          2m33s   <none>           <none>                           <none>           <none>
+load-generator-7f8684cc8f-fgfft   0/1     Pending   0          2m33s   <none>           <none>                           <none>           <none>
+load-generator-7f8684cc8f-g88j9   1/1     Running   0          2m33s   192.168.21.196   ip-192-168-28-221.ec2.internal   <none>           <none>
+php-apache-56cf58f979-lpzp4       1/1     Running   0          11m     192.168.61.156   ip-192-168-39-22.ec2.internal    <none>           <none>
+NAME                              CPU(cores)   MEMORY(bytes)   
+load-generator-7f8684cc8f-2dmkq   1m           0Mi             
+load-generator-7f8684cc8f-bgvvd   1m           0Mi             
+load-generator-7f8684cc8f-g88j9   1m           0Mi             
+php-apache-56cf58f979-lpzp4       18m          16Mi            
+
+---- 2026-08-26 00:58:45 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 9%/50%   1         10        1          11m
+NAME                              READY   STATUS    RESTARTS   AGE     IP               NODE                             NOMINATED NODE   READINESS GATES
+load-generator-7f8684cc8f-2dmkq   1/1     Running   0          2m49s   192.168.7.1      ip-192-168-28-221.ec2.internal   <none>           <none>
+load-generator-7f8684cc8f-bgvvd   1/1     Running   0          2m49s   192.168.37.68    ip-192-168-39-22.ec2.internal    <none>           <none>
+load-generator-7f8684cc8f-ct5sb   0/1     Pending   0          2m49s   <none>           <none>                           <none>           <none>
+load-generator-7f8684cc8f-dp69v   0/1     Pending   0          2m49s   <none>           <none>                           <none>           <none>
+load-generator-7f8684cc8f-fgfft   0/1     Pending   0          2m49s   <none>           <none>                           <none>           <none>
+load-generator-7f8684cc8f-g88j9   1/1     Running   0          2m49s   192.168.21.196   ip-192-168-28-221.ec2.internal   <none>           <none>
+php-apache-56cf58f979-lpzp4       1/1     Running   0          11m     192.168.61.156   ip-192-168-39-22.ec2.internal    <none>           <none>
+NAME                              CPU(cores)   MEMORY(bytes)   
+load-generator-7f8684cc8f-2dmkq   1m           0Mi             
+load-generator-7f8684cc8f-bgvvd   1m           0Mi             
+load-generator-7f8684cc8f-g88j9   1m           0Mi             
+php-apache-56cf58f979-lpzp4       18m          16Mi            
+
+---- 2026-08-26 00:59:02 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 9%/50%   1         10        1          12m
+NAME                              READY   STATUS    RESTARTS   AGE    IP               NODE                             NOMINATED NODE   READINESS GATES
+load-generator-7f8684cc8f-2dmkq   1/1     Running   0          3m5s   192.168.7.1      ip-192-168-28-221.ec2.internal   <none>           <none>
+load-generator-7f8684cc8f-bgvvd   1/1     Running   0          3m5s   192.168.37.68    ip-192-168-39-22.ec2.internal    <none>           <none>
+load-generator-7f8684cc8f-ct5sb   0/1     Pending   0          3m5s   <none>           <none>                           <none>           <none>
+load-generator-7f8684cc8f-dp69v   0/1     Pending   0          3m5s   <none>           <none>                           <none>           <none>
+load-generator-7f8684cc8f-fgfft   0/1     Pending   0          3m5s   <none>           <none>                           <none>           <none>
+load-generator-7f8684cc8f-g88j9   1/1     Running   0          3m5s   192.168.21.196   ip-192-168-28-221.ec2.internal   <none>           <none>
+php-apache-56cf58f979-lpzp4       1/1     Running   0          12m    192.168.61.156   ip-192-168-39-22.ec2.internal    <none>           <none>
+NAME                              CPU(cores)   MEMORY(bytes)   
+load-generator-7f8684cc8f-2dmkq   1m           0Mi             
+load-generator-7f8684cc8f-bgvvd   1m           0Mi             
+load-generator-7f8684cc8f-g88j9   1m           0Mi             
+php-apache-56cf58f979-lpzp4       17m          17Mi            
+
+---- 2026-08-26 00:59:18 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 7%/50%   1         10        1          12m
+NAME                              READY   STATUS    RESTARTS   AGE     IP               NODE                             NOMINATED NODE   READINESS GATES
+load-generator-7f8684cc8f-2dmkq   1/1     Running   0          3m22s   192.168.7.1      ip-192-168-28-221.ec2.internal   <none>           <none>
+load-generator-7f8684cc8f-bgvvd   1/1     Running   0          3m22s   192.168.37.68    ip-192-168-39-22.ec2.internal    <none>           <none>
+load-generator-7f8684cc8f-ct5sb   0/1     Pending   0          3m22s   <none>           <none>                           <none>           <none>
+load-generator-7f8684cc8f-dp69v   0/1     Pending   0          3m22s   <none>           <none>                           <none>           <none>
+load-generator-7f8684cc8f-fgfft   0/1     Pending   0          3m22s   <none>           <none>                           <none>           <none>
+load-generator-7f8684cc8f-g88j9   1/1     Running   0          3m22s   192.168.21.196   ip-192-168-28-221.ec2.internal   <none>           <none>
+php-apache-56cf58f979-lpzp4       1/1     Running   0          12m     192.168.61.156   ip-192-168-39-22.ec2.internal    <none>           <none>
+NAME                              CPU(cores)   MEMORY(bytes)   
+load-generator-7f8684cc8f-2dmkq   2m           0Mi             
+load-generator-7f8684cc8f-bgvvd   2m           0Mi             
+load-generator-7f8684cc8f-g88j9   2m           0Mi             
+php-apache-56cf58f979-lpzp4       135m         19Mi            
+
+---- 2026-08-26 00:59:35 ----
+NAME         REFERENCE               TARGETS        MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 67%/50%   1         10        1          12m
+NAME                              READY   STATUS    RESTARTS   AGE     IP               NODE                             NOMINATED NODE   READINESS GATES
+load-generator-7f8684cc8f-2dmkq   1/1     Running   0          3m38s   192.168.7.1      ip-192-168-28-221.ec2.internal   <none>           <none>
+load-generator-7f8684cc8f-bgvvd   1/1     Running   0          3m38s   192.168.37.68    ip-192-168-39-22.ec2.internal    <none>           <none>
+load-generator-7f8684cc8f-ct5sb   0/1     Pending   0          3m38s   <none>           <none>                           <none>           <none>
+load-generator-7f8684cc8f-dp69v   0/1     Pending   0          3m38s   <none>           <none>                           <none>           <none>
+load-generator-7f8684cc8f-fgfft   0/1     Pending   0          3m38s   <none>           <none>                           <none>           <none>
+load-generator-7f8684cc8f-g88j9   1/1     Running   0          3m38s   192.168.21.196   ip-192-168-28-221.ec2.internal   <none>           <none>
+php-apache-56cf58f979-7hxmh       0/1     Pending   0          9s      <none>           <none>                           <none>           <none>
+php-apache-56cf58f979-lpzp4       1/1     Running   0          12m     192.168.61.156   ip-192-168-39-22.ec2.internal    <none>           <none>
+NAME                              CPU(cores)   MEMORY(bytes)   
+load-generator-7f8684cc8f-2dmkq   2m           0Mi             
+load-generator-7f8684cc8f-bgvvd   3m           0Mi             
+load-generator-7f8684cc8f-g88j9   2m           0Mi             
+php-apache-56cf58f979-lpzp4       501m         19Mi            
+
+---- 2026-08-26 00:59:51 ----
+NAME         REFERENCE               TARGETS         MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 250%/50%   1         10        2          12m
+NAME                              READY   STATUS        RESTARTS   AGE     IP               NODE                             NOMINATED NODE   READINESS GATES
+load-generator-7f8684cc8f-2dmkq   1/1     Terminating   0          3m54s   192.168.7.1      ip-192-168-28-221.ec2.internal   <none>           <none>
+load-generator-7f8684cc8f-bgvvd   1/1     Terminating   0          3m54s   192.168.37.68    ip-192-168-39-22.ec2.internal    <none>           <none>
+load-generator-7f8684cc8f-ct5sb   0/1     Pending       0          3m54s   <none>           <none>                           <none>           <none>
+load-generator-7f8684cc8f-dp69v   0/1     Pending       0          3m54s   <none>           <none>                           <none>           <none>
+load-generator-7f8684cc8f-fgfft   0/1     Pending       0          3m54s   <none>           <none>                           <none>           <none>
+load-generator-7f8684cc8f-g88j9   1/1     Running       0          3m54s   192.168.21.196   ip-192-168-28-221.ec2.internal   <none>           <none>
+load-generator-7f8684cc8f-kkk5j   0/1     Pending       0          0s      <none>           <none>                           <none>           <none>
+load-generator-7f8684cc8f-xbjdn   0/1     Pending       0          0s      <none>           <none>                           <none>           <none>
+php-apache-56cf58f979-6ndnh       0/1     Pending       0          10s     <none>           <none>                           <none>           <none>
+php-apache-56cf58f979-7hxmh       0/1     Pending       0          25s     <none>           <none>                           <none>           <none>
+php-apache-56cf58f979-lpzp4       1/1     Running       0          12m     192.168.61.156   ip-192-168-39-22.ec2.internal    <none>           <none>
+php-apache-56cf58f979-lzn77       0/1     Pending       0          10s     <none>           <none>                           <none>           <none>
+NAME                              CPU(cores)   MEMORY(bytes)   
+load-generator-7f8684cc8f-2dmkq   2m           0Mi             
+load-generator-7f8684cc8f-bgvvd   3m           0Mi             
+load-generator-7f8684cc8f-g88j9   2m           0Mi             
+php-apache-56cf58f979-lpzp4       469m         19Mi            
+
+---- 2026-08-26 01:00:10 ----
+NAME         REFERENCE               TARGETS         MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 212%/50%   1         10        4          13m
+NAME                              READY   STATUS        RESTARTS   AGE     IP               NODE                             NOMINATED NODE   READINESS GATES
+load-generator-7f8684cc8f-2dmkq   1/1     Terminating   0          4m13s   192.168.7.1      ip-192-168-28-221.ec2.internal   <none>           <none>
+load-generator-7f8684cc8f-bgvvd   1/1     Terminating   0          4m13s   192.168.37.68    ip-192-168-39-22.ec2.internal    <none>           <none>
+load-generator-7f8684cc8f-g88j9   1/1     Terminating   0          4m13s   192.168.21.196   ip-192-168-28-221.ec2.internal   <none>           <none>
+php-apache-56cf58f979-5k8j8       0/1     Pending       0          14s     <none>           <none>                           <none>           <none>
+php-apache-56cf58f979-6ndnh       0/1     Pending       0          29s     <none>           <none>                           <none>           <none>
+php-apache-56cf58f979-7hxmh       0/1     Pending       0          44s     <none>           <none>                           <none>           <none>
+php-apache-56cf58f979-lpzp4       1/1     Running       0          13m     192.168.61.156   ip-192-168-39-22.ec2.internal    <none>           <none>
+php-apache-56cf58f979-lzn77       0/1     Pending       0          29s     <none>           <none>                           <none>           <none>
+NAME                              CPU(cores)   MEMORY(bytes)   
+load-generator-7f8684cc8f-2dmkq   3m           0Mi             
+load-generator-7f8684cc8f-bgvvd   3m           0Mi             
+load-generator-7f8684cc8f-g88j9   2m           0Mi             
+php-apache-56cf58f979-lpzp4       387m         19Mi            
+
+---- 2026-08-26 01:00:25 ----
+NAME         REFERENCE               TARGETS         MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 193%/50%   1         10        5          13m
+NAME                          READY   STATUS              RESTARTS   AGE   IP               NODE                             NOMINATED NODE   READINESS GATES
+php-apache-56cf58f979-5k8j8   0/1     Pending             0          30s   <none>           <none>                           <none>           <none>
+php-apache-56cf58f979-6ndnh   0/1     ContainerCreating   0          45s   <none>           ip-192-168-28-221.ec2.internal   <none>           <none>
+php-apache-56cf58f979-7hxmh   0/1     ContainerCreating   0          60s   <none>           ip-192-168-28-221.ec2.internal   <none>           <none>
+php-apache-56cf58f979-lpzp4   1/1     Running             0          13m   192.168.61.156   ip-192-168-39-22.ec2.internal    <none>           <none>
+php-apache-56cf58f979-lzn77   0/1     ContainerCreating   0          45s   <none>           ip-192-168-39-22.ec2.internal    <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-56cf58f979-lpzp4   374m         19Mi            
+
+---- 2026-08-26 01:00:42 ----
+NAME         REFERENCE               TARGETS         MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 187%/50%   1         10        5          13m
+NAME                          READY   STATUS              RESTARTS   AGE   IP               NODE                             NOMINATED NODE   READINESS GATES
+php-apache-56cf58f979-5k8j8   0/1     Pending             0          46s   <none>           <none>                           <none>           <none>
+php-apache-56cf58f979-6ndnh   0/1     ContainerCreating   0          61s   <none>           ip-192-168-28-221.ec2.internal   <none>           <none>
+php-apache-56cf58f979-7hxmh   0/1     ContainerCreating   0          76s   <none>           ip-192-168-28-221.ec2.internal   <none>           <none>
+php-apache-56cf58f979-lpzp4   1/1     Running             0          13m   192.168.61.156   ip-192-168-39-22.ec2.internal    <none>           <none>
+php-apache-56cf58f979-lzn77   0/1     ContainerCreating   0          61s   <none>           ip-192-168-39-22.ec2.internal    <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-56cf58f979-lpzp4   160m         19Mi            
+
+---- 2026-08-26 01:00:58 ----
+NAME         REFERENCE               TARGETS        MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 80%/50%   1         10        5          14m
+NAME                          READY   STATUS              RESTARTS   AGE   IP               NODE                             NOMINATED NODE   READINESS GATES
+php-apache-56cf58f979-5k8j8   0/1     Pending             0          62s   <none>           <none>                           <none>           <none>
+php-apache-56cf58f979-6ndnh   0/1     ContainerCreating   0          77s   <none>           ip-192-168-28-221.ec2.internal   <none>           <none>
+php-apache-56cf58f979-7hxmh   0/1     ContainerCreating   0          92s   <none>           ip-192-168-28-221.ec2.internal   <none>           <none>
+php-apache-56cf58f979-lpzp4   1/1     Running             0          14m   192.168.61.156   ip-192-168-39-22.ec2.internal    <none>           <none>
+php-apache-56cf58f979-lzn77   0/1     ContainerCreating   0          77s   <none>           ip-192-168-39-22.ec2.internal    <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-56cf58f979-lpzp4   160m         19Mi            
+
+---- 2026-08-26 01:01:15 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 9%/50%   1         10        5          14m
+NAME                          READY   STATUS              RESTARTS   AGE    IP               NODE                             NOMINATED NODE   READINESS GATES
+php-apache-56cf58f979-5k8j8   0/1     Pending             0          79s    <none>           <none>                           <none>           <none>
+php-apache-56cf58f979-6ndnh   0/1     Running             0          94s    192.168.21.196   ip-192-168-28-221.ec2.internal   <none>           <none>
+php-apache-56cf58f979-7hxmh   0/1     ContainerCreating   0          109s   <none>           ip-192-168-28-221.ec2.internal   <none>           <none>
+php-apache-56cf58f979-lpzp4   1/1     Running             0          14m    192.168.61.156   ip-192-168-39-22.ec2.internal    <none>           <none>
+php-apache-56cf58f979-lzn77   1/1     Running             0          94s    192.168.37.68    ip-192-168-39-22.ec2.internal    <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-56cf58f979-lpzp4   18m          19Mi            
+
+---- 2026-08-26 01:01:31 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 8%/50%   1         10        5          14m
+NAME                          READY   STATUS    RESTARTS   AGE    IP               NODE                             NOMINATED NODE   READINESS GATES
+php-apache-56cf58f979-5k8j8   0/1     Pending   0          96s    <none>           <none>                           <none>           <none>
+php-apache-56cf58f979-6ndnh   1/1     Running   0          111s   192.168.21.196   ip-192-168-28-221.ec2.internal   <none>           <none>
+php-apache-56cf58f979-7hxmh   1/1     Running   0          2m6s   192.168.10.226   ip-192-168-28-221.ec2.internal   <none>           <none>
+php-apache-56cf58f979-lpzp4   1/1     Running   0          14m    192.168.61.156   ip-192-168-39-22.ec2.internal    <none>           <none>
+php-apache-56cf58f979-lzn77   1/1     Running   0          111s   192.168.37.68    ip-192-168-39-22.ec2.internal    <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-56cf58f979-lpzp4   17m          24Mi            
+php-apache-56cf58f979-lzn77   23m          10Mi            
+
+---- 2026-08-26 01:01:49 ----
+NAME         REFERENCE               TARGETS        MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 10%/50%   1         10        5          14m
+NAME                          READY   STATUS    RESTARTS   AGE     IP               NODE                             NOMINATED NODE   READINESS GATES
+php-apache-56cf58f979-5k8j8   0/1     Pending   0          113s    <none>           <none>                           <none>           <none>
+php-apache-56cf58f979-6ndnh   1/1     Running   0          2m8s    192.168.21.196   ip-192-168-28-221.ec2.internal   <none>           <none>
+php-apache-56cf58f979-7hxmh   1/1     Running   0          2m23s   192.168.10.226   ip-192-168-28-221.ec2.internal   <none>           <none>
+php-apache-56cf58f979-lpzp4   1/1     Running   0          14m     192.168.61.156   ip-192-168-39-22.ec2.internal    <none>           <none>
+php-apache-56cf58f979-lzn77   1/1     Running   0          2m8s    192.168.37.68    ip-192-168-39-22.ec2.internal    <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-56cf58f979-6ndnh   21m          17Mi            
+php-apache-56cf58f979-7hxmh   18m          11Mi            
+php-apache-56cf58f979-lpzp4   20m          24Mi            
+php-apache-56cf58f979-lzn77   20m          11Mi            
+
+---- 2026-08-26 01:02:04 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 9%/50%   1         10        5          15m
+NAME                          READY   STATUS    RESTARTS   AGE     IP               NODE                             NOMINATED NODE   READINESS GATES
+php-apache-56cf58f979-5k8j8   0/1     Pending   0          2m9s    <none>           <none>                           <none>           <none>
+php-apache-56cf58f979-6ndnh   1/1     Running   0          2m24s   192.168.21.196   ip-192-168-28-221.ec2.internal   <none>           <none>
+php-apache-56cf58f979-7hxmh   1/1     Running   0          2m39s   192.168.10.226   ip-192-168-28-221.ec2.internal   <none>           <none>
+php-apache-56cf58f979-lpzp4   1/1     Running   0          15m     192.168.61.156   ip-192-168-39-22.ec2.internal    <none>           <none>
+php-apache-56cf58f979-lzn77   1/1     Running   0          2m24s   192.168.37.68    ip-192-168-39-22.ec2.internal    <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-56cf58f979-6ndnh   17m          18Mi            
+php-apache-56cf58f979-7hxmh   18m          11Mi            
+php-apache-56cf58f979-lpzp4   14m          24Mi            
+php-apache-56cf58f979-lzn77   18m          11Mi            
+
+---- 2026-08-26 01:02:22 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 8%/50%   1         10        5          15m
+NAME                          READY   STATUS    RESTARTS   AGE     IP               NODE                             NOMINATED NODE   READINESS GATES
+php-apache-56cf58f979-5k8j8   0/1     Pending   0          2m26s   <none>           <none>                           <none>           <none>
+php-apache-56cf58f979-6ndnh   1/1     Running   0          2m41s   192.168.21.196   ip-192-168-28-221.ec2.internal   <none>           <none>
+php-apache-56cf58f979-7hxmh   1/1     Running   0          2m56s   192.168.10.226   ip-192-168-28-221.ec2.internal   <none>           <none>
+php-apache-56cf58f979-lpzp4   1/1     Running   0          15m     192.168.61.156   ip-192-168-39-22.ec2.internal    <none>           <none>
+php-apache-56cf58f979-lzn77   1/1     Running   0          2m41s   192.168.37.68    ip-192-168-39-22.ec2.internal    <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-56cf58f979-6ndnh   17m          18Mi            
+php-apache-56cf58f979-7hxmh   20m          12Mi            
+php-apache-56cf58f979-lpzp4   20m          24Mi            
+php-apache-56cf58f979-lzn77   13m          11Mi            
+
+---- 2026-08-26 01:02:37 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 8%/50%   1         10        5          15m
+NAME                          READY   STATUS    RESTARTS   AGE     IP               NODE                             NOMINATED NODE   READINESS GATES
+php-apache-56cf58f979-5k8j8   0/1     Pending   0          2m42s   <none>           <none>                           <none>           <none>
+php-apache-56cf58f979-6ndnh   1/1     Running   0          2m57s   192.168.21.196   ip-192-168-28-221.ec2.internal   <none>           <none>
+php-apache-56cf58f979-7hxmh   1/1     Running   0          3m12s   192.168.10.226   ip-192-168-28-221.ec2.internal   <none>           <none>
+php-apache-56cf58f979-lpzp4   1/1     Running   0          15m     192.168.61.156   ip-192-168-39-22.ec2.internal    <none>           <none>
+php-apache-56cf58f979-lzn77   1/1     Running   0          2m57s   192.168.37.68    ip-192-168-39-22.ec2.internal    <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-56cf58f979-6ndnh   15m          18Mi            
+php-apache-56cf58f979-7hxmh   15m          12Mi            
+php-apache-56cf58f979-lpzp4   14m          24Mi            
+php-apache-56cf58f979-lzn77   18m          11Mi            
+
+---- 2026-08-26 01:02:55 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 7%/50%   1         10        5          15m
+NAME                          READY   STATUS    RESTARTS   AGE     IP               NODE                             NOMINATED NODE   READINESS GATES
+php-apache-56cf58f979-5k8j8   0/1     Pending   0          2m59s   <none>           <none>                           <none>           <none>
+php-apache-56cf58f979-6ndnh   1/1     Running   0          3m14s   192.168.21.196   ip-192-168-28-221.ec2.internal   <none>           <none>
+php-apache-56cf58f979-7hxmh   1/1     Running   0          3m29s   192.168.10.226   ip-192-168-28-221.ec2.internal   <none>           <none>
+php-apache-56cf58f979-lpzp4   1/1     Running   0          16m     192.168.61.156   ip-192-168-39-22.ec2.internal    <none>           <none>
+php-apache-56cf58f979-lzn77   1/1     Running   0          3m14s   192.168.37.68    ip-192-168-39-22.ec2.internal    <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-56cf58f979-6ndnh   15m          18Mi            
+php-apache-56cf58f979-7hxmh   19m          12Mi            
+php-apache-56cf58f979-lpzp4   19m          24Mi            
+php-apache-56cf58f979-lzn77   16m          11Mi            
+
+---- 2026-08-26 01:03:10 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 9%/50%   1         10        5          16m
+NAME                          READY   STATUS    RESTARTS   AGE     IP               NODE                             NOMINATED NODE   READINESS GATES
+php-apache-56cf58f979-5k8j8   0/1     Pending   0          3m15s   <none>           <none>                           <none>           <none>
+php-apache-56cf58f979-6ndnh   1/1     Running   0          3m30s   192.168.21.196   ip-192-168-28-221.ec2.internal   <none>           <none>
+php-apache-56cf58f979-7hxmh   1/1     Running   0          3m45s   192.168.10.226   ip-192-168-28-221.ec2.internal   <none>           <none>
+php-apache-56cf58f979-lpzp4   1/1     Running   0          16m     192.168.61.156   ip-192-168-39-22.ec2.internal    <none>           <none>
+php-apache-56cf58f979-lzn77   1/1     Running   0          3m30s   192.168.37.68    ip-192-168-39-22.ec2.internal    <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-56cf58f979-6ndnh   20m          18Mi            
+php-apache-56cf58f979-7hxmh   19m          12Mi            
+php-apache-56cf58f979-lpzp4   17m          24Mi            
+php-apache-56cf58f979-lzn77   23m          11Mi            
+
+---- 2026-08-26 01:03:28 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 9%/50%   1         10        5          16m
+NAME                          READY   STATUS    RESTARTS   AGE     IP               NODE                             NOMINATED NODE   READINESS GATES
+php-apache-56cf58f979-5k8j8   0/1     Pending   0          3m32s   <none>           <none>                           <none>           <none>
+php-apache-56cf58f979-6ndnh   1/1     Running   0          3m47s   192.168.21.196   ip-192-168-28-221.ec2.internal   <none>           <none>
+php-apache-56cf58f979-7hxmh   1/1     Running   0          4m2s    192.168.10.226   ip-192-168-28-221.ec2.internal   <none>           <none>
+php-apache-56cf58f979-lpzp4   1/1     Running   0          16m     192.168.61.156   ip-192-168-39-22.ec2.internal    <none>           <none>
+php-apache-56cf58f979-lzn77   1/1     Running   0          3m47s   192.168.37.68    ip-192-168-39-22.ec2.internal    <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-56cf58f979-6ndnh   19m          19Mi            
+php-apache-56cf58f979-7hxmh   14m          12Mi            
+php-apache-56cf58f979-lpzp4   17m          24Mi            
+php-apache-56cf58f979-lzn77   15m          11Mi            
+
+---- 2026-08-26 01:03:44 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 9%/50%   1         10        5          16m
+NAME                          READY   STATUS    RESTARTS   AGE     IP               NODE                             NOMINATED NODE   READINESS GATES
+php-apache-56cf58f979-5k8j8   0/1     Pending   0          3m48s   <none>           <none>                           <none>           <none>
+php-apache-56cf58f979-6ndnh   1/1     Running   0          4m3s    192.168.21.196   ip-192-168-28-221.ec2.internal   <none>           <none>
+php-apache-56cf58f979-7hxmh   1/1     Running   0          4m18s   192.168.10.226   ip-192-168-28-221.ec2.internal   <none>           <none>
+php-apache-56cf58f979-lpzp4   1/1     Running   0          16m     192.168.61.156   ip-192-168-39-22.ec2.internal    <none>           <none>
+php-apache-56cf58f979-lzn77   1/1     Running   0          4m3s    192.168.37.68    ip-192-168-39-22.ec2.internal    <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-56cf58f979-6ndnh   16m          19Mi            
+php-apache-56cf58f979-7hxmh   25m          12Mi            
+php-apache-56cf58f979-lpzp4   17m          24Mi            
+php-apache-56cf58f979-lzn77   17m          11Mi            
+
+---- 2026-08-26 01:04:01 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 8%/50%   1         10        5          17m
+NAME                          READY   STATUS    RESTARTS   AGE     IP               NODE                             NOMINATED NODE   READINESS GATES
+php-apache-56cf58f979-5k8j8   0/1     Pending   0          4m5s    <none>           <none>                           <none>           <none>
+php-apache-56cf58f979-6ndnh   1/1     Running   0          4m20s   192.168.21.196   ip-192-168-28-221.ec2.internal   <none>           <none>
+php-apache-56cf58f979-7hxmh   1/1     Running   0          4m35s   192.168.10.226   ip-192-168-28-221.ec2.internal   <none>           <none>
+php-apache-56cf58f979-lpzp4   1/1     Running   0          17m     192.168.61.156   ip-192-168-39-22.ec2.internal    <none>           <none>
+php-apache-56cf58f979-lzn77   1/1     Running   0          4m20s   192.168.37.68    ip-192-168-39-22.ec2.internal    <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-56cf58f979-6ndnh   27m          19Mi            
+php-apache-56cf58f979-7hxmh   16m          12Mi            
+php-apache-56cf58f979-lpzp4   17m          24Mi            
+php-apache-56cf58f979-lzn77   15m          11Mi            
+
+---- 2026-08-26 01:04:17 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 9%/50%   1         10        5          17m
+NAME                          READY   STATUS    RESTARTS   AGE     IP               NODE                             NOMINATED NODE   READINESS GATES
+php-apache-56cf58f979-5k8j8   0/1     Pending   0          4m21s   <none>           <none>                           <none>           <none>
+php-apache-56cf58f979-6ndnh   1/1     Running   0          4m36s   192.168.21.196   ip-192-168-28-221.ec2.internal   <none>           <none>
+php-apache-56cf58f979-7hxmh   1/1     Running   0          4m51s   192.168.10.226   ip-192-168-28-221.ec2.internal   <none>           <none>
+php-apache-56cf58f979-lpzp4   1/1     Running   0          17m     192.168.61.156   ip-192-168-39-22.ec2.internal    <none>           <none>
+php-apache-56cf58f979-lzn77   1/1     Running   0          4m36s   192.168.37.68    ip-192-168-39-22.ec2.internal    <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-56cf58f979-6ndnh   14m          19Mi            
+php-apache-56cf58f979-7hxmh   18m          12Mi            
+php-apache-56cf58f979-lpzp4   19m          24Mi            
+php-apache-56cf58f979-lzn77   20m          11Mi            
+
+---- 2026-08-26 01:04:34 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 8%/50%   1         10        5          17m
+NAME                          READY   STATUS    RESTARTS   AGE     IP               NODE                             NOMINATED NODE   READINESS GATES
+php-apache-56cf58f979-5k8j8   0/1     Pending   0          4m38s   <none>           <none>                           <none>           <none>
+php-apache-56cf58f979-6ndnh   1/1     Running   0          4m53s   192.168.21.196   ip-192-168-28-221.ec2.internal   <none>           <none>
+php-apache-56cf58f979-7hxmh   1/1     Running   0          5m8s    192.168.10.226   ip-192-168-28-221.ec2.internal   <none>           <none>
+php-apache-56cf58f979-lpzp4   1/1     Running   0          17m     192.168.61.156   ip-192-168-39-22.ec2.internal    <none>           <none>
+php-apache-56cf58f979-lzn77   1/1     Running   0          4m53s   192.168.37.68    ip-192-168-39-22.ec2.internal    <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-56cf58f979-6ndnh   19m          19Mi            
+php-apache-56cf58f979-7hxmh   21m          12Mi            
+php-apache-56cf58f979-lpzp4   15m          24Mi            
+php-apache-56cf58f979-lzn77   18m          11Mi            
+
+---- 2026-08-26 01:04:50 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 9%/50%   1         10        5          17m
+NAME                          READY   STATUS    RESTARTS   AGE     IP               NODE                             NOMINATED NODE   READINESS GATES
+php-apache-56cf58f979-5k8j8   0/1     Pending   0          4m54s   <none>           <none>                           <none>           <none>
+php-apache-56cf58f979-6ndnh   1/1     Running   0          5m9s    192.168.21.196   ip-192-168-28-221.ec2.internal   <none>           <none>
+php-apache-56cf58f979-7hxmh   1/1     Running   0          5m24s   192.168.10.226   ip-192-168-28-221.ec2.internal   <none>           <none>
+php-apache-56cf58f979-lpzp4   1/1     Running   0          17m     192.168.61.156   ip-192-168-39-22.ec2.internal    <none>           <none>
+php-apache-56cf58f979-lzn77   1/1     Running   0          5m9s    192.168.37.68    ip-192-168-39-22.ec2.internal    <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-56cf58f979-6ndnh   16m          19Mi            
+php-apache-56cf58f979-7hxmh   15m          12Mi            
+php-apache-56cf58f979-lpzp4   18m          24Mi            
+php-apache-56cf58f979-lzn77   13m          11Mi            
+
+---- 2026-08-26 01:05:07 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 7%/50%   1         10        5          18m
+NAME                          READY   STATUS    RESTARTS   AGE     IP               NODE                             NOMINATED NODE   READINESS GATES
+php-apache-56cf58f979-5k8j8   0/1     Pending   0          5m11s   <none>           <none>                           <none>           <none>
+php-apache-56cf58f979-6ndnh   1/1     Running   0          5m26s   192.168.21.196   ip-192-168-28-221.ec2.internal   <none>           <none>
+php-apache-56cf58f979-7hxmh   1/1     Running   0          5m41s   192.168.10.226   ip-192-168-28-221.ec2.internal   <none>           <none>
+php-apache-56cf58f979-lpzp4   1/1     Running   0          18m     192.168.61.156   ip-192-168-39-22.ec2.internal    <none>           <none>
+php-apache-56cf58f979-lzn77   1/1     Running   0          5m26s   192.168.37.68    ip-192-168-39-22.ec2.internal    <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-56cf58f979-6ndnh   24m          19Mi            
+php-apache-56cf58f979-7hxmh   23m          12Mi            
+php-apache-56cf58f979-lpzp4   18m          24Mi            
+php-apache-56cf58f979-lzn77   22m          11Mi            
+
+---- 2026-08-26 01:05:23 ----
+NAME         REFERENCE               TARGETS        MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 10%/50%   1         10        5          18m
+NAME                          READY   STATUS    RESTARTS   AGE     IP               NODE                             NOMINATED NODE   READINESS GATES
+php-apache-56cf58f979-5k8j8   0/1     Pending   0          5m27s   <none>           <none>                           <none>           <none>
+php-apache-56cf58f979-6ndnh   1/1     Running   0          5m42s   192.168.21.196   ip-192-168-28-221.ec2.internal   <none>           <none>
+php-apache-56cf58f979-7hxmh   1/1     Running   0          5m57s   192.168.10.226   ip-192-168-28-221.ec2.internal   <none>           <none>
+php-apache-56cf58f979-lpzp4   1/1     Running   0          18m     192.168.61.156   ip-192-168-39-22.ec2.internal    <none>           <none>
+php-apache-56cf58f979-lzn77   1/1     Running   0          5m42s   192.168.37.68    ip-192-168-39-22.ec2.internal    <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-56cf58f979-6ndnh   15m          19Mi            
+php-apache-56cf58f979-7hxmh   16m          12Mi            
+php-apache-56cf58f979-lpzp4   17m          24Mi            
+php-apache-56cf58f979-lzn77   16m          11Mi            
+
+---- 2026-08-26 01:05:41 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 8%/50%   1         10        5          18m
+NAME                          READY   STATUS    RESTARTS   AGE     IP               NODE                             NOMINATED NODE   READINESS GATES
+php-apache-56cf58f979-5k8j8   0/1     Pending   0          5m44s   <none>           <none>                           <none>           <none>
+php-apache-56cf58f979-6ndnh   1/1     Running   0          5m59s   192.168.21.196   ip-192-168-28-221.ec2.internal   <none>           <none>
+php-apache-56cf58f979-7hxmh   1/1     Running   0          6m14s   192.168.10.226   ip-192-168-28-221.ec2.internal   <none>           <none>
+php-apache-56cf58f979-lpzp4   1/1     Running   0          18m     192.168.61.156   ip-192-168-39-22.ec2.internal    <none>           <none>
+php-apache-56cf58f979-lzn77   1/1     Running   0          5m59s   192.168.37.68    ip-192-168-39-22.ec2.internal    <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-56cf58f979-6ndnh   17m          19Mi            
+php-apache-56cf58f979-7hxmh   19m          12Mi            
+php-apache-56cf58f979-lpzp4   16m          24Mi            
+php-apache-56cf58f979-lzn77   16m          11Mi            
+
+---- 2026-08-26 01:05:56 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 8%/50%   1         10        5          19m
+NAME                          READY   STATUS    RESTARTS   AGE     IP               NODE                             NOMINATED NODE   READINESS GATES
+php-apache-56cf58f979-5k8j8   0/1     Pending   0          6m1s    <none>           <none>                           <none>           <none>
+php-apache-56cf58f979-6ndnh   1/1     Running   0          6m16s   192.168.21.196   ip-192-168-28-221.ec2.internal   <none>           <none>
+php-apache-56cf58f979-7hxmh   1/1     Running   0          6m31s   192.168.10.226   ip-192-168-28-221.ec2.internal   <none>           <none>
+php-apache-56cf58f979-lpzp4   1/1     Running   0          19m     192.168.61.156   ip-192-168-39-22.ec2.internal    <none>           <none>
+php-apache-56cf58f979-lzn77   1/1     Running   0          6m16s   192.168.37.68    ip-192-168-39-22.ec2.internal    <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-56cf58f979-6ndnh   20m          19Mi            
+php-apache-56cf58f979-7hxmh   13m          11Mi            
+php-apache-56cf58f979-lpzp4   16m          24Mi            
+php-apache-56cf58f979-lzn77   18m          11Mi            
+

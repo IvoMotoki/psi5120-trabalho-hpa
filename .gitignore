@@ -1,0 +1,20 @@
+# Credenciais e segredos - nunca versionar
+*.pem
+*.csv
+*credentials*
+*.env
+.aws/
+
+# Artefatos de compilação LaTeX
+artigo/*.aux
+artigo/*.log
+artigo/*.out
+artigo/*.toc
+artigo/*.synctex.gz
+artigo/*.fdb_latexmk
+artigo/*.fls
+artigo/*.blg
+
+# Sistema
+.DS_Store
+Thumbs.db
