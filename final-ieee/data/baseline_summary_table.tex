@@ -1,0 +1,14 @@
+\begin{table}[ht]
+\centering
+\caption{Baseline HPA metrics extracted from raw experiment logs}
+\label{tab:baseline-generated}
+\begin{tabular}{lrrrrr}
+\toprule
+Environment & First scale-up (s) & Peak replicas & Pending pods & Scale-down after load (s) & Replica-s \\
+\midrule
+Minikube & 82 & 10 & 0 & 144 & 2450 \\
+EKS (005559) & 230 & 5 & 4 & -- & 1983 \\
+EKS (010657) & 50 & 5 & 4 & 351 & 2773 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,126 @@
+\documentclass[conference]{IEEEtran}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{cite}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{url}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\lstset{
+  basicstyle=\ttfamily\scriptsize,
+  breaklines=true,
+  columns=fullflexible,
+  frame=single,
+  backgroundcolor=\color[gray]{0.96}
+}
+
+\title{Beyond CPU-Based Horizontal Pod Autoscaling: Empirical Limits of Kubernetes Autoscaling in Local and Managed Cloud Environments}
+
+\author{\IEEEauthorblockN{Ivo Motoki Makiyama Lopes}
+\IEEEauthorblockA{Escola Politecnica, Universidade de Sao Paulo\\
+PSI5120 -- Topicos de Computacao em Nuvem\\
+ivo.motoki@usp.br}}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Horizontal Pod Autoscaling (HPA) is a central mechanism for elastic cloud-native applications, but increasing the desired number of replicas does not guarantee that a cluster can actually schedule and run them. This paper extends a previous Kubernetes HPA experiment by comparing the same CPU-bound web workload in local Minikube and managed Amazon EKS environments, then adding an HPA behavior-tuning experiment. The study measures reaction time, time to peak replicas, scale-down delay, effective schedulable capacity, and replica-seconds as an operational cost proxy. Preliminary results show that Minikube reaches the configured HPA maximum, while EKS can be capped below that maximum by node-level pod density and Amazon VPC CNI constraints. The paper argues that practical elasticity requires reasoning about the metrics pipeline, HPA policy, scheduler capacity, node autoscaling, and cloud cost together.
+\end{abstract}
+
+\begin{IEEEkeywords}
+Kubernetes, Horizontal Pod Autoscaler, Amazon EKS, Minikube, cloud computing, autoscaling, container orchestration.
+\end{IEEEkeywords}
+
+\section{Introduction}
+
+Autoscaling is one of the main operational promises of cloud computing: instead of provisioning fixed capacity for peak demand, applications can adapt resource allocation to observed load. In Kubernetes, the Horizontal Pod Autoscaler (HPA) implements this mechanism by periodically changing the replica count of scalable workloads such as Deployments based on metrics such as CPU utilization~\cite{kubernetes_hpa_concepts}.
+
+In practice, however, HPA is only one control loop inside a larger system. It can request more replicas, but it cannot by itself guarantee that the cluster has enough schedulable capacity, IP addresses, node resources, or cloud budget to run them. This distinction is especially important in managed Kubernetes environments such as Amazon EKS, where pod density depends not only on CPU and memory but also on instance type and Amazon VPC CNI networking limits~\cite{aws_eks_vpc_cni}.
+
+This work extends an intermediate PSI5120 project that deployed the official Kubernetes CPU-bound HPA example workload in both Minikube and Amazon EKS. The final project has three goals: first, to quantify the baseline behavior already observed in both environments; second, to add a controlled experiment using explicit \texttt{autoscaling/v2} behavior policies; and third, to analyze why effective elasticity in EKS can be bounded by infrastructure constraints outside the HPA object itself.
+
+The guiding research questions are:
+
+\begin{itemize}
+  \item RQ1: With the same workload and HPA target, how do Minikube and EKS differ in reaction time, peak replicas, and scale-down behavior?
+  \item RQ2: When HPA recommends additional replicas in EKS, which infrastructure limits can prevent those replicas from becoming ready?
+  \item RQ3: How do explicit HPA behavior policies change underprovisioning and overprovisioning windows compared with Kubernetes defaults?
+\end{itemize}
+
+\section{Background}
+
+\subsection{Horizontal Pod Autoscaler}
+
+The Kubernetes HPA controller periodically computes a desired replica count from observed metrics. For resource metrics such as CPU, the controller compares current utilization with the configured target and conceptually applies the ratio between the current and desired values~\cite{kubernetes_hpa_concepts}. CPU utilization is expressed relative to each container's \texttt{resources.requests.cpu}, so missing or poorly chosen requests can make HPA behavior undefined or misleading.
+
+The default HPA control loop favors fast scale-up and conservative scale-down. Kubernetes documents a default 15 s synchronization period for the controller and a default 300 s stabilization window for scale-down recommendations~\cite{kubernetes_hpa_concepts}. The \texttt{autoscaling/v2} API exposes a \texttt{behavior} field that allows experiments with explicit scale-up and scale-down policies, including stabilization windows, pod-based policies, percent-based policies, and policy selection rules~\cite{kubernetes_hpa_api_v2}.
+
+\subsection{Metrics Pipeline}
+
+The HPA does not collect resource metrics directly. It relies on the Kubernetes metrics APIs, commonly backed by Metrics Server. Metrics Server is intended as an efficient source for autoscaling resource metrics, not as a general-purpose monitoring or historical observability system~\cite{kubernetes_metrics_server}. This distinction motivates the use of experiment logs and derived CSV data in this project.
+
+\subsection{Amazon EKS Capacity Constraints}
+
+Amazon EKS runs standard Kubernetes HPA behavior, provided that a metrics source such as Metrics Server is available~\cite{aws_eks_hpa}. The managed cloud environment adds other constraints. With the Amazon VPC CNI plugin in the default mode, pods receive VPC IP addresses, and pod density is bounded by the number of elastic network interfaces and IP addresses supported by each EC2 instance type~\cite{aws_eks_vpc_cni}. Therefore, a workload may hit scheduling limits even when the HPA \texttt{maxReplicas} value is higher.
+
+\section{Related Work}
+
+Recent work has evaluated HPA in microservice environments, including throughput, latency, resource utilization, and operational cost trade-offs~\cite{buzato_goldman_2026_hpa}. Other studies have proposed finer-grained horizontal scaling policies to address delayed response and conservative anti-oscillation behavior in container clouds~\cite{jiang_wu_2021_fine_grained_hpa}. This paper is narrower in workload complexity, but contributes a reproducible educational comparison between a local Kubernetes cluster and a managed cloud cluster under realistic infrastructure limits.
+
+\section{Experimental Setup}
+
+\subsection{Workload}
+
+Both environments run the official Kubernetes HPA walkthrough workload, \texttt{registry.k8s.io/hpa-example}, exposed through a \texttt{php-apache} Deployment and Service~\cite{kubernetes_hpa_walkthrough}. The container requests 200 mCPU and 64 MiB of memory, with limits of 500 mCPU and 128 MiB. The baseline HPA targets 50\% average CPU utilization with \texttt{minReplicas: 1} and \texttt{maxReplicas: 10}.
+
+\subsection{Load Generation}
+
+Load is generated from inside the cluster using BusyBox pods repeatedly issuing HTTP requests to the internal Kubernetes Service DNS name. This avoids differences caused by external network exposure and keeps the stress method comparable between Minikube and EKS.
+
+\subsection{Measurements}
+
+The experiment logs \texttt{kubectl get hpa}, \texttt{kubectl get pods -o wide}, and \texttt{kubectl top pods} every few seconds during active load and after load removal. The final project derives the following metrics from raw logs: time to first scale-up, time to peak replicas, time to scale-down, peak desired replicas, running workload pods, pending workload pods, replica-seconds, and time spent above the CPU target.
+
+\section{Baseline Results}
+
+The baseline analysis uses the raw timeline logs produced in the intermediate project. Each run records HPA state, pod state, and resource metrics during the active-load window and after load removal. Table~\ref{tab:baseline-generated} summarizes the metrics extracted automatically from those logs.
+
+\input{data/baseline_summary_table}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\linewidth]{figures/baseline_hpa_replicas.png}
+\caption{HPA desired replicas over time for the existing baseline runs. The shaded area indicates the active-load phase of the first parsed run.}
+\label{fig:baseline-hpa-replicas}
+\end{figure}
+
+The parsed data confirms the qualitative findings from the intermediate report. In the Minikube baseline, HPA reached the configured maximum of 10 replicas without pending workload pods. In the EKS runs, the HPA desired replica count reached only 5, while up to 4 \texttt{php-apache} pods remained pending. This separates the HPA decision from effective workload capacity: the controller can request replicas, but the scheduler can only place them if the cluster has enough node and networking capacity.
+
+\section{HPA Behavior-Tuning Extension}
+
+The extension compares the default HPA behavior against two explicit \texttt{autoscaling/v2} policies: an aggressive scale-up policy and a faster scale-down policy. The expected trade-off is that faster scale-up may reduce the underprovisioning window, while faster scale-down may reduce replica-seconds after a burst but increase the risk of oscillation for intermittent workloads.
+
+\section{Cloud Infrastructure Constraints}
+
+The EKS baseline is used to show the difference between configured elasticity and effective elasticity. HPA may set a higher desired replica count, but the scheduler can leave pods pending if nodes lack capacity. In the tested EKS configuration, \texttt{t3.micro} nodes are particularly constrained: the instance family is burstable, has limited memory, and, more importantly for this experiment, pod density is bounded by VPC CNI IP address capacity~\cite{aws_ec2_t3,aws_eks_vpc_cni}.
+
+\section{Cost and Operational Discussion}
+
+Minikube has no direct cloud cost, but it depends on local host capacity and is not a production-grade managed environment. EKS introduces a managed control-plane charge and separate costs for worker nodes and related AWS resources~\cite{aws_eks_pricing}. This section will estimate the cost of reproducing the experiment and discuss when HPA must be combined with node autoscaling mechanisms such as Karpenter or Cluster Autoscaler~\cite{aws_eks_autoscaling}.
+
+\section{Threats to Validity}
+
+The workload is intentionally simple and CPU-bound, so results should not be generalized to all microservice or I/O-bound systems. The EKS experiment used small Free-Tier-constrained instances, which makes infrastructure constraints visible but does not represent all production EKS clusters. Finally, Metrics Server values are sufficient for HPA control but are not a high-resolution observability dataset.
+
+\section{Conclusion}
+
+The final project extends a working HPA comparison into a broader empirical study of Kubernetes elasticity. The expected conclusion is that HPA is necessary but insufficient: practical autoscaling requires aligning application metrics, controller behavior, schedulable capacity, node autoscaling, and cloud cost.
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+\end{document}

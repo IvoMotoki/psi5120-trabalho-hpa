@@ -1,6 +1,7 @@
 # Credenciais e segredos - nunca versionar
 *.pem
 *.csv
+!final-ieee/data/*.csv
 *credentials*
 *.env
 .aws/
@@ -18,3 +19,4 @@ artigo/*.blg
 # Sistema
 .DS_Store
 Thumbs.db
+__pycache__/
