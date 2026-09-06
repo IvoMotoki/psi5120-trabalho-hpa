@@ -15,6 +15,15 @@ artigo/*.synctex.gz
 artigo/*.fdb_latexmk
 artigo/*.fls
 artigo/*.blg
+final-ieee/*.aux
+final-ieee/*.log
+final-ieee/*.out
+final-ieee/*.toc
+final-ieee/*.synctex.gz
+final-ieee/*.fdb_latexmk
+final-ieee/*.fls
+final-ieee/*.blg
+final-ieee/*.bbl
 
 # Sistema
 .DS_Store

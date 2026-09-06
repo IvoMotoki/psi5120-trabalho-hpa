@@ -255,6 +255,7 @@ def write_latex_summary(path: Path, summaries: list[dict[str, str | int | float 
         r"\centering",
         r"\caption{Baseline HPA metrics extracted from raw experiment logs}",
         r"\label{tab:baseline-generated}",
+        r"\resizebox{\linewidth}{!}{%",
         r"\begin{tabular}{lrrrrr}",
         r"\toprule",
         r"Environment & First scale-up (s) & Peak replicas & Pending pods & Scale-down after load (s) & Replica-s \\",
@@ -283,6 +284,7 @@ def write_latex_summary(path: Path, summaries: list[dict[str, str | int | float 
         [
             r"\bottomrule",
             r"\end{tabular}",
+            r"}",
             r"\end{table}",
             "",
         ]
