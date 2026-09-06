@@ -1,6 +1,6 @@
 \begin{table}[ht]
 \centering
-\caption{HPA metrics extracted from raw experiment logs}
+\caption{Baseline HPA metrics extracted from raw experiment logs}
 \label{tab:baseline-generated}
 \resizebox{\linewidth}{!}{%
 \begin{tabular}{lrrrrr}
@@ -8,11 +8,8 @@
 Run & First scale-up (s) & Peak replicas & Pending pods & Scale-down after load (s) & Replica-s \\
 \midrule
 Minikube baseline & 82 & 10 & 0 & 144 & 2450 \\
-Minikube aggressive & 70 & 10 & 0 & 409 & 5560 \\
-Minikube fast scale-down & 70 & 10 & 0 & 353 & 4149 \\
-Minikube baseline rerun & 103 & 10 & 0 & 421 & 5581 \\
-Eks EKS baseline 005559 & 230 & 5 & 4 & -- & 1983 \\
-Eks EKS baseline 010657 & 50 & 5 & 4 & 351 & 2773 \\
+EKS baseline 005559 & 230 & 5 & 4 & -- & 1983 \\
+EKS baseline 010657 & 50 & 5 & 4 & 351 & 2773 \\
 \bottomrule
 \end{tabular}
 }

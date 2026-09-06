@@ -282,7 +282,13 @@ def write_latex_summary(
     ]
 
     for row in summaries:
-        run_label = f"{str(row['environment']).capitalize()} {row['scenario']}"
+        scenario = str(row["scenario"])
+        environment = str(row["environment"])
+        run_label = (
+            scenario
+            if scenario.upper().startswith("EKS ")
+            else f"{environment.capitalize()} {scenario}"
+        )
         lines.append(
             " & ".join(
                 [
@@ -332,10 +338,16 @@ def main() -> None:
             writer.writerows(summaries)
         print(f"Wrote {summary_path.relative_to(ROOT)} ({len(summaries)} runs)")
         latex_path = DATA_DIR / "baseline_summary_table.tex"
+        baseline_rows = [
+            row
+            for row in summaries
+            if row["environment"] == "eks"
+            or (row["environment"] == "minikube" and row["scenario"] == "baseline")
+        ]
         write_latex_summary(
             latex_path,
-            summaries,
-            "HPA metrics extracted from raw experiment logs",
+            baseline_rows,
+            "Baseline HPA metrics extracted from raw experiment logs",
             "tab:baseline-generated",
         )
         print(f"Wrote {latex_path.relative_to(ROOT)}")
