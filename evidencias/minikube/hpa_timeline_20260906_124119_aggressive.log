@@ -1,0 +1,1669 @@
+---- 2026-09-06 12:41:19 ----
+NAME         REFERENCE               TARGETS              MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: <unknown>/50%   1         10        1          67s
+NAME                             READY   STATUS              RESTARTS   AGE   IP           NODE       NOMINATED NODE   READINESS GATES
+load-generator-d5cb56dc8-4q44f   0/1     ContainerCreating   0          1s    <none>       hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-g9zn9   0/1     ContainerCreating   0          1s    <none>       hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-jb9d5   0/1     ContainerCreating   0          1s    <none>       hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-s4nf9   0/1     ContainerCreating   0          1s    <none>       hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-s672v   0/1     ContainerCreating   0          1s    <none>       hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-svdpp   0/1     ContainerCreating   0          1s    <none>       hpa-2026   <none>           <none>
+php-apache-7f969fb464-q6k8d      1/1     Running             0          69s   10.244.0.5   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-q6k8d   8m           10Mi            
+
+---- 2026-09-06 12:41:31 ----
+NAME         REFERENCE               TARGETS              MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: <unknown>/50%   1         10        1          79s
+NAME                             READY   STATUS    RESTARTS   AGE   IP            NODE       NOMINATED NODE   READINESS GATES
+load-generator-d5cb56dc8-4q44f   1/1     Running   0          12s   10.244.0.10   hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-g9zn9   1/1     Running   0          12s   10.244.0.7    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-jb9d5   1/1     Running   0          12s   10.244.0.8    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-s4nf9   1/1     Running   0          12s   10.244.0.6    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-s672v   1/1     Running   0          12s   10.244.0.9    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-svdpp   1/1     Running   0          12s   10.244.0.11   hpa-2026   <none>           <none>
+php-apache-7f969fb464-q6k8d      1/1     Running   0          80s   10.244.0.5    hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-q6k8d   8m           10Mi            
+
+---- 2026-09-06 12:41:43 ----
+NAME         REFERENCE               TARGETS              MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: <unknown>/50%   1         10        1          90s
+NAME                             READY   STATUS    RESTARTS   AGE   IP            NODE       NOMINATED NODE   READINESS GATES
+load-generator-d5cb56dc8-4q44f   1/1     Running   0          24s   10.244.0.10   hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-g9zn9   1/1     Running   0          24s   10.244.0.7    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-jb9d5   1/1     Running   0          24s   10.244.0.8    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-s4nf9   1/1     Running   0          24s   10.244.0.6    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-s672v   1/1     Running   0          24s   10.244.0.9    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-svdpp   1/1     Running   0          24s   10.244.0.11   hpa-2026   <none>           <none>
+php-apache-7f969fb464-q6k8d      1/1     Running   0          92s   10.244.0.5    hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-q6k8d   8m           10Mi            
+
+---- 2026-09-06 12:41:54 ----
+NAME         REFERENCE               TARGETS              MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: <unknown>/50%   1         10        1          102s
+NAME                             READY   STATUS    RESTARTS   AGE    IP            NODE       NOMINATED NODE   READINESS GATES
+load-generator-d5cb56dc8-4q44f   1/1     Running   0          35s    10.244.0.10   hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-g9zn9   1/1     Running   0          35s    10.244.0.7    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-jb9d5   1/1     Running   0          35s    10.244.0.8    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-s4nf9   1/1     Running   0          35s    10.244.0.6    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-s672v   1/1     Running   0          35s    10.244.0.9    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-svdpp   1/1     Running   0          35s    10.244.0.11   hpa-2026   <none>           <none>
+php-apache-7f969fb464-q6k8d      1/1     Running   0          103s   10.244.0.5    hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-q6k8d   8m           10Mi            
+
+---- 2026-09-06 12:42:06 ----
+NAME         REFERENCE               TARGETS              MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: <unknown>/50%   1         10        1          114s
+NAME                             READY   STATUS    RESTARTS   AGE    IP            NODE       NOMINATED NODE   READINESS GATES
+load-generator-d5cb56dc8-4q44f   1/1     Running   0          47s    10.244.0.10   hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-g9zn9   1/1     Running   0          47s    10.244.0.7    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-jb9d5   1/1     Running   0          47s    10.244.0.8    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-s4nf9   1/1     Running   0          47s    10.244.0.6    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-s672v   1/1     Running   0          47s    10.244.0.9    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-svdpp   1/1     Running   0          47s    10.244.0.11   hpa-2026   <none>           <none>
+php-apache-7f969fb464-q6k8d      1/1     Running   0          115s   10.244.0.5    hpa-2026   <none>           <none>
+NAME                             CPU(cores)   MEMORY(bytes)   
+load-generator-d5cb56dc8-4q44f   4m           0Mi             
+load-generator-d5cb56dc8-g9zn9   5m           0Mi             
+load-generator-d5cb56dc8-jb9d5   5m           0Mi             
+load-generator-d5cb56dc8-s4nf9   5m           0Mi             
+load-generator-d5cb56dc8-s672v   4m           0Mi             
+load-generator-d5cb56dc8-svdpp   4m           0Mi             
+php-apache-7f969fb464-q6k8d      363m         17Mi            
+
+---- 2026-09-06 12:42:18 ----
+NAME         REFERENCE               TARGETS         MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 181%/50%   1         10        1          2m5s
+NAME                             READY   STATUS    RESTARTS   AGE    IP            NODE       NOMINATED NODE   READINESS GATES
+load-generator-d5cb56dc8-4q44f   1/1     Running   0          59s    10.244.0.10   hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-g9zn9   1/1     Running   0          59s    10.244.0.7    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-jb9d5   1/1     Running   0          59s    10.244.0.8    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-s4nf9   1/1     Running   0          59s    10.244.0.6    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-s672v   1/1     Running   0          59s    10.244.0.9    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-svdpp   1/1     Running   0          59s    10.244.0.11   hpa-2026   <none>           <none>
+php-apache-7f969fb464-9twhj      0/1     Running   0          6s     10.244.0.14   hpa-2026   <none>           <none>
+php-apache-7f969fb464-q6k8d      1/1     Running   0          2m7s   10.244.0.5    hpa-2026   <none>           <none>
+php-apache-7f969fb464-t75qh      0/1     Running   0          6s     10.244.0.12   hpa-2026   <none>           <none>
+php-apache-7f969fb464-wv5mx      0/1     Running   0          6s     10.244.0.13   hpa-2026   <none>           <none>
+NAME                             CPU(cores)   MEMORY(bytes)   
+load-generator-d5cb56dc8-4q44f   4m           0Mi             
+load-generator-d5cb56dc8-g9zn9   5m           0Mi             
+load-generator-d5cb56dc8-jb9d5   5m           0Mi             
+load-generator-d5cb56dc8-s4nf9   5m           0Mi             
+load-generator-d5cb56dc8-s672v   4m           0Mi             
+load-generator-d5cb56dc8-svdpp   4m           0Mi             
+php-apache-7f969fb464-q6k8d      363m         17Mi            
+
+---- 2026-09-06 12:42:29 ----
+NAME         REFERENCE               TARGETS         MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 181%/50%   1         10        4          2m17s
+NAME                             READY   STATUS    RESTARTS   AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+load-generator-d5cb56dc8-4q44f   1/1     Running   0          70s     10.244.0.10   hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-g9zn9   1/1     Running   0          70s     10.244.0.7    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-jb9d5   1/1     Running   0          70s     10.244.0.8    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-s4nf9   1/1     Running   0          70s     10.244.0.6    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-s672v   1/1     Running   0          70s     10.244.0.9    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-svdpp   1/1     Running   0          70s     10.244.0.11   hpa-2026   <none>           <none>
+php-apache-7f969fb464-9twhj      1/1     Running   0          17s     10.244.0.14   hpa-2026   <none>           <none>
+php-apache-7f969fb464-q6k8d      1/1     Running   0          2m18s   10.244.0.5    hpa-2026   <none>           <none>
+php-apache-7f969fb464-t75qh      1/1     Running   0          17s     10.244.0.12   hpa-2026   <none>           <none>
+php-apache-7f969fb464-wv5mx      1/1     Running   0          17s     10.244.0.13   hpa-2026   <none>           <none>
+NAME                             CPU(cores)   MEMORY(bytes)   
+load-generator-d5cb56dc8-4q44f   4m           0Mi             
+load-generator-d5cb56dc8-g9zn9   5m           0Mi             
+load-generator-d5cb56dc8-jb9d5   5m           0Mi             
+load-generator-d5cb56dc8-s4nf9   5m           0Mi             
+load-generator-d5cb56dc8-s672v   4m           0Mi             
+load-generator-d5cb56dc8-svdpp   4m           0Mi             
+php-apache-7f969fb464-q6k8d      363m         17Mi            
+
+---- 2026-09-06 12:42:40 ----
+NAME         REFERENCE               TARGETS         MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 181%/50%   1         10        4          2m28s
+NAME                             READY   STATUS    RESTARTS   AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+load-generator-d5cb56dc8-4q44f   1/1     Running   0          81s     10.244.0.10   hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-g9zn9   1/1     Running   0          81s     10.244.0.7    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-jb9d5   1/1     Running   0          81s     10.244.0.8    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-s4nf9   1/1     Running   0          81s     10.244.0.6    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-s672v   1/1     Running   0          81s     10.244.0.9    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-svdpp   1/1     Running   0          81s     10.244.0.11   hpa-2026   <none>           <none>
+php-apache-7f969fb464-9twhj      1/1     Running   0          28s     10.244.0.14   hpa-2026   <none>           <none>
+php-apache-7f969fb464-q6k8d      1/1     Running   0          2m29s   10.244.0.5    hpa-2026   <none>           <none>
+php-apache-7f969fb464-t75qh      1/1     Running   0          28s     10.244.0.12   hpa-2026   <none>           <none>
+php-apache-7f969fb464-wv5mx      1/1     Running   0          28s     10.244.0.13   hpa-2026   <none>           <none>
+NAME                             CPU(cores)   MEMORY(bytes)   
+load-generator-d5cb56dc8-4q44f   4m           0Mi             
+load-generator-d5cb56dc8-g9zn9   5m           0Mi             
+load-generator-d5cb56dc8-jb9d5   5m           0Mi             
+load-generator-d5cb56dc8-s4nf9   5m           0Mi             
+load-generator-d5cb56dc8-s672v   4m           0Mi             
+load-generator-d5cb56dc8-svdpp   4m           0Mi             
+php-apache-7f969fb464-q6k8d      363m         17Mi            
+
+---- 2026-09-06 12:42:52 ----
+NAME         REFERENCE               TARGETS         MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 181%/50%   1         10        4          2m40s
+NAME                             READY   STATUS    RESTARTS   AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+load-generator-d5cb56dc8-4q44f   1/1     Running   0          93s     10.244.0.10   hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-g9zn9   1/1     Running   0          93s     10.244.0.7    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-jb9d5   1/1     Running   0          93s     10.244.0.8    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-s4nf9   1/1     Running   0          93s     10.244.0.6    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-s672v   1/1     Running   0          93s     10.244.0.9    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-svdpp   1/1     Running   0          93s     10.244.0.11   hpa-2026   <none>           <none>
+php-apache-7f969fb464-9twhj      1/1     Running   0          40s     10.244.0.14   hpa-2026   <none>           <none>
+php-apache-7f969fb464-q6k8d      1/1     Running   0          2m41s   10.244.0.5    hpa-2026   <none>           <none>
+php-apache-7f969fb464-t75qh      1/1     Running   0          40s     10.244.0.12   hpa-2026   <none>           <none>
+php-apache-7f969fb464-wv5mx      1/1     Running   0          40s     10.244.0.13   hpa-2026   <none>           <none>
+NAME                             CPU(cores)   MEMORY(bytes)   
+load-generator-d5cb56dc8-4q44f   4m           0Mi             
+load-generator-d5cb56dc8-g9zn9   5m           0Mi             
+load-generator-d5cb56dc8-jb9d5   5m           0Mi             
+load-generator-d5cb56dc8-s4nf9   5m           0Mi             
+load-generator-d5cb56dc8-s672v   4m           0Mi             
+load-generator-d5cb56dc8-svdpp   4m           0Mi             
+php-apache-7f969fb464-q6k8d      363m         17Mi            
+
+---- 2026-09-06 12:43:04 ----
+NAME         REFERENCE               TARGETS         MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 181%/50%   1         10        4          2m52s
+NAME                             READY   STATUS    RESTARTS   AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+load-generator-d5cb56dc8-4q44f   1/1     Running   0          105s    10.244.0.10   hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-g9zn9   1/1     Running   0          105s    10.244.0.7    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-jb9d5   1/1     Running   0          105s    10.244.0.8    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-s4nf9   1/1     Running   0          105s    10.244.0.6    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-s672v   1/1     Running   0          105s    10.244.0.9    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-svdpp   1/1     Running   0          105s    10.244.0.11   hpa-2026   <none>           <none>
+php-apache-7f969fb464-9twhj      1/1     Running   0          52s     10.244.0.14   hpa-2026   <none>           <none>
+php-apache-7f969fb464-q6k8d      1/1     Running   0          2m53s   10.244.0.5    hpa-2026   <none>           <none>
+php-apache-7f969fb464-t75qh      1/1     Running   0          52s     10.244.0.12   hpa-2026   <none>           <none>
+php-apache-7f969fb464-wv5mx      1/1     Running   0          52s     10.244.0.13   hpa-2026   <none>           <none>
+NAME                             CPU(cores)   MEMORY(bytes)   
+load-generator-d5cb56dc8-4q44f   4m           0Mi             
+load-generator-d5cb56dc8-g9zn9   5m           0Mi             
+load-generator-d5cb56dc8-jb9d5   5m           0Mi             
+load-generator-d5cb56dc8-s4nf9   5m           0Mi             
+load-generator-d5cb56dc8-s672v   4m           0Mi             
+load-generator-d5cb56dc8-svdpp   4m           0Mi             
+php-apache-7f969fb464-q6k8d      363m         17Mi            
+
+---- 2026-09-06 12:43:16 ----
+NAME         REFERENCE               TARGETS         MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 205%/50%   1         10        4          3m4s
+NAME                             READY   STATUS    RESTARTS   AGE    IP            NODE       NOMINATED NODE   READINESS GATES
+load-generator-d5cb56dc8-4q44f   1/1     Running   0          117s   10.244.0.10   hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-g9zn9   1/1     Running   0          117s   10.244.0.7    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-jb9d5   1/1     Running   0          117s   10.244.0.8    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-s4nf9   1/1     Running   0          117s   10.244.0.6    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-s672v   1/1     Running   0          117s   10.244.0.9    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-svdpp   1/1     Running   0          117s   10.244.0.11   hpa-2026   <none>           <none>
+php-apache-7f969fb464-9twhj      1/1     Running   0          64s    10.244.0.14   hpa-2026   <none>           <none>
+php-apache-7f969fb464-q6k8d      1/1     Running   0          3m5s   10.244.0.5    hpa-2026   <none>           <none>
+php-apache-7f969fb464-t75qh      1/1     Running   0          64s    10.244.0.12   hpa-2026   <none>           <none>
+php-apache-7f969fb464-wv5mx      1/1     Running   0          64s    10.244.0.13   hpa-2026   <none>           <none>
+NAME                             CPU(cores)   MEMORY(bytes)   
+load-generator-d5cb56dc8-4q44f   7m           0Mi             
+load-generator-d5cb56dc8-g9zn9   7m           0Mi             
+load-generator-d5cb56dc8-jb9d5   7m           0Mi             
+load-generator-d5cb56dc8-s4nf9   8m           0Mi             
+load-generator-d5cb56dc8-s672v   8m           0Mi             
+load-generator-d5cb56dc8-svdpp   7m           0Mi             
+php-apache-7f969fb464-9twhj      327m         15Mi            
+php-apache-7f969fb464-q6k8d      411m         15Mi            
+php-apache-7f969fb464-t75qh      315m         15Mi            
+php-apache-7f969fb464-wv5mx      292m         15Mi            
+
+---- 2026-09-06 12:43:28 ----
+NAME         REFERENCE               TARGETS         MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 205%/50%   1         10        4          3m16s
+NAME                             READY   STATUS    RESTARTS   AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+load-generator-d5cb56dc8-4q44f   1/1     Running   0          2m9s    10.244.0.10   hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-g9zn9   1/1     Running   0          2m9s    10.244.0.7    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-jb9d5   1/1     Running   0          2m9s    10.244.0.8    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-s4nf9   1/1     Running   0          2m9s    10.244.0.6    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-s672v   1/1     Running   0          2m9s    10.244.0.9    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-svdpp   1/1     Running   0          2m9s    10.244.0.11   hpa-2026   <none>           <none>
+php-apache-7f969fb464-9twhj      1/1     Running   0          76s     10.244.0.14   hpa-2026   <none>           <none>
+php-apache-7f969fb464-q6k8d      1/1     Running   0          3m17s   10.244.0.5    hpa-2026   <none>           <none>
+php-apache-7f969fb464-t75qh      1/1     Running   0          76s     10.244.0.12   hpa-2026   <none>           <none>
+php-apache-7f969fb464-wv5mx      1/1     Running   0          76s     10.244.0.13   hpa-2026   <none>           <none>
+NAME                             CPU(cores)   MEMORY(bytes)   
+load-generator-d5cb56dc8-4q44f   7m           0Mi             
+load-generator-d5cb56dc8-g9zn9   7m           0Mi             
+load-generator-d5cb56dc8-jb9d5   7m           0Mi             
+load-generator-d5cb56dc8-s4nf9   8m           0Mi             
+load-generator-d5cb56dc8-s672v   8m           0Mi             
+load-generator-d5cb56dc8-svdpp   7m           0Mi             
+php-apache-7f969fb464-9twhj      327m         15Mi            
+php-apache-7f969fb464-q6k8d      411m         15Mi            
+php-apache-7f969fb464-t75qh      315m         15Mi            
+php-apache-7f969fb464-wv5mx      292m         15Mi            
+
+---- 2026-09-06 12:43:40 ----
+NAME         REFERENCE               TARGETS         MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 205%/50%   1         10        4          3m28s
+NAME                             READY   STATUS    RESTARTS   AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+load-generator-d5cb56dc8-4q44f   1/1     Running   0          2m21s   10.244.0.10   hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-g9zn9   1/1     Running   0          2m21s   10.244.0.7    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-jb9d5   1/1     Running   0          2m21s   10.244.0.8    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-s4nf9   1/1     Running   0          2m21s   10.244.0.6    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-s672v   1/1     Running   0          2m21s   10.244.0.9    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-svdpp   1/1     Running   0          2m21s   10.244.0.11   hpa-2026   <none>           <none>
+php-apache-7f969fb464-9twhj      1/1     Running   0          88s     10.244.0.14   hpa-2026   <none>           <none>
+php-apache-7f969fb464-q6k8d      1/1     Running   0          3m29s   10.244.0.5    hpa-2026   <none>           <none>
+php-apache-7f969fb464-t75qh      1/1     Running   0          88s     10.244.0.12   hpa-2026   <none>           <none>
+php-apache-7f969fb464-wv5mx      1/1     Running   0          88s     10.244.0.13   hpa-2026   <none>           <none>
+NAME                             CPU(cores)   MEMORY(bytes)   
+load-generator-d5cb56dc8-4q44f   7m           0Mi             
+load-generator-d5cb56dc8-g9zn9   7m           0Mi             
+load-generator-d5cb56dc8-jb9d5   7m           0Mi             
+load-generator-d5cb56dc8-s4nf9   8m           0Mi             
+load-generator-d5cb56dc8-s672v   8m           0Mi             
+load-generator-d5cb56dc8-svdpp   7m           0Mi             
+php-apache-7f969fb464-9twhj      327m         15Mi            
+php-apache-7f969fb464-q6k8d      411m         15Mi            
+php-apache-7f969fb464-t75qh      315m         15Mi            
+php-apache-7f969fb464-wv5mx      292m         15Mi            
+
+---- 2026-09-06 12:43:52 ----
+NAME         REFERENCE               TARGETS         MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 205%/50%   1         10        4          3m40s
+NAME                             READY   STATUS    RESTARTS   AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+load-generator-d5cb56dc8-4q44f   1/1     Running   0          2m33s   10.244.0.10   hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-g9zn9   1/1     Running   0          2m33s   10.244.0.7    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-jb9d5   1/1     Running   0          2m33s   10.244.0.8    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-s4nf9   1/1     Running   0          2m33s   10.244.0.6    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-s672v   1/1     Running   0          2m33s   10.244.0.9    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-svdpp   1/1     Running   0          2m33s   10.244.0.11   hpa-2026   <none>           <none>
+php-apache-7f969fb464-9twhj      1/1     Running   0          100s    10.244.0.14   hpa-2026   <none>           <none>
+php-apache-7f969fb464-q6k8d      1/1     Running   0          3m41s   10.244.0.5    hpa-2026   <none>           <none>
+php-apache-7f969fb464-t75qh      1/1     Running   0          100s    10.244.0.12   hpa-2026   <none>           <none>
+php-apache-7f969fb464-wv5mx      1/1     Running   0          100s    10.244.0.13   hpa-2026   <none>           <none>
+NAME                             CPU(cores)   MEMORY(bytes)   
+load-generator-d5cb56dc8-4q44f   7m           0Mi             
+load-generator-d5cb56dc8-g9zn9   7m           0Mi             
+load-generator-d5cb56dc8-jb9d5   7m           0Mi             
+load-generator-d5cb56dc8-s4nf9   8m           0Mi             
+load-generator-d5cb56dc8-s672v   8m           0Mi             
+load-generator-d5cb56dc8-svdpp   7m           0Mi             
+php-apache-7f969fb464-9twhj      327m         15Mi            
+php-apache-7f969fb464-q6k8d      411m         15Mi            
+php-apache-7f969fb464-t75qh      315m         15Mi            
+php-apache-7f969fb464-wv5mx      292m         15Mi            
+
+---- 2026-09-06 12:44:04 ----
+NAME         REFERENCE               TARGETS         MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 205%/50%   1         10        4          3m52s
+NAME                             READY   STATUS    RESTARTS   AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+load-generator-d5cb56dc8-4q44f   1/1     Running   0          2m45s   10.244.0.10   hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-g9zn9   1/1     Running   0          2m45s   10.244.0.7    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-jb9d5   1/1     Running   0          2m45s   10.244.0.8    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-s4nf9   1/1     Running   0          2m45s   10.244.0.6    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-s672v   1/1     Running   0          2m45s   10.244.0.9    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-svdpp   1/1     Running   0          2m45s   10.244.0.11   hpa-2026   <none>           <none>
+php-apache-7f969fb464-9twhj      1/1     Running   0          112s    10.244.0.14   hpa-2026   <none>           <none>
+php-apache-7f969fb464-q6k8d      1/1     Running   0          3m53s   10.244.0.5    hpa-2026   <none>           <none>
+php-apache-7f969fb464-t75qh      1/1     Running   0          112s    10.244.0.12   hpa-2026   <none>           <none>
+php-apache-7f969fb464-wv5mx      1/1     Running   0          112s    10.244.0.13   hpa-2026   <none>           <none>
+NAME                             CPU(cores)   MEMORY(bytes)   
+load-generator-d5cb56dc8-4q44f   7m           0Mi             
+load-generator-d5cb56dc8-g9zn9   7m           0Mi             
+load-generator-d5cb56dc8-jb9d5   7m           0Mi             
+load-generator-d5cb56dc8-s4nf9   8m           0Mi             
+load-generator-d5cb56dc8-s672v   8m           0Mi             
+load-generator-d5cb56dc8-svdpp   7m           0Mi             
+php-apache-7f969fb464-9twhj      327m         15Mi            
+php-apache-7f969fb464-q6k8d      411m         15Mi            
+php-apache-7f969fb464-t75qh      315m         15Mi            
+php-apache-7f969fb464-wv5mx      292m         15Mi            
+
+---- 2026-09-06 12:44:15 ----
+NAME         REFERENCE               TARGETS         MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 186%/50%   1         10        4          4m4s
+NAME                             READY   STATUS              RESTARTS   AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+load-generator-d5cb56dc8-4q44f   1/1     Running             0          2m57s   10.244.0.10   hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-g9zn9   1/1     Running             0          2m57s   10.244.0.7    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-jb9d5   1/1     Running             0          2m57s   10.244.0.8    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-s4nf9   1/1     Running             0          2m57s   10.244.0.6    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-s672v   1/1     Running             0          2m57s   10.244.0.9    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-svdpp   1/1     Running             0          2m57s   10.244.0.11   hpa-2026   <none>           <none>
+php-apache-7f969fb464-22m2l      0/1     ContainerCreating   0          4s      <none>        hpa-2026   <none>           <none>
+php-apache-7f969fb464-58jcs      0/1     Running             0          4s      10.244.0.15   hpa-2026   <none>           <none>
+php-apache-7f969fb464-9twhj      1/1     Running             0          2m4s    10.244.0.14   hpa-2026   <none>           <none>
+php-apache-7f969fb464-dl8db      0/1     ContainerCreating   0          4s      <none>        hpa-2026   <none>           <none>
+php-apache-7f969fb464-gmzcd      0/1     ContainerCreating   0          4s      <none>        hpa-2026   <none>           <none>
+php-apache-7f969fb464-ngzkt      0/1     ContainerCreating   0          4s      <none>        hpa-2026   <none>           <none>
+php-apache-7f969fb464-q6k8d      1/1     Running             0          4m5s    10.244.0.5    hpa-2026   <none>           <none>
+php-apache-7f969fb464-srlh8      0/1     ContainerCreating   0          4s      <none>        hpa-2026   <none>           <none>
+php-apache-7f969fb464-t75qh      1/1     Running             0          2m4s    10.244.0.12   hpa-2026   <none>           <none>
+php-apache-7f969fb464-wv5mx      1/1     Running             0          2m4s    10.244.0.13   hpa-2026   <none>           <none>
+NAME                             CPU(cores)   MEMORY(bytes)   
+load-generator-d5cb56dc8-4q44f   10m          0Mi             
+load-generator-d5cb56dc8-g9zn9   9m           0Mi             
+load-generator-d5cb56dc8-jb9d5   9m           0Mi             
+load-generator-d5cb56dc8-s4nf9   9m           0Mi             
+load-generator-d5cb56dc8-s672v   9m           0Mi             
+load-generator-d5cb56dc8-svdpp   9m           0Mi             
+php-apache-7f969fb464-9twhj      393m         16Mi            
+php-apache-7f969fb464-q6k8d      368m         15Mi            
+php-apache-7f969fb464-t75qh      364m         15Mi            
+php-apache-7f969fb464-wv5mx      364m         15Mi            
+
+---- 2026-09-06 12:44:28 ----
+NAME         REFERENCE               TARGETS         MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 186%/50%   1         10        10         4m16s
+NAME                             READY   STATUS    RESTARTS   AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+load-generator-d5cb56dc8-4q44f   1/1     Running   0          3m9s    10.244.0.10   hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-g9zn9   1/1     Running   0          3m9s    10.244.0.7    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-jb9d5   1/1     Running   0          3m9s    10.244.0.8    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-s4nf9   1/1     Running   0          3m9s    10.244.0.6    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-s672v   1/1     Running   0          3m9s    10.244.0.9    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-svdpp   1/1     Running   0          3m9s    10.244.0.11   hpa-2026   <none>           <none>
+php-apache-7f969fb464-22m2l      1/1     Running   0          16s     10.244.0.16   hpa-2026   <none>           <none>
+php-apache-7f969fb464-58jcs      1/1     Running   0          16s     10.244.0.15   hpa-2026   <none>           <none>
+php-apache-7f969fb464-9twhj      1/1     Running   0          2m16s   10.244.0.14   hpa-2026   <none>           <none>
+php-apache-7f969fb464-dl8db      1/1     Running   0          16s     10.244.0.19   hpa-2026   <none>           <none>
+php-apache-7f969fb464-gmzcd      1/1     Running   0          16s     10.244.0.18   hpa-2026   <none>           <none>
+php-apache-7f969fb464-ngzkt      1/1     Running   0          16s     10.244.0.20   hpa-2026   <none>           <none>
+php-apache-7f969fb464-q6k8d      1/1     Running   0          4m17s   10.244.0.5    hpa-2026   <none>           <none>
+php-apache-7f969fb464-srlh8      1/1     Running   0          16s     10.244.0.17   hpa-2026   <none>           <none>
+php-apache-7f969fb464-t75qh      1/1     Running   0          2m16s   10.244.0.12   hpa-2026   <none>           <none>
+php-apache-7f969fb464-wv5mx      1/1     Running   0          2m16s   10.244.0.13   hpa-2026   <none>           <none>
+NAME                             CPU(cores)   MEMORY(bytes)   
+load-generator-d5cb56dc8-4q44f   10m          0Mi             
+load-generator-d5cb56dc8-g9zn9   9m           0Mi             
+load-generator-d5cb56dc8-jb9d5   9m           0Mi             
+load-generator-d5cb56dc8-s4nf9   9m           0Mi             
+load-generator-d5cb56dc8-s672v   9m           0Mi             
+load-generator-d5cb56dc8-svdpp   9m           0Mi             
+php-apache-7f969fb464-9twhj      393m         16Mi            
+php-apache-7f969fb464-q6k8d      368m         15Mi            
+php-apache-7f969fb464-t75qh      364m         15Mi            
+php-apache-7f969fb464-wv5mx      364m         15Mi            
+
+---- 2026-09-06 12:44:40 ----
+NAME         REFERENCE               TARGETS         MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 186%/50%   1         10        10         4m28s
+NAME                             READY   STATUS    RESTARTS   AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+load-generator-d5cb56dc8-4q44f   1/1     Running   0          3m21s   10.244.0.10   hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-g9zn9   1/1     Running   0          3m21s   10.244.0.7    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-jb9d5   1/1     Running   0          3m21s   10.244.0.8    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-s4nf9   1/1     Running   0          3m21s   10.244.0.6    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-s672v   1/1     Running   0          3m21s   10.244.0.9    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-svdpp   1/1     Running   0          3m21s   10.244.0.11   hpa-2026   <none>           <none>
+php-apache-7f969fb464-22m2l      1/1     Running   0          28s     10.244.0.16   hpa-2026   <none>           <none>
+php-apache-7f969fb464-58jcs      1/1     Running   0          28s     10.244.0.15   hpa-2026   <none>           <none>
+php-apache-7f969fb464-9twhj      1/1     Running   0          2m28s   10.244.0.14   hpa-2026   <none>           <none>
+php-apache-7f969fb464-dl8db      1/1     Running   0          28s     10.244.0.19   hpa-2026   <none>           <none>
+php-apache-7f969fb464-gmzcd      1/1     Running   0          28s     10.244.0.18   hpa-2026   <none>           <none>
+php-apache-7f969fb464-ngzkt      1/1     Running   0          28s     10.244.0.20   hpa-2026   <none>           <none>
+php-apache-7f969fb464-q6k8d      1/1     Running   0          4m29s   10.244.0.5    hpa-2026   <none>           <none>
+php-apache-7f969fb464-srlh8      1/1     Running   0          28s     10.244.0.17   hpa-2026   <none>           <none>
+php-apache-7f969fb464-t75qh      1/1     Running   0          2m28s   10.244.0.12   hpa-2026   <none>           <none>
+php-apache-7f969fb464-wv5mx      1/1     Running   0          2m28s   10.244.0.13   hpa-2026   <none>           <none>
+NAME                             CPU(cores)   MEMORY(bytes)   
+load-generator-d5cb56dc8-4q44f   10m          0Mi             
+load-generator-d5cb56dc8-g9zn9   9m           0Mi             
+load-generator-d5cb56dc8-jb9d5   9m           0Mi             
+load-generator-d5cb56dc8-s4nf9   9m           0Mi             
+load-generator-d5cb56dc8-s672v   9m           0Mi             
+load-generator-d5cb56dc8-svdpp   9m           0Mi             
+php-apache-7f969fb464-9twhj      393m         16Mi            
+php-apache-7f969fb464-q6k8d      368m         15Mi            
+php-apache-7f969fb464-t75qh      364m         15Mi            
+php-apache-7f969fb464-wv5mx      364m         15Mi            
+
+---- 2026-09-06 12:44:52 ----
+NAME         REFERENCE               TARGETS         MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 186%/50%   1         10        10         4m40s
+NAME                             READY   STATUS    RESTARTS   AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+load-generator-d5cb56dc8-4q44f   1/1     Running   0          3m34s   10.244.0.10   hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-g9zn9   1/1     Running   0          3m34s   10.244.0.7    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-jb9d5   1/1     Running   0          3m34s   10.244.0.8    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-s4nf9   1/1     Running   0          3m34s   10.244.0.6    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-s672v   1/1     Running   0          3m34s   10.244.0.9    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-svdpp   1/1     Running   0          3m34s   10.244.0.11   hpa-2026   <none>           <none>
+php-apache-7f969fb464-22m2l      1/1     Running   0          41s     10.244.0.16   hpa-2026   <none>           <none>
+php-apache-7f969fb464-58jcs      1/1     Running   0          41s     10.244.0.15   hpa-2026   <none>           <none>
+php-apache-7f969fb464-9twhj      1/1     Running   0          2m41s   10.244.0.14   hpa-2026   <none>           <none>
+php-apache-7f969fb464-dl8db      1/1     Running   0          41s     10.244.0.19   hpa-2026   <none>           <none>
+php-apache-7f969fb464-gmzcd      1/1     Running   0          41s     10.244.0.18   hpa-2026   <none>           <none>
+php-apache-7f969fb464-ngzkt      1/1     Running   0          41s     10.244.0.20   hpa-2026   <none>           <none>
+php-apache-7f969fb464-q6k8d      1/1     Running   0          4m42s   10.244.0.5    hpa-2026   <none>           <none>
+php-apache-7f969fb464-srlh8      1/1     Running   0          41s     10.244.0.17   hpa-2026   <none>           <none>
+php-apache-7f969fb464-t75qh      1/1     Running   0          2m41s   10.244.0.12   hpa-2026   <none>           <none>
+php-apache-7f969fb464-wv5mx      1/1     Running   0          2m41s   10.244.0.13   hpa-2026   <none>           <none>
+NAME                             CPU(cores)   MEMORY(bytes)   
+load-generator-d5cb56dc8-4q44f   10m          0Mi             
+load-generator-d5cb56dc8-g9zn9   9m           0Mi             
+load-generator-d5cb56dc8-jb9d5   9m           0Mi             
+load-generator-d5cb56dc8-s4nf9   9m           0Mi             
+load-generator-d5cb56dc8-s672v   9m           0Mi             
+load-generator-d5cb56dc8-svdpp   9m           0Mi             
+php-apache-7f969fb464-9twhj      393m         16Mi            
+php-apache-7f969fb464-q6k8d      368m         15Mi            
+php-apache-7f969fb464-t75qh      364m         15Mi            
+php-apache-7f969fb464-wv5mx      364m         15Mi            
+
+---- 2026-09-06 12:45:05 ----
+NAME         REFERENCE               TARGETS         MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 186%/50%   1         10        10         4m53s
+NAME                             READY   STATUS    RESTARTS   AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+load-generator-d5cb56dc8-4q44f   1/1     Running   0          3m46s   10.244.0.10   hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-g9zn9   1/1     Running   0          3m46s   10.244.0.7    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-jb9d5   1/1     Running   0          3m46s   10.244.0.8    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-s4nf9   1/1     Running   0          3m46s   10.244.0.6    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-s672v   1/1     Running   0          3m46s   10.244.0.9    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-svdpp   1/1     Running   0          3m46s   10.244.0.11   hpa-2026   <none>           <none>
+php-apache-7f969fb464-22m2l      1/1     Running   0          53s     10.244.0.16   hpa-2026   <none>           <none>
+php-apache-7f969fb464-58jcs      1/1     Running   0          53s     10.244.0.15   hpa-2026   <none>           <none>
+php-apache-7f969fb464-9twhj      1/1     Running   0          2m53s   10.244.0.14   hpa-2026   <none>           <none>
+php-apache-7f969fb464-dl8db      1/1     Running   0          53s     10.244.0.19   hpa-2026   <none>           <none>
+php-apache-7f969fb464-gmzcd      1/1     Running   0          53s     10.244.0.18   hpa-2026   <none>           <none>
+php-apache-7f969fb464-ngzkt      1/1     Running   0          53s     10.244.0.20   hpa-2026   <none>           <none>
+php-apache-7f969fb464-q6k8d      1/1     Running   0          4m54s   10.244.0.5    hpa-2026   <none>           <none>
+php-apache-7f969fb464-srlh8      1/1     Running   0          53s     10.244.0.17   hpa-2026   <none>           <none>
+php-apache-7f969fb464-t75qh      1/1     Running   0          2m53s   10.244.0.12   hpa-2026   <none>           <none>
+php-apache-7f969fb464-wv5mx      1/1     Running   0          2m53s   10.244.0.13   hpa-2026   <none>           <none>
+NAME                             CPU(cores)   MEMORY(bytes)   
+load-generator-d5cb56dc8-4q44f   13m          0Mi             
+load-generator-d5cb56dc8-g9zn9   15m          0Mi             
+load-generator-d5cb56dc8-jb9d5   13m          0Mi             
+load-generator-d5cb56dc8-s4nf9   13m          0Mi             
+load-generator-d5cb56dc8-s672v   15m          0Mi             
+load-generator-d5cb56dc8-svdpp   13m          0Mi             
+php-apache-7f969fb464-22m2l      226m         13Mi            
+php-apache-7f969fb464-58jcs      235m         14Mi            
+php-apache-7f969fb464-9twhj      265m         15Mi            
+php-apache-7f969fb464-dl8db      195m         14Mi            
+php-apache-7f969fb464-gmzcd      219m         13Mi            
+php-apache-7f969fb464-ngzkt      224m         13Mi            
+php-apache-7f969fb464-q6k8d      244m         15Mi            
+php-apache-7f969fb464-srlh8      192m         13Mi            
+php-apache-7f969fb464-t75qh      263m         15Mi            
+php-apache-7f969fb464-wv5mx      266m         15Mi            
+
+---- 2026-09-06 12:45:17 ----
+NAME         REFERENCE               TARGETS         MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 129%/50%   1         10        10         5m5s
+NAME                             READY   STATUS    RESTARTS   AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+load-generator-d5cb56dc8-4q44f   1/1     Running   0          3m59s   10.244.0.10   hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-g9zn9   1/1     Running   0          3m59s   10.244.0.7    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-jb9d5   1/1     Running   0          3m59s   10.244.0.8    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-s4nf9   1/1     Running   0          3m59s   10.244.0.6    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-s672v   1/1     Running   0          3m59s   10.244.0.9    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-svdpp   1/1     Running   0          3m59s   10.244.0.11   hpa-2026   <none>           <none>
+php-apache-7f969fb464-22m2l      1/1     Running   0          66s     10.244.0.16   hpa-2026   <none>           <none>
+php-apache-7f969fb464-58jcs      1/1     Running   0          66s     10.244.0.15   hpa-2026   <none>           <none>
+php-apache-7f969fb464-9twhj      1/1     Running   0          3m6s    10.244.0.14   hpa-2026   <none>           <none>
+php-apache-7f969fb464-dl8db      1/1     Running   0          66s     10.244.0.19   hpa-2026   <none>           <none>
+php-apache-7f969fb464-gmzcd      1/1     Running   0          66s     10.244.0.18   hpa-2026   <none>           <none>
+php-apache-7f969fb464-ngzkt      1/1     Running   0          66s     10.244.0.20   hpa-2026   <none>           <none>
+php-apache-7f969fb464-q6k8d      1/1     Running   0          5m7s    10.244.0.5    hpa-2026   <none>           <none>
+php-apache-7f969fb464-srlh8      1/1     Running   0          66s     10.244.0.17   hpa-2026   <none>           <none>
+php-apache-7f969fb464-t75qh      1/1     Running   0          3m6s    10.244.0.12   hpa-2026   <none>           <none>
+php-apache-7f969fb464-wv5mx      1/1     Running   0          3m6s    10.244.0.13   hpa-2026   <none>           <none>
+NAME                             CPU(cores)   MEMORY(bytes)   
+load-generator-d5cb56dc8-4q44f   13m          0Mi             
+load-generator-d5cb56dc8-g9zn9   15m          0Mi             
+load-generator-d5cb56dc8-jb9d5   13m          0Mi             
+load-generator-d5cb56dc8-s4nf9   13m          0Mi             
+load-generator-d5cb56dc8-s672v   15m          0Mi             
+load-generator-d5cb56dc8-svdpp   13m          0Mi             
+php-apache-7f969fb464-22m2l      226m         13Mi            
+php-apache-7f969fb464-58jcs      235m         14Mi            
+php-apache-7f969fb464-9twhj      265m         15Mi            
+php-apache-7f969fb464-dl8db      195m         14Mi            
+php-apache-7f969fb464-gmzcd      219m         13Mi            
+php-apache-7f969fb464-ngzkt      224m         13Mi            
+php-apache-7f969fb464-q6k8d      244m         15Mi            
+php-apache-7f969fb464-srlh8      192m         13Mi            
+php-apache-7f969fb464-t75qh      263m         15Mi            
+php-apache-7f969fb464-wv5mx      266m         15Mi            
+
+---- 2026-09-06 12:45:30 ----
+NAME         REFERENCE               TARGETS         MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 129%/50%   1         10        10         5m18s
+NAME                             READY   STATUS        RESTARTS   AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+load-generator-d5cb56dc8-4q44f   1/1     Terminating   0          4m11s   10.244.0.10   hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-g9zn9   1/1     Terminating   0          4m11s   10.244.0.7    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-jb9d5   1/1     Terminating   0          4m11s   10.244.0.8    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-s4nf9   1/1     Terminating   0          4m11s   10.244.0.6    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-s672v   1/1     Terminating   0          4m11s   10.244.0.9    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-svdpp   1/1     Terminating   0          4m11s   10.244.0.11   hpa-2026   <none>           <none>
+php-apache-7f969fb464-22m2l      1/1     Running       0          78s     10.244.0.16   hpa-2026   <none>           <none>
+php-apache-7f969fb464-58jcs      1/1     Running       0          78s     10.244.0.15   hpa-2026   <none>           <none>
+php-apache-7f969fb464-9twhj      1/1     Running       0          3m18s   10.244.0.14   hpa-2026   <none>           <none>
+php-apache-7f969fb464-dl8db      1/1     Running       0          78s     10.244.0.19   hpa-2026   <none>           <none>
+php-apache-7f969fb464-gmzcd      1/1     Running       0          78s     10.244.0.18   hpa-2026   <none>           <none>
+php-apache-7f969fb464-ngzkt      1/1     Running       0          78s     10.244.0.20   hpa-2026   <none>           <none>
+php-apache-7f969fb464-q6k8d      1/1     Running       0          5m19s   10.244.0.5    hpa-2026   <none>           <none>
+php-apache-7f969fb464-srlh8      1/1     Running       0          78s     10.244.0.17   hpa-2026   <none>           <none>
+php-apache-7f969fb464-t75qh      1/1     Running       0          3m18s   10.244.0.12   hpa-2026   <none>           <none>
+php-apache-7f969fb464-wv5mx      1/1     Running       0          3m18s   10.244.0.13   hpa-2026   <none>           <none>
+NAME                             CPU(cores)   MEMORY(bytes)   
+load-generator-d5cb56dc8-4q44f   13m          0Mi             
+load-generator-d5cb56dc8-g9zn9   15m          0Mi             
+load-generator-d5cb56dc8-jb9d5   13m          0Mi             
+load-generator-d5cb56dc8-s4nf9   13m          0Mi             
+load-generator-d5cb56dc8-s672v   15m          0Mi             
+load-generator-d5cb56dc8-svdpp   13m          0Mi             
+php-apache-7f969fb464-22m2l      226m         13Mi            
+php-apache-7f969fb464-58jcs      235m         14Mi            
+php-apache-7f969fb464-9twhj      265m         15Mi            
+php-apache-7f969fb464-dl8db      195m         14Mi            
+php-apache-7f969fb464-gmzcd      219m         13Mi            
+php-apache-7f969fb464-ngzkt      224m         13Mi            
+php-apache-7f969fb464-q6k8d      244m         15Mi            
+php-apache-7f969fb464-srlh8      192m         13Mi            
+php-apache-7f969fb464-t75qh      263m         15Mi            
+php-apache-7f969fb464-wv5mx      266m         15Mi            
+
+---- 2026-09-06 12:45:42 ----
+NAME         REFERENCE               TARGETS         MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 129%/50%   1         10        10         5m30s
+NAME                             READY   STATUS        RESTARTS   AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+load-generator-d5cb56dc8-4q44f   1/1     Terminating   0          4m23s   10.244.0.10   hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-g9zn9   1/1     Terminating   0          4m23s   10.244.0.7    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-jb9d5   1/1     Terminating   0          4m23s   10.244.0.8    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-s4nf9   1/1     Terminating   0          4m23s   10.244.0.6    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-s672v   1/1     Terminating   0          4m23s   10.244.0.9    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-svdpp   1/1     Terminating   0          4m23s   10.244.0.11   hpa-2026   <none>           <none>
+php-apache-7f969fb464-22m2l      1/1     Running       0          90s     10.244.0.16   hpa-2026   <none>           <none>
+php-apache-7f969fb464-58jcs      1/1     Running       0          90s     10.244.0.15   hpa-2026   <none>           <none>
+php-apache-7f969fb464-9twhj      1/1     Running       0          3m30s   10.244.0.14   hpa-2026   <none>           <none>
+php-apache-7f969fb464-dl8db      1/1     Running       0          90s     10.244.0.19   hpa-2026   <none>           <none>
+php-apache-7f969fb464-gmzcd      1/1     Running       0          90s     10.244.0.18   hpa-2026   <none>           <none>
+php-apache-7f969fb464-ngzkt      1/1     Running       0          90s     10.244.0.20   hpa-2026   <none>           <none>
+php-apache-7f969fb464-q6k8d      1/1     Running       0          5m31s   10.244.0.5    hpa-2026   <none>           <none>
+php-apache-7f969fb464-srlh8      1/1     Running       0          90s     10.244.0.17   hpa-2026   <none>           <none>
+php-apache-7f969fb464-t75qh      1/1     Running       0          3m30s   10.244.0.12   hpa-2026   <none>           <none>
+php-apache-7f969fb464-wv5mx      1/1     Running       0          3m30s   10.244.0.13   hpa-2026   <none>           <none>
+NAME                             CPU(cores)   MEMORY(bytes)   
+load-generator-d5cb56dc8-4q44f   13m          0Mi             
+load-generator-d5cb56dc8-g9zn9   15m          0Mi             
+load-generator-d5cb56dc8-jb9d5   13m          0Mi             
+load-generator-d5cb56dc8-s4nf9   13m          0Mi             
+load-generator-d5cb56dc8-s672v   15m          0Mi             
+load-generator-d5cb56dc8-svdpp   13m          0Mi             
+php-apache-7f969fb464-22m2l      226m         13Mi            
+php-apache-7f969fb464-58jcs      235m         14Mi            
+php-apache-7f969fb464-9twhj      265m         15Mi            
+php-apache-7f969fb464-dl8db      195m         14Mi            
+php-apache-7f969fb464-gmzcd      219m         13Mi            
+php-apache-7f969fb464-ngzkt      224m         13Mi            
+php-apache-7f969fb464-q6k8d      244m         15Mi            
+php-apache-7f969fb464-srlh8      192m         13Mi            
+php-apache-7f969fb464-t75qh      263m         15Mi            
+php-apache-7f969fb464-wv5mx      266m         15Mi            
+
+---- 2026-09-06 12:45:54 ----
+NAME         REFERENCE               TARGETS         MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 129%/50%   1         10        10         5m42s
+NAME                             READY   STATUS        RESTARTS   AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+load-generator-d5cb56dc8-4q44f   1/1     Terminating   0          4m36s   10.244.0.10   hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-g9zn9   1/1     Terminating   0          4m36s   10.244.0.7    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-jb9d5   1/1     Terminating   0          4m36s   10.244.0.8    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-s4nf9   1/1     Terminating   0          4m36s   10.244.0.6    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-s672v   1/1     Terminating   0          4m36s   10.244.0.9    hpa-2026   <none>           <none>
+load-generator-d5cb56dc8-svdpp   1/1     Terminating   0          4m36s   10.244.0.11   hpa-2026   <none>           <none>
+php-apache-7f969fb464-22m2l      1/1     Running       0          103s    10.244.0.16   hpa-2026   <none>           <none>
+php-apache-7f969fb464-58jcs      1/1     Running       0          103s    10.244.0.15   hpa-2026   <none>           <none>
+php-apache-7f969fb464-9twhj      1/1     Running       0          3m43s   10.244.0.14   hpa-2026   <none>           <none>
+php-apache-7f969fb464-dl8db      1/1     Running       0          103s    10.244.0.19   hpa-2026   <none>           <none>
+php-apache-7f969fb464-gmzcd      1/1     Running       0          103s    10.244.0.18   hpa-2026   <none>           <none>
+php-apache-7f969fb464-ngzkt      1/1     Running       0          103s    10.244.0.20   hpa-2026   <none>           <none>
+php-apache-7f969fb464-q6k8d      1/1     Running       0          5m44s   10.244.0.5    hpa-2026   <none>           <none>
+php-apache-7f969fb464-srlh8      1/1     Running       0          103s    10.244.0.17   hpa-2026   <none>           <none>
+php-apache-7f969fb464-t75qh      1/1     Running       0          3m43s   10.244.0.12   hpa-2026   <none>           <none>
+php-apache-7f969fb464-wv5mx      1/1     Running       0          3m43s   10.244.0.13   hpa-2026   <none>           <none>
+NAME                             CPU(cores)   MEMORY(bytes)   
+load-generator-d5cb56dc8-4q44f   13m          0Mi             
+load-generator-d5cb56dc8-g9zn9   15m          0Mi             
+load-generator-d5cb56dc8-jb9d5   13m          0Mi             
+load-generator-d5cb56dc8-s4nf9   13m          0Mi             
+load-generator-d5cb56dc8-s672v   15m          0Mi             
+load-generator-d5cb56dc8-svdpp   13m          0Mi             
+php-apache-7f969fb464-22m2l      226m         13Mi            
+php-apache-7f969fb464-58jcs      235m         14Mi            
+php-apache-7f969fb464-9twhj      265m         15Mi            
+php-apache-7f969fb464-dl8db      195m         14Mi            
+php-apache-7f969fb464-gmzcd      219m         13Mi            
+php-apache-7f969fb464-ngzkt      224m         13Mi            
+php-apache-7f969fb464-q6k8d      244m         15Mi            
+php-apache-7f969fb464-srlh8      192m         13Mi            
+php-apache-7f969fb464-t75qh      263m         15Mi            
+php-apache-7f969fb464-wv5mx      266m         15Mi            
+
+---- 2026-09-06 12:46:07 ----
+NAME         REFERENCE               TARGETS         MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 129%/50%   1         10        10         5m54s
+NAME                          READY   STATUS    RESTARTS   AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+php-apache-7f969fb464-22m2l   1/1     Running   0          114s    10.244.0.16   hpa-2026   <none>           <none>
+php-apache-7f969fb464-58jcs   1/1     Running   0          114s    10.244.0.15   hpa-2026   <none>           <none>
+php-apache-7f969fb464-9twhj   1/1     Running   0          3m54s   10.244.0.14   hpa-2026   <none>           <none>
+php-apache-7f969fb464-dl8db   1/1     Running   0          114s    10.244.0.19   hpa-2026   <none>           <none>
+php-apache-7f969fb464-gmzcd   1/1     Running   0          114s    10.244.0.18   hpa-2026   <none>           <none>
+php-apache-7f969fb464-ngzkt   1/1     Running   0          114s    10.244.0.20   hpa-2026   <none>           <none>
+php-apache-7f969fb464-q6k8d   1/1     Running   0          5m55s   10.244.0.5    hpa-2026   <none>           <none>
+php-apache-7f969fb464-srlh8   1/1     Running   0          114s    10.244.0.17   hpa-2026   <none>           <none>
+php-apache-7f969fb464-t75qh   1/1     Running   0          3m54s   10.244.0.12   hpa-2026   <none>           <none>
+php-apache-7f969fb464-wv5mx   1/1     Running   0          3m54s   10.244.0.13   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-22m2l   216m         14Mi            
+php-apache-7f969fb464-58jcs   234m         14Mi            
+php-apache-7f969fb464-9twhj   236m         15Mi            
+php-apache-7f969fb464-dl8db   218m         14Mi            
+php-apache-7f969fb464-gmzcd   184m         13Mi            
+php-apache-7f969fb464-ngzkt   200m         13Mi            
+php-apache-7f969fb464-q6k8d   212m         15Mi            
+php-apache-7f969fb464-srlh8   229m         13Mi            
+php-apache-7f969fb464-t75qh   199m         15Mi            
+php-apache-7f969fb464-wv5mx   209m         15Mi            
+
+---- 2026-09-06 12:46:17 ----
+NAME         REFERENCE               TARGETS         MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 106%/50%   1         10        10         6m5s
+NAME                          READY   STATUS    RESTARTS   AGE    IP            NODE       NOMINATED NODE   READINESS GATES
+php-apache-7f969fb464-22m2l   1/1     Running   0          2m5s   10.244.0.16   hpa-2026   <none>           <none>
+php-apache-7f969fb464-58jcs   1/1     Running   0          2m5s   10.244.0.15   hpa-2026   <none>           <none>
+php-apache-7f969fb464-9twhj   1/1     Running   0          4m5s   10.244.0.14   hpa-2026   <none>           <none>
+php-apache-7f969fb464-dl8db   1/1     Running   0          2m5s   10.244.0.19   hpa-2026   <none>           <none>
+php-apache-7f969fb464-gmzcd   1/1     Running   0          2m5s   10.244.0.18   hpa-2026   <none>           <none>
+php-apache-7f969fb464-ngzkt   1/1     Running   0          2m5s   10.244.0.20   hpa-2026   <none>           <none>
+php-apache-7f969fb464-q6k8d   1/1     Running   0          6m6s   10.244.0.5    hpa-2026   <none>           <none>
+php-apache-7f969fb464-srlh8   1/1     Running   0          2m5s   10.244.0.17   hpa-2026   <none>           <none>
+php-apache-7f969fb464-t75qh   1/1     Running   0          4m5s   10.244.0.12   hpa-2026   <none>           <none>
+php-apache-7f969fb464-wv5mx   1/1     Running   0          4m5s   10.244.0.13   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-22m2l   216m         14Mi            
+php-apache-7f969fb464-58jcs   234m         14Mi            
+php-apache-7f969fb464-9twhj   236m         15Mi            
+php-apache-7f969fb464-dl8db   218m         14Mi            
+php-apache-7f969fb464-gmzcd   184m         13Mi            
+php-apache-7f969fb464-ngzkt   200m         13Mi            
+php-apache-7f969fb464-q6k8d   212m         15Mi            
+php-apache-7f969fb464-srlh8   229m         13Mi            
+php-apache-7f969fb464-t75qh   199m         15Mi            
+php-apache-7f969fb464-wv5mx   209m         15Mi            
+
+---- 2026-09-06 12:46:28 ----
+NAME         REFERENCE               TARGETS         MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 106%/50%   1         10        10         6m16s
+NAME                          READY   STATUS    RESTARTS   AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+php-apache-7f969fb464-22m2l   1/1     Running   0          2m17s   10.244.0.16   hpa-2026   <none>           <none>
+php-apache-7f969fb464-58jcs   1/1     Running   0          2m17s   10.244.0.15   hpa-2026   <none>           <none>
+php-apache-7f969fb464-9twhj   1/1     Running   0          4m17s   10.244.0.14   hpa-2026   <none>           <none>
+php-apache-7f969fb464-dl8db   1/1     Running   0          2m17s   10.244.0.19   hpa-2026   <none>           <none>
+php-apache-7f969fb464-gmzcd   1/1     Running   0          2m17s   10.244.0.18   hpa-2026   <none>           <none>
+php-apache-7f969fb464-ngzkt   1/1     Running   0          2m17s   10.244.0.20   hpa-2026   <none>           <none>
+php-apache-7f969fb464-q6k8d   1/1     Running   0          6m18s   10.244.0.5    hpa-2026   <none>           <none>
+php-apache-7f969fb464-srlh8   1/1     Running   0          2m17s   10.244.0.17   hpa-2026   <none>           <none>
+php-apache-7f969fb464-t75qh   1/1     Running   0          4m17s   10.244.0.12   hpa-2026   <none>           <none>
+php-apache-7f969fb464-wv5mx   1/1     Running   0          4m17s   10.244.0.13   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-22m2l   216m         14Mi            
+php-apache-7f969fb464-58jcs   234m         14Mi            
+php-apache-7f969fb464-9twhj   236m         15Mi            
+php-apache-7f969fb464-dl8db   218m         14Mi            
+php-apache-7f969fb464-gmzcd   184m         13Mi            
+php-apache-7f969fb464-ngzkt   200m         13Mi            
+php-apache-7f969fb464-q6k8d   212m         15Mi            
+php-apache-7f969fb464-srlh8   229m         13Mi            
+php-apache-7f969fb464-t75qh   199m         15Mi            
+php-apache-7f969fb464-wv5mx   209m         15Mi            
+
+---- 2026-09-06 12:46:40 ----
+NAME         REFERENCE               TARGETS         MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 106%/50%   1         10        10         6m28s
+NAME                          READY   STATUS    RESTARTS   AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+php-apache-7f969fb464-22m2l   1/1     Running   0          2m28s   10.244.0.16   hpa-2026   <none>           <none>
+php-apache-7f969fb464-58jcs   1/1     Running   0          2m28s   10.244.0.15   hpa-2026   <none>           <none>
+php-apache-7f969fb464-9twhj   1/1     Running   0          4m28s   10.244.0.14   hpa-2026   <none>           <none>
+php-apache-7f969fb464-dl8db   1/1     Running   0          2m28s   10.244.0.19   hpa-2026   <none>           <none>
+php-apache-7f969fb464-gmzcd   1/1     Running   0          2m28s   10.244.0.18   hpa-2026   <none>           <none>
+php-apache-7f969fb464-ngzkt   1/1     Running   0          2m28s   10.244.0.20   hpa-2026   <none>           <none>
+php-apache-7f969fb464-q6k8d   1/1     Running   0          6m29s   10.244.0.5    hpa-2026   <none>           <none>
+php-apache-7f969fb464-srlh8   1/1     Running   0          2m28s   10.244.0.17   hpa-2026   <none>           <none>
+php-apache-7f969fb464-t75qh   1/1     Running   0          4m28s   10.244.0.12   hpa-2026   <none>           <none>
+php-apache-7f969fb464-wv5mx   1/1     Running   0          4m28s   10.244.0.13   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-22m2l   216m         14Mi            
+php-apache-7f969fb464-58jcs   234m         14Mi            
+php-apache-7f969fb464-9twhj   236m         15Mi            
+php-apache-7f969fb464-dl8db   218m         14Mi            
+php-apache-7f969fb464-gmzcd   184m         13Mi            
+php-apache-7f969fb464-ngzkt   200m         13Mi            
+php-apache-7f969fb464-q6k8d   212m         15Mi            
+php-apache-7f969fb464-srlh8   229m         13Mi            
+php-apache-7f969fb464-t75qh   199m         15Mi            
+php-apache-7f969fb464-wv5mx   209m         15Mi            
+
+---- 2026-09-06 12:46:51 ----
+NAME         REFERENCE               TARGETS         MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 106%/50%   1         10        10         6m39s
+NAME                          READY   STATUS    RESTARTS   AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+php-apache-7f969fb464-22m2l   1/1     Running   0          2m39s   10.244.0.16   hpa-2026   <none>           <none>
+php-apache-7f969fb464-58jcs   1/1     Running   0          2m39s   10.244.0.15   hpa-2026   <none>           <none>
+php-apache-7f969fb464-9twhj   1/1     Running   0          4m39s   10.244.0.14   hpa-2026   <none>           <none>
+php-apache-7f969fb464-dl8db   1/1     Running   0          2m39s   10.244.0.19   hpa-2026   <none>           <none>
+php-apache-7f969fb464-gmzcd   1/1     Running   0          2m39s   10.244.0.18   hpa-2026   <none>           <none>
+php-apache-7f969fb464-ngzkt   1/1     Running   0          2m39s   10.244.0.20   hpa-2026   <none>           <none>
+php-apache-7f969fb464-q6k8d   1/1     Running   0          6m40s   10.244.0.5    hpa-2026   <none>           <none>
+php-apache-7f969fb464-srlh8   1/1     Running   0          2m39s   10.244.0.17   hpa-2026   <none>           <none>
+php-apache-7f969fb464-t75qh   1/1     Running   0          4m39s   10.244.0.12   hpa-2026   <none>           <none>
+php-apache-7f969fb464-wv5mx   1/1     Running   0          4m39s   10.244.0.13   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-22m2l   216m         14Mi            
+php-apache-7f969fb464-58jcs   234m         14Mi            
+php-apache-7f969fb464-9twhj   236m         15Mi            
+php-apache-7f969fb464-dl8db   218m         14Mi            
+php-apache-7f969fb464-gmzcd   184m         13Mi            
+php-apache-7f969fb464-ngzkt   200m         13Mi            
+php-apache-7f969fb464-q6k8d   212m         15Mi            
+php-apache-7f969fb464-srlh8   229m         13Mi            
+php-apache-7f969fb464-t75qh   199m         15Mi            
+php-apache-7f969fb464-wv5mx   209m         15Mi            
+
+---- 2026-09-06 12:47:02 ----
+NAME         REFERENCE               TARGETS         MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 106%/50%   1         10        10         6m50s
+NAME                          READY   STATUS    RESTARTS   AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+php-apache-7f969fb464-22m2l   1/1     Running   0          2m50s   10.244.0.16   hpa-2026   <none>           <none>
+php-apache-7f969fb464-58jcs   1/1     Running   0          2m50s   10.244.0.15   hpa-2026   <none>           <none>
+php-apache-7f969fb464-9twhj   1/1     Running   0          4m50s   10.244.0.14   hpa-2026   <none>           <none>
+php-apache-7f969fb464-dl8db   1/1     Running   0          2m50s   10.244.0.19   hpa-2026   <none>           <none>
+php-apache-7f969fb464-gmzcd   1/1     Running   0          2m50s   10.244.0.18   hpa-2026   <none>           <none>
+php-apache-7f969fb464-ngzkt   1/1     Running   0          2m50s   10.244.0.20   hpa-2026   <none>           <none>
+php-apache-7f969fb464-q6k8d   1/1     Running   0          6m51s   10.244.0.5    hpa-2026   <none>           <none>
+php-apache-7f969fb464-srlh8   1/1     Running   0          2m50s   10.244.0.17   hpa-2026   <none>           <none>
+php-apache-7f969fb464-t75qh   1/1     Running   0          4m50s   10.244.0.12   hpa-2026   <none>           <none>
+php-apache-7f969fb464-wv5mx   1/1     Running   0          4m50s   10.244.0.13   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-22m2l   216m         14Mi            
+php-apache-7f969fb464-58jcs   234m         14Mi            
+php-apache-7f969fb464-9twhj   236m         15Mi            
+php-apache-7f969fb464-dl8db   218m         14Mi            
+php-apache-7f969fb464-gmzcd   184m         13Mi            
+php-apache-7f969fb464-ngzkt   200m         13Mi            
+php-apache-7f969fb464-q6k8d   212m         15Mi            
+php-apache-7f969fb464-srlh8   229m         13Mi            
+php-apache-7f969fb464-t75qh   199m         15Mi            
+php-apache-7f969fb464-wv5mx   209m         15Mi            
+
+---- 2026-09-06 12:47:14 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 4%/50%   1         10        10         7m1s
+NAME                          READY   STATUS    RESTARTS   AGE    IP            NODE       NOMINATED NODE   READINESS GATES
+php-apache-7f969fb464-22m2l   1/1     Running   0          3m1s   10.244.0.16   hpa-2026   <none>           <none>
+php-apache-7f969fb464-58jcs   1/1     Running   0          3m1s   10.244.0.15   hpa-2026   <none>           <none>
+php-apache-7f969fb464-9twhj   1/1     Running   0          5m1s   10.244.0.14   hpa-2026   <none>           <none>
+php-apache-7f969fb464-dl8db   1/1     Running   0          3m1s   10.244.0.19   hpa-2026   <none>           <none>
+php-apache-7f969fb464-gmzcd   1/1     Running   0          3m1s   10.244.0.18   hpa-2026   <none>           <none>
+php-apache-7f969fb464-ngzkt   1/1     Running   0          3m1s   10.244.0.20   hpa-2026   <none>           <none>
+php-apache-7f969fb464-q6k8d   1/1     Running   0          7m2s   10.244.0.5    hpa-2026   <none>           <none>
+php-apache-7f969fb464-srlh8   1/1     Running   0          3m1s   10.244.0.17   hpa-2026   <none>           <none>
+php-apache-7f969fb464-t75qh   1/1     Running   0          5m1s   10.244.0.12   hpa-2026   <none>           <none>
+php-apache-7f969fb464-wv5mx   1/1     Running   0          5m1s   10.244.0.13   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-22m2l   8m           14Mi            
+php-apache-7f969fb464-58jcs   8m           14Mi            
+php-apache-7f969fb464-9twhj   8m           15Mi            
+php-apache-7f969fb464-dl8db   8m           14Mi            
+php-apache-7f969fb464-gmzcd   9m           13Mi            
+php-apache-7f969fb464-ngzkt   9m           13Mi            
+php-apache-7f969fb464-q6k8d   8m           15Mi            
+php-apache-7f969fb464-srlh8   8m           13Mi            
+php-apache-7f969fb464-t75qh   8m           15Mi            
+php-apache-7f969fb464-wv5mx   8m           15Mi            
+
+---- 2026-09-06 12:47:25 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 4%/50%   1         10        10         7m13s
+NAME                          READY   STATUS    RESTARTS   AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+php-apache-7f969fb464-22m2l   1/1     Running   0          3m13s   10.244.0.16   hpa-2026   <none>           <none>
+php-apache-7f969fb464-58jcs   1/1     Running   0          3m13s   10.244.0.15   hpa-2026   <none>           <none>
+php-apache-7f969fb464-9twhj   1/1     Running   0          5m13s   10.244.0.14   hpa-2026   <none>           <none>
+php-apache-7f969fb464-dl8db   1/1     Running   0          3m13s   10.244.0.19   hpa-2026   <none>           <none>
+php-apache-7f969fb464-gmzcd   1/1     Running   0          3m13s   10.244.0.18   hpa-2026   <none>           <none>
+php-apache-7f969fb464-ngzkt   1/1     Running   0          3m13s   10.244.0.20   hpa-2026   <none>           <none>
+php-apache-7f969fb464-q6k8d   1/1     Running   0          7m14s   10.244.0.5    hpa-2026   <none>           <none>
+php-apache-7f969fb464-srlh8   1/1     Running   0          3m13s   10.244.0.17   hpa-2026   <none>           <none>
+php-apache-7f969fb464-t75qh   1/1     Running   0          5m13s   10.244.0.12   hpa-2026   <none>           <none>
+php-apache-7f969fb464-wv5mx   1/1     Running   0          5m13s   10.244.0.13   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-22m2l   8m           14Mi            
+php-apache-7f969fb464-58jcs   8m           14Mi            
+php-apache-7f969fb464-9twhj   8m           15Mi            
+php-apache-7f969fb464-dl8db   8m           14Mi            
+php-apache-7f969fb464-gmzcd   9m           13Mi            
+php-apache-7f969fb464-ngzkt   9m           13Mi            
+php-apache-7f969fb464-q6k8d   8m           15Mi            
+php-apache-7f969fb464-srlh8   8m           13Mi            
+php-apache-7f969fb464-t75qh   8m           15Mi            
+php-apache-7f969fb464-wv5mx   8m           15Mi            
+
+---- 2026-09-06 12:47:36 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 4%/50%   1         10        10         7m24s
+NAME                          READY   STATUS    RESTARTS   AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+php-apache-7f969fb464-22m2l   1/1     Running   0          3m25s   10.244.0.16   hpa-2026   <none>           <none>
+php-apache-7f969fb464-58jcs   1/1     Running   0          3m25s   10.244.0.15   hpa-2026   <none>           <none>
+php-apache-7f969fb464-9twhj   1/1     Running   0          5m25s   10.244.0.14   hpa-2026   <none>           <none>
+php-apache-7f969fb464-dl8db   1/1     Running   0          3m25s   10.244.0.19   hpa-2026   <none>           <none>
+php-apache-7f969fb464-gmzcd   1/1     Running   0          3m25s   10.244.0.18   hpa-2026   <none>           <none>
+php-apache-7f969fb464-ngzkt   1/1     Running   0          3m25s   10.244.0.20   hpa-2026   <none>           <none>
+php-apache-7f969fb464-q6k8d   1/1     Running   0          7m26s   10.244.0.5    hpa-2026   <none>           <none>
+php-apache-7f969fb464-srlh8   1/1     Running   0          3m25s   10.244.0.17   hpa-2026   <none>           <none>
+php-apache-7f969fb464-t75qh   1/1     Running   0          5m25s   10.244.0.12   hpa-2026   <none>           <none>
+php-apache-7f969fb464-wv5mx   1/1     Running   0          5m25s   10.244.0.13   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-22m2l   8m           14Mi            
+php-apache-7f969fb464-58jcs   8m           14Mi            
+php-apache-7f969fb464-9twhj   8m           15Mi            
+php-apache-7f969fb464-dl8db   8m           14Mi            
+php-apache-7f969fb464-gmzcd   9m           13Mi            
+php-apache-7f969fb464-ngzkt   9m           13Mi            
+php-apache-7f969fb464-q6k8d   8m           15Mi            
+php-apache-7f969fb464-srlh8   8m           13Mi            
+php-apache-7f969fb464-t75qh   8m           15Mi            
+php-apache-7f969fb464-wv5mx   8m           15Mi            
+
+---- 2026-09-06 12:47:49 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 4%/50%   1         10        10         7m36s
+NAME                          READY   STATUS    RESTARTS   AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+php-apache-7f969fb464-22m2l   1/1     Running   0          3m37s   10.244.0.16   hpa-2026   <none>           <none>
+php-apache-7f969fb464-58jcs   1/1     Running   0          3m37s   10.244.0.15   hpa-2026   <none>           <none>
+php-apache-7f969fb464-9twhj   1/1     Running   0          5m37s   10.244.0.14   hpa-2026   <none>           <none>
+php-apache-7f969fb464-dl8db   1/1     Running   0          3m37s   10.244.0.19   hpa-2026   <none>           <none>
+php-apache-7f969fb464-gmzcd   1/1     Running   0          3m37s   10.244.0.18   hpa-2026   <none>           <none>
+php-apache-7f969fb464-ngzkt   1/1     Running   0          3m37s   10.244.0.20   hpa-2026   <none>           <none>
+php-apache-7f969fb464-q6k8d   1/1     Running   0          7m38s   10.244.0.5    hpa-2026   <none>           <none>
+php-apache-7f969fb464-srlh8   1/1     Running   0          3m37s   10.244.0.17   hpa-2026   <none>           <none>
+php-apache-7f969fb464-t75qh   1/1     Running   0          5m37s   10.244.0.12   hpa-2026   <none>           <none>
+php-apache-7f969fb464-wv5mx   1/1     Running   0          5m37s   10.244.0.13   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-22m2l   8m           14Mi            
+php-apache-7f969fb464-58jcs   8m           14Mi            
+php-apache-7f969fb464-9twhj   8m           15Mi            
+php-apache-7f969fb464-dl8db   8m           14Mi            
+php-apache-7f969fb464-gmzcd   9m           13Mi            
+php-apache-7f969fb464-ngzkt   9m           13Mi            
+php-apache-7f969fb464-q6k8d   8m           15Mi            
+php-apache-7f969fb464-srlh8   8m           13Mi            
+php-apache-7f969fb464-t75qh   8m           15Mi            
+php-apache-7f969fb464-wv5mx   8m           15Mi            
+
+---- 2026-09-06 12:48:00 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 4%/50%   1         10        10         7m48s
+NAME                          READY   STATUS    RESTARTS   AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+php-apache-7f969fb464-22m2l   1/1     Running   0          3m48s   10.244.0.16   hpa-2026   <none>           <none>
+php-apache-7f969fb464-58jcs   1/1     Running   0          3m48s   10.244.0.15   hpa-2026   <none>           <none>
+php-apache-7f969fb464-9twhj   1/1     Running   0          5m48s   10.244.0.14   hpa-2026   <none>           <none>
+php-apache-7f969fb464-dl8db   1/1     Running   0          3m48s   10.244.0.19   hpa-2026   <none>           <none>
+php-apache-7f969fb464-gmzcd   1/1     Running   0          3m48s   10.244.0.18   hpa-2026   <none>           <none>
+php-apache-7f969fb464-ngzkt   1/1     Running   0          3m48s   10.244.0.20   hpa-2026   <none>           <none>
+php-apache-7f969fb464-q6k8d   1/1     Running   0          7m49s   10.244.0.5    hpa-2026   <none>           <none>
+php-apache-7f969fb464-srlh8   1/1     Running   0          3m48s   10.244.0.17   hpa-2026   <none>           <none>
+php-apache-7f969fb464-t75qh   1/1     Running   0          5m48s   10.244.0.12   hpa-2026   <none>           <none>
+php-apache-7f969fb464-wv5mx   1/1     Running   0          5m48s   10.244.0.13   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-22m2l   8m           14Mi            
+php-apache-7f969fb464-58jcs   8m           14Mi            
+php-apache-7f969fb464-9twhj   8m           15Mi            
+php-apache-7f969fb464-dl8db   8m           14Mi            
+php-apache-7f969fb464-gmzcd   9m           13Mi            
+php-apache-7f969fb464-ngzkt   9m           13Mi            
+php-apache-7f969fb464-q6k8d   8m           15Mi            
+php-apache-7f969fb464-srlh8   8m           13Mi            
+php-apache-7f969fb464-t75qh   8m           15Mi            
+php-apache-7f969fb464-wv5mx   8m           15Mi            
+
+---- 2026-09-06 12:48:12 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 4%/50%   1         10        10         8m
+NAME                          READY   STATUS    RESTARTS   AGE    IP            NODE       NOMINATED NODE   READINESS GATES
+php-apache-7f969fb464-22m2l   1/1     Running   0          4m     10.244.0.16   hpa-2026   <none>           <none>
+php-apache-7f969fb464-58jcs   1/1     Running   0          4m     10.244.0.15   hpa-2026   <none>           <none>
+php-apache-7f969fb464-9twhj   1/1     Running   0          6m     10.244.0.14   hpa-2026   <none>           <none>
+php-apache-7f969fb464-dl8db   1/1     Running   0          4m     10.244.0.19   hpa-2026   <none>           <none>
+php-apache-7f969fb464-gmzcd   1/1     Running   0          4m     10.244.0.18   hpa-2026   <none>           <none>
+php-apache-7f969fb464-ngzkt   1/1     Running   0          4m     10.244.0.20   hpa-2026   <none>           <none>
+php-apache-7f969fb464-q6k8d   1/1     Running   0          8m1s   10.244.0.5    hpa-2026   <none>           <none>
+php-apache-7f969fb464-srlh8   1/1     Running   0          4m     10.244.0.17   hpa-2026   <none>           <none>
+php-apache-7f969fb464-t75qh   1/1     Running   0          6m     10.244.0.12   hpa-2026   <none>           <none>
+php-apache-7f969fb464-wv5mx   1/1     Running   0          6m     10.244.0.13   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-22m2l   10m          14Mi            
+php-apache-7f969fb464-58jcs   10m          14Mi            
+php-apache-7f969fb464-9twhj   9m           15Mi            
+php-apache-7f969fb464-dl8db   10m          14Mi            
+php-apache-7f969fb464-gmzcd   11m          13Mi            
+php-apache-7f969fb464-ngzkt   11m          13Mi            
+php-apache-7f969fb464-q6k8d   9m           15Mi            
+php-apache-7f969fb464-srlh8   10m          13Mi            
+php-apache-7f969fb464-t75qh   9m           15Mi            
+php-apache-7f969fb464-wv5mx   10m          15Mi            
+
+---- 2026-09-06 12:48:24 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 4%/50%   1         10        10         8m12s
+NAME                          READY   STATUS    RESTARTS   AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+php-apache-7f969fb464-22m2l   1/1     Running   0          4m12s   10.244.0.16   hpa-2026   <none>           <none>
+php-apache-7f969fb464-58jcs   1/1     Running   0          4m12s   10.244.0.15   hpa-2026   <none>           <none>
+php-apache-7f969fb464-9twhj   1/1     Running   0          6m12s   10.244.0.14   hpa-2026   <none>           <none>
+php-apache-7f969fb464-dl8db   1/1     Running   0          4m12s   10.244.0.19   hpa-2026   <none>           <none>
+php-apache-7f969fb464-gmzcd   1/1     Running   0          4m12s   10.244.0.18   hpa-2026   <none>           <none>
+php-apache-7f969fb464-ngzkt   1/1     Running   0          4m12s   10.244.0.20   hpa-2026   <none>           <none>
+php-apache-7f969fb464-q6k8d   1/1     Running   0          8m13s   10.244.0.5    hpa-2026   <none>           <none>
+php-apache-7f969fb464-srlh8   1/1     Running   0          4m12s   10.244.0.17   hpa-2026   <none>           <none>
+php-apache-7f969fb464-t75qh   1/1     Running   0          6m12s   10.244.0.12   hpa-2026   <none>           <none>
+php-apache-7f969fb464-wv5mx   1/1     Running   0          6m12s   10.244.0.13   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-22m2l   10m          14Mi            
+php-apache-7f969fb464-58jcs   10m          14Mi            
+php-apache-7f969fb464-9twhj   9m           15Mi            
+php-apache-7f969fb464-dl8db   10m          14Mi            
+php-apache-7f969fb464-gmzcd   11m          13Mi            
+php-apache-7f969fb464-ngzkt   11m          13Mi            
+php-apache-7f969fb464-q6k8d   9m           15Mi            
+php-apache-7f969fb464-srlh8   10m          13Mi            
+php-apache-7f969fb464-t75qh   9m           15Mi            
+php-apache-7f969fb464-wv5mx   10m          15Mi            
+
+---- 2026-09-06 12:48:35 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 4%/50%   1         10        10         8m23s
+NAME                          READY   STATUS    RESTARTS   AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+php-apache-7f969fb464-22m2l   1/1     Running   0          4m23s   10.244.0.16   hpa-2026   <none>           <none>
+php-apache-7f969fb464-58jcs   1/1     Running   0          4m23s   10.244.0.15   hpa-2026   <none>           <none>
+php-apache-7f969fb464-9twhj   1/1     Running   0          6m23s   10.244.0.14   hpa-2026   <none>           <none>
+php-apache-7f969fb464-dl8db   1/1     Running   0          4m23s   10.244.0.19   hpa-2026   <none>           <none>
+php-apache-7f969fb464-gmzcd   1/1     Running   0          4m23s   10.244.0.18   hpa-2026   <none>           <none>
+php-apache-7f969fb464-ngzkt   1/1     Running   0          4m23s   10.244.0.20   hpa-2026   <none>           <none>
+php-apache-7f969fb464-q6k8d   1/1     Running   0          8m24s   10.244.0.5    hpa-2026   <none>           <none>
+php-apache-7f969fb464-srlh8   1/1     Running   0          4m23s   10.244.0.17   hpa-2026   <none>           <none>
+php-apache-7f969fb464-t75qh   1/1     Running   0          6m23s   10.244.0.12   hpa-2026   <none>           <none>
+php-apache-7f969fb464-wv5mx   1/1     Running   0          6m23s   10.244.0.13   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-22m2l   10m          14Mi            
+php-apache-7f969fb464-58jcs   10m          14Mi            
+php-apache-7f969fb464-9twhj   9m           15Mi            
+php-apache-7f969fb464-dl8db   10m          14Mi            
+php-apache-7f969fb464-gmzcd   11m          13Mi            
+php-apache-7f969fb464-ngzkt   11m          13Mi            
+php-apache-7f969fb464-q6k8d   9m           15Mi            
+php-apache-7f969fb464-srlh8   10m          13Mi            
+php-apache-7f969fb464-t75qh   9m           15Mi            
+php-apache-7f969fb464-wv5mx   10m          15Mi            
+
+---- 2026-09-06 12:48:46 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 4%/50%   1         10        10         8m34s
+NAME                          READY   STATUS    RESTARTS   AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+php-apache-7f969fb464-22m2l   1/1     Running   0          4m34s   10.244.0.16   hpa-2026   <none>           <none>
+php-apache-7f969fb464-58jcs   1/1     Running   0          4m34s   10.244.0.15   hpa-2026   <none>           <none>
+php-apache-7f969fb464-9twhj   1/1     Running   0          6m34s   10.244.0.14   hpa-2026   <none>           <none>
+php-apache-7f969fb464-dl8db   1/1     Running   0          4m34s   10.244.0.19   hpa-2026   <none>           <none>
+php-apache-7f969fb464-gmzcd   1/1     Running   0          4m34s   10.244.0.18   hpa-2026   <none>           <none>
+php-apache-7f969fb464-ngzkt   1/1     Running   0          4m34s   10.244.0.20   hpa-2026   <none>           <none>
+php-apache-7f969fb464-q6k8d   1/1     Running   0          8m35s   10.244.0.5    hpa-2026   <none>           <none>
+php-apache-7f969fb464-srlh8   1/1     Running   0          4m34s   10.244.0.17   hpa-2026   <none>           <none>
+php-apache-7f969fb464-t75qh   1/1     Running   0          6m34s   10.244.0.12   hpa-2026   <none>           <none>
+php-apache-7f969fb464-wv5mx   1/1     Running   0          6m34s   10.244.0.13   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-22m2l   10m          14Mi            
+php-apache-7f969fb464-58jcs   10m          14Mi            
+php-apache-7f969fb464-9twhj   9m           15Mi            
+php-apache-7f969fb464-dl8db   10m          14Mi            
+php-apache-7f969fb464-gmzcd   11m          13Mi            
+php-apache-7f969fb464-ngzkt   11m          13Mi            
+php-apache-7f969fb464-q6k8d   9m           15Mi            
+php-apache-7f969fb464-srlh8   10m          13Mi            
+php-apache-7f969fb464-t75qh   9m           15Mi            
+php-apache-7f969fb464-wv5mx   10m          15Mi            
+
+---- 2026-09-06 12:48:58 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 4%/50%   1         10        10         8m45s
+NAME                          READY   STATUS    RESTARTS   AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+php-apache-7f969fb464-22m2l   1/1     Running   0          4m45s   10.244.0.16   hpa-2026   <none>           <none>
+php-apache-7f969fb464-58jcs   1/1     Running   0          4m45s   10.244.0.15   hpa-2026   <none>           <none>
+php-apache-7f969fb464-9twhj   1/1     Running   0          6m45s   10.244.0.14   hpa-2026   <none>           <none>
+php-apache-7f969fb464-dl8db   1/1     Running   0          4m45s   10.244.0.19   hpa-2026   <none>           <none>
+php-apache-7f969fb464-gmzcd   1/1     Running   0          4m45s   10.244.0.18   hpa-2026   <none>           <none>
+php-apache-7f969fb464-ngzkt   1/1     Running   0          4m45s   10.244.0.20   hpa-2026   <none>           <none>
+php-apache-7f969fb464-q6k8d   1/1     Running   0          8m46s   10.244.0.5    hpa-2026   <none>           <none>
+php-apache-7f969fb464-srlh8   1/1     Running   0          4m45s   10.244.0.17   hpa-2026   <none>           <none>
+php-apache-7f969fb464-t75qh   1/1     Running   0          6m45s   10.244.0.12   hpa-2026   <none>           <none>
+php-apache-7f969fb464-wv5mx   1/1     Running   0          6m45s   10.244.0.13   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-22m2l   10m          14Mi            
+php-apache-7f969fb464-58jcs   10m          14Mi            
+php-apache-7f969fb464-9twhj   9m           15Mi            
+php-apache-7f969fb464-dl8db   10m          14Mi            
+php-apache-7f969fb464-gmzcd   11m          13Mi            
+php-apache-7f969fb464-ngzkt   11m          13Mi            
+php-apache-7f969fb464-q6k8d   9m           15Mi            
+php-apache-7f969fb464-srlh8   10m          13Mi            
+php-apache-7f969fb464-t75qh   9m           15Mi            
+php-apache-7f969fb464-wv5mx   10m          15Mi            
+
+---- 2026-09-06 12:49:08 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 4%/50%   1         10        10         8m56s
+NAME                          READY   STATUS    RESTARTS   AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+php-apache-7f969fb464-22m2l   1/1     Running   0          4m56s   10.244.0.16   hpa-2026   <none>           <none>
+php-apache-7f969fb464-58jcs   1/1     Running   0          4m56s   10.244.0.15   hpa-2026   <none>           <none>
+php-apache-7f969fb464-9twhj   1/1     Running   0          6m56s   10.244.0.14   hpa-2026   <none>           <none>
+php-apache-7f969fb464-dl8db   1/1     Running   0          4m56s   10.244.0.19   hpa-2026   <none>           <none>
+php-apache-7f969fb464-gmzcd   1/1     Running   0          4m56s   10.244.0.18   hpa-2026   <none>           <none>
+php-apache-7f969fb464-ngzkt   1/1     Running   0          4m56s   10.244.0.20   hpa-2026   <none>           <none>
+php-apache-7f969fb464-q6k8d   1/1     Running   0          8m57s   10.244.0.5    hpa-2026   <none>           <none>
+php-apache-7f969fb464-srlh8   1/1     Running   0          4m56s   10.244.0.17   hpa-2026   <none>           <none>
+php-apache-7f969fb464-t75qh   1/1     Running   0          6m56s   10.244.0.12   hpa-2026   <none>           <none>
+php-apache-7f969fb464-wv5mx   1/1     Running   0          6m56s   10.244.0.13   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-22m2l   10m          14Mi            
+php-apache-7f969fb464-58jcs   9m           14Mi            
+php-apache-7f969fb464-9twhj   11m          15Mi            
+php-apache-7f969fb464-dl8db   10m          14Mi            
+php-apache-7f969fb464-gmzcd   10m          13Mi            
+php-apache-7f969fb464-ngzkt   10m          13Mi            
+php-apache-7f969fb464-q6k8d   9m           15Mi            
+php-apache-7f969fb464-srlh8   11m          13Mi            
+php-apache-7f969fb464-t75qh   9m           15Mi            
+php-apache-7f969fb464-wv5mx   9m           15Mi            
+
+---- 2026-09-06 12:49:19 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 4%/50%   1         10        10         9m8s
+NAME                          READY   STATUS    RESTARTS   AGE    IP            NODE       NOMINATED NODE   READINESS GATES
+php-apache-7f969fb464-22m2l   1/1     Running   0          5m8s   10.244.0.16   hpa-2026   <none>           <none>
+php-apache-7f969fb464-58jcs   1/1     Running   0          5m8s   10.244.0.15   hpa-2026   <none>           <none>
+php-apache-7f969fb464-9twhj   1/1     Running   0          7m8s   10.244.0.14   hpa-2026   <none>           <none>
+php-apache-7f969fb464-dl8db   1/1     Running   0          5m8s   10.244.0.19   hpa-2026   <none>           <none>
+php-apache-7f969fb464-gmzcd   1/1     Running   0          5m8s   10.244.0.18   hpa-2026   <none>           <none>
+php-apache-7f969fb464-ngzkt   1/1     Running   0          5m8s   10.244.0.20   hpa-2026   <none>           <none>
+php-apache-7f969fb464-q6k8d   1/1     Running   0          9m9s   10.244.0.5    hpa-2026   <none>           <none>
+php-apache-7f969fb464-srlh8   1/1     Running   0          5m8s   10.244.0.17   hpa-2026   <none>           <none>
+php-apache-7f969fb464-t75qh   1/1     Running   0          7m8s   10.244.0.12   hpa-2026   <none>           <none>
+php-apache-7f969fb464-wv5mx   1/1     Running   0          7m8s   10.244.0.13   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-22m2l   10m          14Mi            
+php-apache-7f969fb464-58jcs   9m           14Mi            
+php-apache-7f969fb464-9twhj   11m          15Mi            
+php-apache-7f969fb464-dl8db   10m          14Mi            
+php-apache-7f969fb464-gmzcd   10m          13Mi            
+php-apache-7f969fb464-ngzkt   10m          13Mi            
+php-apache-7f969fb464-q6k8d   9m           15Mi            
+php-apache-7f969fb464-srlh8   11m          13Mi            
+php-apache-7f969fb464-t75qh   9m           15Mi            
+php-apache-7f969fb464-wv5mx   9m           15Mi            
+
+---- 2026-09-06 12:49:31 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 4%/50%   1         10        10         9m19s
+NAME                          READY   STATUS    RESTARTS   AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+php-apache-7f969fb464-22m2l   1/1     Running   0          5m20s   10.244.0.16   hpa-2026   <none>           <none>
+php-apache-7f969fb464-58jcs   1/1     Running   0          5m20s   10.244.0.15   hpa-2026   <none>           <none>
+php-apache-7f969fb464-9twhj   1/1     Running   0          7m20s   10.244.0.14   hpa-2026   <none>           <none>
+php-apache-7f969fb464-dl8db   1/1     Running   0          5m20s   10.244.0.19   hpa-2026   <none>           <none>
+php-apache-7f969fb464-gmzcd   1/1     Running   0          5m20s   10.244.0.18   hpa-2026   <none>           <none>
+php-apache-7f969fb464-ngzkt   1/1     Running   0          5m20s   10.244.0.20   hpa-2026   <none>           <none>
+php-apache-7f969fb464-q6k8d   1/1     Running   0          9m21s   10.244.0.5    hpa-2026   <none>           <none>
+php-apache-7f969fb464-srlh8   1/1     Running   0          5m20s   10.244.0.17   hpa-2026   <none>           <none>
+php-apache-7f969fb464-t75qh   1/1     Running   0          7m20s   10.244.0.12   hpa-2026   <none>           <none>
+php-apache-7f969fb464-wv5mx   1/1     Running   0          7m20s   10.244.0.13   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-22m2l   10m          14Mi            
+php-apache-7f969fb464-58jcs   9m           14Mi            
+php-apache-7f969fb464-9twhj   11m          15Mi            
+php-apache-7f969fb464-dl8db   10m          14Mi            
+php-apache-7f969fb464-gmzcd   10m          13Mi            
+php-apache-7f969fb464-ngzkt   10m          13Mi            
+php-apache-7f969fb464-q6k8d   9m           15Mi            
+php-apache-7f969fb464-srlh8   11m          13Mi            
+php-apache-7f969fb464-t75qh   9m           15Mi            
+php-apache-7f969fb464-wv5mx   9m           15Mi            
+
+---- 2026-09-06 12:49:44 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 4%/50%   1         10        10         9m32s
+NAME                          READY   STATUS    RESTARTS   AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+php-apache-7f969fb464-22m2l   1/1     Running   0          5m32s   10.244.0.16   hpa-2026   <none>           <none>
+php-apache-7f969fb464-58jcs   1/1     Running   0          5m32s   10.244.0.15   hpa-2026   <none>           <none>
+php-apache-7f969fb464-9twhj   1/1     Running   0          7m32s   10.244.0.14   hpa-2026   <none>           <none>
+php-apache-7f969fb464-dl8db   1/1     Running   0          5m32s   10.244.0.19   hpa-2026   <none>           <none>
+php-apache-7f969fb464-gmzcd   1/1     Running   0          5m32s   10.244.0.18   hpa-2026   <none>           <none>
+php-apache-7f969fb464-ngzkt   1/1     Running   0          5m32s   10.244.0.20   hpa-2026   <none>           <none>
+php-apache-7f969fb464-q6k8d   1/1     Running   0          9m33s   10.244.0.5    hpa-2026   <none>           <none>
+php-apache-7f969fb464-srlh8   1/1     Running   0          5m32s   10.244.0.17   hpa-2026   <none>           <none>
+php-apache-7f969fb464-t75qh   1/1     Running   0          7m32s   10.244.0.12   hpa-2026   <none>           <none>
+php-apache-7f969fb464-wv5mx   1/1     Running   0          7m32s   10.244.0.13   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-22m2l   10m          14Mi            
+php-apache-7f969fb464-58jcs   9m           14Mi            
+php-apache-7f969fb464-9twhj   11m          15Mi            
+php-apache-7f969fb464-dl8db   10m          14Mi            
+php-apache-7f969fb464-gmzcd   10m          13Mi            
+php-apache-7f969fb464-ngzkt   10m          13Mi            
+php-apache-7f969fb464-q6k8d   9m           15Mi            
+php-apache-7f969fb464-srlh8   11m          13Mi            
+php-apache-7f969fb464-t75qh   9m           15Mi            
+php-apache-7f969fb464-wv5mx   9m           15Mi            
+
+---- 2026-09-06 12:49:57 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 4%/50%   1         10        10         9m44s
+NAME                          READY   STATUS    RESTARTS   AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+php-apache-7f969fb464-22m2l   1/1     Running   0          5m45s   10.244.0.16   hpa-2026   <none>           <none>
+php-apache-7f969fb464-58jcs   1/1     Running   0          5m45s   10.244.0.15   hpa-2026   <none>           <none>
+php-apache-7f969fb464-9twhj   1/1     Running   0          7m45s   10.244.0.14   hpa-2026   <none>           <none>
+php-apache-7f969fb464-dl8db   1/1     Running   0          5m45s   10.244.0.19   hpa-2026   <none>           <none>
+php-apache-7f969fb464-gmzcd   1/1     Running   0          5m45s   10.244.0.18   hpa-2026   <none>           <none>
+php-apache-7f969fb464-ngzkt   1/1     Running   0          5m45s   10.244.0.20   hpa-2026   <none>           <none>
+php-apache-7f969fb464-q6k8d   1/1     Running   0          9m46s   10.244.0.5    hpa-2026   <none>           <none>
+php-apache-7f969fb464-srlh8   1/1     Running   0          5m45s   10.244.0.17   hpa-2026   <none>           <none>
+php-apache-7f969fb464-t75qh   1/1     Running   0          7m45s   10.244.0.12   hpa-2026   <none>           <none>
+php-apache-7f969fb464-wv5mx   1/1     Running   0          7m45s   10.244.0.13   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-22m2l   10m          14Mi            
+php-apache-7f969fb464-58jcs   9m           14Mi            
+php-apache-7f969fb464-9twhj   11m          15Mi            
+php-apache-7f969fb464-dl8db   10m          14Mi            
+php-apache-7f969fb464-gmzcd   10m          13Mi            
+php-apache-7f969fb464-ngzkt   10m          13Mi            
+php-apache-7f969fb464-q6k8d   9m           15Mi            
+php-apache-7f969fb464-srlh8   11m          13Mi            
+php-apache-7f969fb464-t75qh   9m           15Mi            
+php-apache-7f969fb464-wv5mx   9m           15Mi            
+
+---- 2026-09-06 12:50:08 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 4%/50%   1         10        10         9m56s
+NAME                          READY   STATUS    RESTARTS   AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+php-apache-7f969fb464-22m2l   1/1     Running   0          5m57s   10.244.0.16   hpa-2026   <none>           <none>
+php-apache-7f969fb464-58jcs   1/1     Running   0          5m57s   10.244.0.15   hpa-2026   <none>           <none>
+php-apache-7f969fb464-9twhj   1/1     Running   0          7m57s   10.244.0.14   hpa-2026   <none>           <none>
+php-apache-7f969fb464-dl8db   1/1     Running   0          5m57s   10.244.0.19   hpa-2026   <none>           <none>
+php-apache-7f969fb464-gmzcd   1/1     Running   0          5m57s   10.244.0.18   hpa-2026   <none>           <none>
+php-apache-7f969fb464-ngzkt   1/1     Running   0          5m57s   10.244.0.20   hpa-2026   <none>           <none>
+php-apache-7f969fb464-q6k8d   1/1     Running   0          9m58s   10.244.0.5    hpa-2026   <none>           <none>
+php-apache-7f969fb464-srlh8   1/1     Running   0          5m57s   10.244.0.17   hpa-2026   <none>           <none>
+php-apache-7f969fb464-t75qh   1/1     Running   0          7m57s   10.244.0.12   hpa-2026   <none>           <none>
+php-apache-7f969fb464-wv5mx   1/1     Running   0          7m57s   10.244.0.13   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-22m2l   10m          14Mi            
+php-apache-7f969fb464-58jcs   12m          14Mi            
+php-apache-7f969fb464-9twhj   11m          15Mi            
+php-apache-7f969fb464-dl8db   10m          14Mi            
+php-apache-7f969fb464-gmzcd   11m          13Mi            
+php-apache-7f969fb464-ngzkt   11m          13Mi            
+php-apache-7f969fb464-q6k8d   11m          15Mi            
+php-apache-7f969fb464-srlh8   10m          13Mi            
+php-apache-7f969fb464-t75qh   11m          15Mi            
+php-apache-7f969fb464-wv5mx   9m           15Mi            
+
+---- 2026-09-06 12:50:20 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 5%/50%   1         10        10         10m
+NAME                          READY   STATUS    RESTARTS   AGE    IP            NODE       NOMINATED NODE   READINESS GATES
+php-apache-7f969fb464-22m2l   1/1     Running   0          6m9s   10.244.0.16   hpa-2026   <none>           <none>
+php-apache-7f969fb464-58jcs   1/1     Running   0          6m9s   10.244.0.15   hpa-2026   <none>           <none>
+php-apache-7f969fb464-9twhj   1/1     Running   0          8m9s   10.244.0.14   hpa-2026   <none>           <none>
+php-apache-7f969fb464-dl8db   1/1     Running   0          6m9s   10.244.0.19   hpa-2026   <none>           <none>
+php-apache-7f969fb464-gmzcd   1/1     Running   0          6m9s   10.244.0.18   hpa-2026   <none>           <none>
+php-apache-7f969fb464-ngzkt   1/1     Running   0          6m9s   10.244.0.20   hpa-2026   <none>           <none>
+php-apache-7f969fb464-q6k8d   1/1     Running   0          10m    10.244.0.5    hpa-2026   <none>           <none>
+php-apache-7f969fb464-srlh8   1/1     Running   0          6m9s   10.244.0.17   hpa-2026   <none>           <none>
+php-apache-7f969fb464-t75qh   1/1     Running   0          8m9s   10.244.0.12   hpa-2026   <none>           <none>
+php-apache-7f969fb464-wv5mx   1/1     Running   0          8m9s   10.244.0.13   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-22m2l   10m          14Mi            
+php-apache-7f969fb464-58jcs   12m          14Mi            
+php-apache-7f969fb464-9twhj   11m          15Mi            
+php-apache-7f969fb464-dl8db   10m          14Mi            
+php-apache-7f969fb464-gmzcd   11m          13Mi            
+php-apache-7f969fb464-ngzkt   11m          13Mi            
+php-apache-7f969fb464-q6k8d   11m          15Mi            
+php-apache-7f969fb464-srlh8   10m          13Mi            
+php-apache-7f969fb464-t75qh   11m          15Mi            
+php-apache-7f969fb464-wv5mx   9m           15Mi            
+
+---- 2026-09-06 12:50:32 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 5%/50%   1         10        10         10m
+NAME                          READY   STATUS    RESTARTS   AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+php-apache-7f969fb464-22m2l   1/1     Running   0          6m21s   10.244.0.16   hpa-2026   <none>           <none>
+php-apache-7f969fb464-58jcs   1/1     Running   0          6m21s   10.244.0.15   hpa-2026   <none>           <none>
+php-apache-7f969fb464-9twhj   1/1     Running   0          8m21s   10.244.0.14   hpa-2026   <none>           <none>
+php-apache-7f969fb464-dl8db   1/1     Running   0          6m21s   10.244.0.19   hpa-2026   <none>           <none>
+php-apache-7f969fb464-gmzcd   1/1     Running   0          6m21s   10.244.0.18   hpa-2026   <none>           <none>
+php-apache-7f969fb464-ngzkt   1/1     Running   0          6m21s   10.244.0.20   hpa-2026   <none>           <none>
+php-apache-7f969fb464-q6k8d   1/1     Running   0          10m     10.244.0.5    hpa-2026   <none>           <none>
+php-apache-7f969fb464-srlh8   1/1     Running   0          6m21s   10.244.0.17   hpa-2026   <none>           <none>
+php-apache-7f969fb464-t75qh   1/1     Running   0          8m21s   10.244.0.12   hpa-2026   <none>           <none>
+php-apache-7f969fb464-wv5mx   1/1     Running   0          8m21s   10.244.0.13   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-22m2l   10m          14Mi            
+php-apache-7f969fb464-58jcs   12m          14Mi            
+php-apache-7f969fb464-9twhj   11m          15Mi            
+php-apache-7f969fb464-dl8db   10m          14Mi            
+php-apache-7f969fb464-gmzcd   11m          13Mi            
+php-apache-7f969fb464-ngzkt   11m          13Mi            
+php-apache-7f969fb464-q6k8d   11m          15Mi            
+php-apache-7f969fb464-srlh8   10m          13Mi            
+php-apache-7f969fb464-t75qh   11m          15Mi            
+php-apache-7f969fb464-wv5mx   9m           15Mi            
+
+---- 2026-09-06 12:50:44 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 5%/50%   1         10        10         10m
+NAME                          READY   STATUS    RESTARTS   AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+php-apache-7f969fb464-22m2l   1/1     Running   0          6m32s   10.244.0.16   hpa-2026   <none>           <none>
+php-apache-7f969fb464-58jcs   1/1     Running   0          6m32s   10.244.0.15   hpa-2026   <none>           <none>
+php-apache-7f969fb464-9twhj   1/1     Running   0          8m32s   10.244.0.14   hpa-2026   <none>           <none>
+php-apache-7f969fb464-dl8db   1/1     Running   0          6m32s   10.244.0.19   hpa-2026   <none>           <none>
+php-apache-7f969fb464-gmzcd   1/1     Running   0          6m32s   10.244.0.18   hpa-2026   <none>           <none>
+php-apache-7f969fb464-ngzkt   1/1     Running   0          6m32s   10.244.0.20   hpa-2026   <none>           <none>
+php-apache-7f969fb464-q6k8d   1/1     Running   0          10m     10.244.0.5    hpa-2026   <none>           <none>
+php-apache-7f969fb464-srlh8   1/1     Running   0          6m32s   10.244.0.17   hpa-2026   <none>           <none>
+php-apache-7f969fb464-t75qh   1/1     Running   0          8m32s   10.244.0.12   hpa-2026   <none>           <none>
+php-apache-7f969fb464-wv5mx   1/1     Running   0          8m32s   10.244.0.13   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-22m2l   10m          14Mi            
+php-apache-7f969fb464-58jcs   12m          14Mi            
+php-apache-7f969fb464-9twhj   11m          15Mi            
+php-apache-7f969fb464-dl8db   10m          14Mi            
+php-apache-7f969fb464-gmzcd   11m          13Mi            
+php-apache-7f969fb464-ngzkt   11m          13Mi            
+php-apache-7f969fb464-q6k8d   11m          15Mi            
+php-apache-7f969fb464-srlh8   10m          13Mi            
+php-apache-7f969fb464-t75qh   11m          15Mi            
+php-apache-7f969fb464-wv5mx   9m           15Mi            
+
+---- 2026-09-06 12:50:56 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 5%/50%   1         10        10         10m
+NAME                          READY   STATUS    RESTARTS   AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+php-apache-7f969fb464-22m2l   1/1     Running   0          6m45s   10.244.0.16   hpa-2026   <none>           <none>
+php-apache-7f969fb464-58jcs   1/1     Running   0          6m45s   10.244.0.15   hpa-2026   <none>           <none>
+php-apache-7f969fb464-9twhj   1/1     Running   0          8m45s   10.244.0.14   hpa-2026   <none>           <none>
+php-apache-7f969fb464-dl8db   1/1     Running   0          6m45s   10.244.0.19   hpa-2026   <none>           <none>
+php-apache-7f969fb464-gmzcd   1/1     Running   0          6m45s   10.244.0.18   hpa-2026   <none>           <none>
+php-apache-7f969fb464-ngzkt   1/1     Running   0          6m45s   10.244.0.20   hpa-2026   <none>           <none>
+php-apache-7f969fb464-q6k8d   1/1     Running   0          10m     10.244.0.5    hpa-2026   <none>           <none>
+php-apache-7f969fb464-srlh8   1/1     Running   0          6m45s   10.244.0.17   hpa-2026   <none>           <none>
+php-apache-7f969fb464-t75qh   1/1     Running   0          8m45s   10.244.0.12   hpa-2026   <none>           <none>
+php-apache-7f969fb464-wv5mx   1/1     Running   0          8m45s   10.244.0.13   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-22m2l   10m          14Mi            
+php-apache-7f969fb464-58jcs   12m          14Mi            
+php-apache-7f969fb464-9twhj   11m          15Mi            
+php-apache-7f969fb464-dl8db   10m          14Mi            
+php-apache-7f969fb464-gmzcd   11m          13Mi            
+php-apache-7f969fb464-ngzkt   11m          13Mi            
+php-apache-7f969fb464-q6k8d   11m          15Mi            
+php-apache-7f969fb464-srlh8   10m          13Mi            
+php-apache-7f969fb464-t75qh   11m          15Mi            
+php-apache-7f969fb464-wv5mx   9m           15Mi            
+
+---- 2026-09-06 12:51:07 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 5%/50%   1         10        10         10m
+NAME                          READY   STATUS    RESTARTS   AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+php-apache-7f969fb464-22m2l   1/1     Running   0          6m57s   10.244.0.16   hpa-2026   <none>           <none>
+php-apache-7f969fb464-58jcs   1/1     Running   0          6m57s   10.244.0.15   hpa-2026   <none>           <none>
+php-apache-7f969fb464-9twhj   1/1     Running   0          8m57s   10.244.0.14   hpa-2026   <none>           <none>
+php-apache-7f969fb464-dl8db   1/1     Running   0          6m57s   10.244.0.19   hpa-2026   <none>           <none>
+php-apache-7f969fb464-gmzcd   1/1     Running   0          6m57s   10.244.0.18   hpa-2026   <none>           <none>
+php-apache-7f969fb464-ngzkt   1/1     Running   0          6m57s   10.244.0.20   hpa-2026   <none>           <none>
+php-apache-7f969fb464-q6k8d   1/1     Running   0          10m     10.244.0.5    hpa-2026   <none>           <none>
+php-apache-7f969fb464-srlh8   1/1     Running   0          6m57s   10.244.0.17   hpa-2026   <none>           <none>
+php-apache-7f969fb464-t75qh   1/1     Running   0          8m57s   10.244.0.12   hpa-2026   <none>           <none>
+php-apache-7f969fb464-wv5mx   1/1     Running   0          8m57s   10.244.0.13   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-22m2l   9m           14Mi            
+php-apache-7f969fb464-58jcs   9m           14Mi            
+php-apache-7f969fb464-9twhj   9m           15Mi            
+php-apache-7f969fb464-dl8db   9m           14Mi            
+php-apache-7f969fb464-gmzcd   9m           13Mi            
+php-apache-7f969fb464-ngzkt   9m           13Mi            
+php-apache-7f969fb464-q6k8d   9m           15Mi            
+php-apache-7f969fb464-srlh8   9m           13Mi            
+php-apache-7f969fb464-t75qh   9m           15Mi            
+php-apache-7f969fb464-wv5mx   9m           15Mi            
+
+---- 2026-09-06 12:51:21 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 4%/50%   1         10        10         11m
+NAME                          READY   STATUS    RESTARTS   AGE    IP            NODE       NOMINATED NODE   READINESS GATES
+php-apache-7f969fb464-22m2l   1/1     Running   0          7m9s   10.244.0.16   hpa-2026   <none>           <none>
+php-apache-7f969fb464-58jcs   1/1     Running   0          7m9s   10.244.0.15   hpa-2026   <none>           <none>
+php-apache-7f969fb464-9twhj   1/1     Running   0          9m9s   10.244.0.14   hpa-2026   <none>           <none>
+php-apache-7f969fb464-dl8db   1/1     Running   0          7m9s   10.244.0.19   hpa-2026   <none>           <none>
+php-apache-7f969fb464-gmzcd   1/1     Running   0          7m9s   10.244.0.18   hpa-2026   <none>           <none>
+php-apache-7f969fb464-ngzkt   1/1     Running   0          7m9s   10.244.0.20   hpa-2026   <none>           <none>
+php-apache-7f969fb464-q6k8d   1/1     Running   0          11m    10.244.0.5    hpa-2026   <none>           <none>
+php-apache-7f969fb464-srlh8   1/1     Running   0          7m9s   10.244.0.17   hpa-2026   <none>           <none>
+php-apache-7f969fb464-t75qh   1/1     Running   0          9m9s   10.244.0.12   hpa-2026   <none>           <none>
+php-apache-7f969fb464-wv5mx   1/1     Running   0          9m9s   10.244.0.13   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-22m2l   9m           14Mi            
+php-apache-7f969fb464-58jcs   9m           14Mi            
+php-apache-7f969fb464-9twhj   9m           15Mi            
+php-apache-7f969fb464-dl8db   9m           14Mi            
+php-apache-7f969fb464-gmzcd   9m           13Mi            
+php-apache-7f969fb464-ngzkt   9m           13Mi            
+php-apache-7f969fb464-q6k8d   9m           15Mi            
+php-apache-7f969fb464-srlh8   9m           13Mi            
+php-apache-7f969fb464-t75qh   9m           15Mi            
+php-apache-7f969fb464-wv5mx   9m           15Mi            
+
+---- 2026-09-06 12:51:32 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 4%/50%   1         10        10         11m
+NAME                          READY   STATUS    RESTARTS   AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+php-apache-7f969fb464-22m2l   1/1     Running   0          7m21s   10.244.0.16   hpa-2026   <none>           <none>
+php-apache-7f969fb464-58jcs   1/1     Running   0          7m21s   10.244.0.15   hpa-2026   <none>           <none>
+php-apache-7f969fb464-9twhj   1/1     Running   0          9m21s   10.244.0.14   hpa-2026   <none>           <none>
+php-apache-7f969fb464-dl8db   1/1     Running   0          7m21s   10.244.0.19   hpa-2026   <none>           <none>
+php-apache-7f969fb464-gmzcd   1/1     Running   0          7m21s   10.244.0.18   hpa-2026   <none>           <none>
+php-apache-7f969fb464-ngzkt   1/1     Running   0          7m21s   10.244.0.20   hpa-2026   <none>           <none>
+php-apache-7f969fb464-q6k8d   1/1     Running   0          11m     10.244.0.5    hpa-2026   <none>           <none>
+php-apache-7f969fb464-srlh8   1/1     Running   0          7m21s   10.244.0.17   hpa-2026   <none>           <none>
+php-apache-7f969fb464-t75qh   1/1     Running   0          9m21s   10.244.0.12   hpa-2026   <none>           <none>
+php-apache-7f969fb464-wv5mx   1/1     Running   0          9m21s   10.244.0.13   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-22m2l   9m           14Mi            
+php-apache-7f969fb464-58jcs   9m           14Mi            
+php-apache-7f969fb464-9twhj   9m           15Mi            
+php-apache-7f969fb464-dl8db   9m           14Mi            
+php-apache-7f969fb464-gmzcd   9m           13Mi            
+php-apache-7f969fb464-ngzkt   9m           13Mi            
+php-apache-7f969fb464-q6k8d   9m           15Mi            
+php-apache-7f969fb464-srlh8   9m           13Mi            
+php-apache-7f969fb464-t75qh   9m           15Mi            
+php-apache-7f969fb464-wv5mx   9m           15Mi            
+
+---- 2026-09-06 12:51:44 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 4%/50%   1         10        10         11m
+NAME                          READY   STATUS    RESTARTS   AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+php-apache-7f969fb464-22m2l   1/1     Running   0          7m32s   10.244.0.16   hpa-2026   <none>           <none>
+php-apache-7f969fb464-58jcs   1/1     Running   0          7m32s   10.244.0.15   hpa-2026   <none>           <none>
+php-apache-7f969fb464-9twhj   1/1     Running   0          9m32s   10.244.0.14   hpa-2026   <none>           <none>
+php-apache-7f969fb464-dl8db   1/1     Running   0          7m32s   10.244.0.19   hpa-2026   <none>           <none>
+php-apache-7f969fb464-gmzcd   1/1     Running   0          7m32s   10.244.0.18   hpa-2026   <none>           <none>
+php-apache-7f969fb464-ngzkt   1/1     Running   0          7m32s   10.244.0.20   hpa-2026   <none>           <none>
+php-apache-7f969fb464-q6k8d   1/1     Running   0          11m     10.244.0.5    hpa-2026   <none>           <none>
+php-apache-7f969fb464-srlh8   1/1     Running   0          7m32s   10.244.0.17   hpa-2026   <none>           <none>
+php-apache-7f969fb464-t75qh   1/1     Running   0          9m32s   10.244.0.12   hpa-2026   <none>           <none>
+php-apache-7f969fb464-wv5mx   1/1     Running   0          9m32s   10.244.0.13   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-22m2l   9m           14Mi            
+php-apache-7f969fb464-58jcs   9m           14Mi            
+php-apache-7f969fb464-9twhj   9m           15Mi            
+php-apache-7f969fb464-dl8db   9m           14Mi            
+php-apache-7f969fb464-gmzcd   9m           13Mi            
+php-apache-7f969fb464-ngzkt   9m           13Mi            
+php-apache-7f969fb464-q6k8d   9m           15Mi            
+php-apache-7f969fb464-srlh8   9m           13Mi            
+php-apache-7f969fb464-t75qh   9m           15Mi            
+php-apache-7f969fb464-wv5mx   9m           15Mi            
+
+---- 2026-09-06 12:51:56 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 4%/50%   1         10        10         11m
+NAME                          READY   STATUS    RESTARTS   AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+php-apache-7f969fb464-22m2l   1/1     Running   0          7m44s   10.244.0.16   hpa-2026   <none>           <none>
+php-apache-7f969fb464-58jcs   1/1     Running   0          7m44s   10.244.0.15   hpa-2026   <none>           <none>
+php-apache-7f969fb464-9twhj   1/1     Running   0          9m44s   10.244.0.14   hpa-2026   <none>           <none>
+php-apache-7f969fb464-dl8db   1/1     Running   0          7m44s   10.244.0.19   hpa-2026   <none>           <none>
+php-apache-7f969fb464-gmzcd   1/1     Running   0          7m44s   10.244.0.18   hpa-2026   <none>           <none>
+php-apache-7f969fb464-ngzkt   1/1     Running   0          7m44s   10.244.0.20   hpa-2026   <none>           <none>
+php-apache-7f969fb464-q6k8d   1/1     Running   0          11m     10.244.0.5    hpa-2026   <none>           <none>
+php-apache-7f969fb464-srlh8   1/1     Running   0          7m44s   10.244.0.17   hpa-2026   <none>           <none>
+php-apache-7f969fb464-t75qh   1/1     Running   0          9m44s   10.244.0.12   hpa-2026   <none>           <none>
+php-apache-7f969fb464-wv5mx   1/1     Running   0          9m44s   10.244.0.13   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-22m2l   9m           14Mi            
+php-apache-7f969fb464-58jcs   9m           14Mi            
+php-apache-7f969fb464-9twhj   9m           15Mi            
+php-apache-7f969fb464-dl8db   9m           14Mi            
+php-apache-7f969fb464-gmzcd   9m           13Mi            
+php-apache-7f969fb464-ngzkt   9m           13Mi            
+php-apache-7f969fb464-q6k8d   9m           15Mi            
+php-apache-7f969fb464-srlh8   9m           13Mi            
+php-apache-7f969fb464-t75qh   9m           15Mi            
+php-apache-7f969fb464-wv5mx   9m           15Mi            
+
+---- 2026-09-06 12:52:08 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 4%/50%   1         10        10         11m
+NAME                          READY   STATUS    RESTARTS   AGE     IP            NODE       NOMINATED NODE   READINESS GATES
+php-apache-7f969fb464-wv5mx   1/1     Running   0          9m56s   10.244.0.13   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-wv5mx   9m           15Mi            
+
+---- 2026-09-06 12:52:19 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 4%/50%   1         10        1          12m
+NAME                          READY   STATUS    RESTARTS   AGE   IP            NODE       NOMINATED NODE   READINESS GATES
+php-apache-7f969fb464-wv5mx   1/1     Running   0          10m   10.244.0.13   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-wv5mx   9m           15Mi            
+
+---- 2026-09-06 12:52:31 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 4%/50%   1         10        1          12m
+NAME                          READY   STATUS    RESTARTS   AGE   IP            NODE       NOMINATED NODE   READINESS GATES
+php-apache-7f969fb464-wv5mx   1/1     Running   0          10m   10.244.0.13   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-wv5mx   9m           15Mi            
+
+---- 2026-09-06 12:52:43 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 4%/50%   1         10        1          12m
+NAME                          READY   STATUS    RESTARTS   AGE   IP            NODE       NOMINATED NODE   READINESS GATES
+php-apache-7f969fb464-wv5mx   1/1     Running   0          10m   10.244.0.13   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-wv5mx   9m           15Mi            
+
+---- 2026-09-06 12:52:54 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 4%/50%   1         10        1          12m
+NAME                          READY   STATUS    RESTARTS   AGE   IP            NODE       NOMINATED NODE   READINESS GATES
+php-apache-7f969fb464-wv5mx   1/1     Running   0          10m   10.244.0.13   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-wv5mx   9m           15Mi            
+
+---- 2026-09-06 12:53:06 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 4%/50%   1         10        1          12m
+NAME                          READY   STATUS    RESTARTS   AGE   IP            NODE       NOMINATED NODE   READINESS GATES
+php-apache-7f969fb464-wv5mx   1/1     Running   0          10m   10.244.0.13   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-wv5mx   9m           15Mi            
+
+---- 2026-09-06 12:53:18 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 4%/50%   1         10        1          13m
+NAME                          READY   STATUS    RESTARTS   AGE   IP            NODE       NOMINATED NODE   READINESS GATES
+php-apache-7f969fb464-wv5mx   1/1     Running   0          11m   10.244.0.13   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-wv5mx   9m           15Mi            
+
+---- 2026-09-06 12:53:30 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 4%/50%   1         10        1          13m
+NAME                          READY   STATUS    RESTARTS   AGE   IP            NODE       NOMINATED NODE   READINESS GATES
+php-apache-7f969fb464-wv5mx   1/1     Running   0          11m   10.244.0.13   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-wv5mx   9m           15Mi            
+
+---- 2026-09-06 12:53:41 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 4%/50%   1         10        1          13m
+NAME                          READY   STATUS    RESTARTS   AGE   IP            NODE       NOMINATED NODE   READINESS GATES
+php-apache-7f969fb464-wv5mx   1/1     Running   0          11m   10.244.0.13   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-wv5mx   9m           15Mi            
+
+---- 2026-09-06 12:53:54 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 4%/50%   1         10        1          13m
+NAME                          READY   STATUS    RESTARTS   AGE   IP            NODE       NOMINATED NODE   READINESS GATES
+php-apache-7f969fb464-wv5mx   1/1     Running   0          11m   10.244.0.13   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-wv5mx   9m           15Mi            
+
+---- 2026-09-06 12:54:06 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 4%/50%   1         10        1          13m
+NAME                          READY   STATUS    RESTARTS   AGE   IP            NODE       NOMINATED NODE   READINESS GATES
+php-apache-7f969fb464-wv5mx   1/1     Running   0          11m   10.244.0.13   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-wv5mx   14m          15Mi            
+
+---- 2026-09-06 12:54:18 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 7%/50%   1         10        1          14m
+NAME                          READY   STATUS    RESTARTS   AGE   IP            NODE       NOMINATED NODE   READINESS GATES
+php-apache-7f969fb464-wv5mx   1/1     Running   0          12m   10.244.0.13   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-wv5mx   14m          15Mi            
+
+---- 2026-09-06 12:54:29 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 7%/50%   1         10        1          14m
+NAME                          READY   STATUS    RESTARTS   AGE   IP            NODE       NOMINATED NODE   READINESS GATES
+php-apache-7f969fb464-wv5mx   1/1     Running   0          12m   10.244.0.13   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-wv5mx   14m          15Mi            
+
+---- 2026-09-06 12:54:41 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 7%/50%   1         10        1          14m
+NAME                          READY   STATUS    RESTARTS   AGE   IP            NODE       NOMINATED NODE   READINESS GATES
+php-apache-7f969fb464-wv5mx   1/1     Running   0          12m   10.244.0.13   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-wv5mx   14m          15Mi            
+
+---- 2026-09-06 12:54:52 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 7%/50%   1         10        1          14m
+NAME                          READY   STATUS    RESTARTS   AGE   IP            NODE       NOMINATED NODE   READINESS GATES
+php-apache-7f969fb464-wv5mx   1/1     Running   0          12m   10.244.0.13   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-wv5mx   14m          15Mi            
+
+---- 2026-09-06 12:55:04 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 7%/50%   1         10        1          14m
+NAME                          READY   STATUS    RESTARTS   AGE   IP            NODE       NOMINATED NODE   READINESS GATES
+php-apache-7f969fb464-wv5mx   1/1     Running   0          12m   10.244.0.13   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-wv5mx   14m          15Mi            
+
+---- 2026-09-06 12:55:16 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 4%/50%   1         10        1          15m
+NAME                          READY   STATUS    RESTARTS   AGE   IP            NODE       NOMINATED NODE   READINESS GATES
+php-apache-7f969fb464-wv5mx   1/1     Running   0          13m   10.244.0.13   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-wv5mx   9m           15Mi            
+
+---- 2026-09-06 12:55:27 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 4%/50%   1         10        1          15m
+NAME                          READY   STATUS    RESTARTS   AGE   IP            NODE       NOMINATED NODE   READINESS GATES
+php-apache-7f969fb464-wv5mx   1/1     Running   0          13m   10.244.0.13   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-wv5mx   9m           15Mi            
+
+---- 2026-09-06 12:55:38 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 4%/50%   1         10        1          15m
+NAME                          READY   STATUS    RESTARTS   AGE   IP            NODE       NOMINATED NODE   READINESS GATES
+php-apache-7f969fb464-wv5mx   1/1     Running   0          13m   10.244.0.13   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-wv5mx   9m           15Mi            
+
+---- 2026-09-06 12:55:50 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 4%/50%   1         10        1          15m
+NAME                          READY   STATUS    RESTARTS   AGE   IP            NODE       NOMINATED NODE   READINESS GATES
+php-apache-7f969fb464-wv5mx   1/1     Running   0          13m   10.244.0.13   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-wv5mx   9m           15Mi            
+
+---- 2026-09-06 12:56:02 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 4%/50%   1         10        1          15m
+NAME                          READY   STATUS    RESTARTS   AGE   IP            NODE       NOMINATED NODE   READINESS GATES
+php-apache-7f969fb464-wv5mx   1/1     Running   0          13m   10.244.0.13   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-wv5mx   9m           15Mi            
+
+---- 2026-09-06 12:56:14 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 4%/50%   1         10        1          16m
+NAME                          READY   STATUS    RESTARTS   AGE   IP            NODE       NOMINATED NODE   READINESS GATES
+php-apache-7f969fb464-wv5mx   1/1     Running   0          14m   10.244.0.13   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-wv5mx   9m           15Mi            
+
+---- 2026-09-06 12:56:25 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 4%/50%   1         10        1          16m
+NAME                          READY   STATUS    RESTARTS   AGE   IP            NODE       NOMINATED NODE   READINESS GATES
+php-apache-7f969fb464-wv5mx   1/1     Running   0          14m   10.244.0.13   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-wv5mx   9m           15Mi            
+
+---- 2026-09-06 12:56:37 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 4%/50%   1         10        1          16m
+NAME                          READY   STATUS    RESTARTS   AGE   IP            NODE       NOMINATED NODE   READINESS GATES
+php-apache-7f969fb464-wv5mx   1/1     Running   0          14m   10.244.0.13   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-wv5mx   9m           15Mi            
+
+---- 2026-09-06 12:56:48 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 4%/50%   1         10        1          16m
+NAME                          READY   STATUS    RESTARTS   AGE   IP            NODE       NOMINATED NODE   READINESS GATES
+php-apache-7f969fb464-wv5mx   1/1     Running   0          14m   10.244.0.13   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-wv5mx   9m           15Mi            
+
+---- 2026-09-06 12:57:01 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 4%/50%   1         10        1          16m
+NAME                          READY   STATUS    RESTARTS   AGE   IP            NODE       NOMINATED NODE   READINESS GATES
+php-apache-7f969fb464-wv5mx   1/1     Running   0          14m   10.244.0.13   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-wv5mx   9m           15Mi            
+
+---- 2026-09-06 12:57:11 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 4%/50%   1         10        1          17m
+NAME                          READY   STATUS    RESTARTS   AGE   IP            NODE       NOMINATED NODE   READINESS GATES
+php-apache-7f969fb464-wv5mx   1/1     Running   0          15m   10.244.0.13   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-wv5mx   9m           15Mi            
+
+---- 2026-09-06 12:57:23 ----
+NAME         REFERENCE               TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+php-apache   Deployment/php-apache   cpu: 4%/50%   1         10        1          17m
+NAME                          READY   STATUS    RESTARTS   AGE   IP            NODE       NOMINATED NODE   READINESS GATES
+php-apache-7f969fb464-wv5mx   1/1     Running   0          15m   10.244.0.13   hpa-2026   <none>           <none>
+NAME                          CPU(cores)   MEMORY(bytes)   
+php-apache-7f969fb464-wv5mx   9m           15Mi            
+

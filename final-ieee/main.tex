@@ -104,6 +104,17 @@ The parsed data confirms the qualitative findings from the intermediate report. 
 
 The extension compares the default HPA behavior against two explicit \texttt{autoscaling/v2} policies: an aggressive scale-up policy and a faster scale-down policy. The expected trade-off is that faster scale-up may reduce the underprovisioning window, while faster scale-down may reduce replica-seconds after a burst but increase the risk of oscillation for intermittent workloads.
 
+\input{data/minikube_tuning_table}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\linewidth]{figures/minikube_hpa_tuning_replicas.png}
+\caption{Desired replicas in the Minikube behavior-tuning runs. All runs used the same 240 s active-load window and 720 s post-load observation window.}
+\label{fig:minikube-hpa-tuning}
+\end{figure}
+
+The comparable Minikube rerun shows that policy tuning changes the distribution of capacity over time even when all variants reach the same peak of 10 replicas. The aggressive policy reduced the first scale-up time from 103 s to 70 s and reached the peak slightly earlier, from 199 s to 189 s. However, its replica-second cost proxy remained nearly identical to the baseline rerun, because the scale-down behavior remained conservative. The fast scale-down policy preserved the same 70 s first scale-up time observed in the aggressive run, reduced scale-down after load removal from 421 s to 353 s, and lowered replica-seconds from 5581 to 4149. This represents a 25.7\% reduction in the replica-second proxy relative to the comparable baseline rerun.
+
 \section{Cloud Infrastructure Constraints}
 
 The EKS baseline is used to show the difference between configured elasticity and effective elasticity. HPA may set a higher desired replica count, but the scheduler can leave pods pending if nodes lack capacity. In the tested EKS configuration, \texttt{t3.micro} nodes are particularly constrained: the instance family is burstable, has limited memory, and, more importantly for this experiment, pod density is bounded by VPC CNI IP address capacity~\cite{aws_ec2_t3,aws_eks_vpc_cni}.

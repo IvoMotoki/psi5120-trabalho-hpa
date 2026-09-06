@@ -20,7 +20,7 @@ LOG_DIRS = {
 
 BLOCK_RE = re.compile(r"^---- (?P<timestamp>\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}) ----$")
 HPA_RE = re.compile(
-    r"^php-apache\s+Deployment/php-apache\s+cpu:\s+(?P<cpu>\d+)%/(?P<target>\d+)%\s+"
+    r"^php-apache\s+Deployment/php-apache\s+cpu:\s+(?P<cpu>(?:\d+%|<unknown>))/(?P<target>\d+)%\s+"
     r"(?P<min>\d+)\s+(?P<max>\d+)\s+(?P<replicas>\d+)\s+"
 )
 
@@ -83,7 +83,8 @@ def parse_block(environment: str, run_id: str, first_ts: datetime, timestamp: da
     for line in lines:
         hpa_match = HPA_RE.match(line)
         if hpa_match:
-            cpu_pct = int(hpa_match.group("cpu"))
+            cpu_value = hpa_match.group("cpu")
+            cpu_pct = None if cpu_value == "<unknown>" else int(cpu_value.rstrip("%"))
             target_cpu_pct = int(hpa_match.group("target"))
             min_replicas = int(hpa_match.group("min"))
             max_replicas = int(hpa_match.group("max"))
@@ -159,6 +160,18 @@ def write_samples(path: Path, samples: list[Sample]) -> None:
             writer.writerow(row)
 
 
+def scenario_for(run_id: str, environment: str) -> str:
+    if "baseline_rerun" in run_id:
+        return "baseline rerun"
+    if "aggressive" in run_id:
+        return "aggressive"
+    if "fast_scaledown" in run_id:
+        return "fast scale-down"
+    if environment == "eks":
+        return f"EKS baseline {run_id.rsplit('_', 1)[-1]}"
+    return "baseline"
+
+
 def sample_pairs(samples: list[Sample]) -> Iterable[tuple[Sample, Sample]]:
     for previous, current in zip(samples, samples[1:]):
         yield previous, current
@@ -222,6 +235,7 @@ def summarize(samples: list[Sample]) -> dict[str, str | int | float | None]:
 
     return {
         "environment": first.environment,
+        "scenario": scenario_for(first.run_id, first.environment),
         "run_id": first.run_id,
         "samples": len(samples),
         "duration_s": samples[-1].elapsed_s,
@@ -245,7 +259,12 @@ def summarize(samples: list[Sample]) -> dict[str, str | int | float | None]:
     }
 
 
-def write_latex_summary(path: Path, summaries: list[dict[str, str | int | float | None]]) -> None:
+def write_latex_summary(
+    path: Path,
+    summaries: list[dict[str, str | int | float | None]],
+    caption: str,
+    label: str,
+) -> None:
     def value(row: dict[str, str | int | float | None], key: str) -> str:
         item = row.get(key)
         return "--" if item is None or item == "" else str(item)
@@ -253,23 +272,21 @@ def write_latex_summary(path: Path, summaries: list[dict[str, str | int | float 
     lines = [
         r"\begin{table}[ht]",
         r"\centering",
-        r"\caption{Baseline HPA metrics extracted from raw experiment logs}",
-        r"\label{tab:baseline-generated}",
+        rf"\caption{{{caption}}}",
+        rf"\label{{{label}}}",
         r"\resizebox{\linewidth}{!}{%",
         r"\begin{tabular}{lrrrrr}",
         r"\toprule",
-        r"Environment & First scale-up (s) & Peak replicas & Pending pods & Scale-down after load (s) & Replica-s \\",
+        r"Run & First scale-up (s) & Peak replicas & Pending pods & Scale-down after load (s) & Replica-s \\",
         r"\midrule",
     ]
 
     for row in summaries:
-        environment = str(row["environment"]).capitalize()
-        if row["environment"] == "eks":
-            environment = f"EKS ({str(row['run_id']).split('_')[-1]})"
+        run_label = f"{str(row['environment']).capitalize()} {row['scenario']}"
         lines.append(
             " & ".join(
                 [
-                    environment,
+                    run_label,
                     value(row, "first_scale_up_s"),
                     value(row, "peak_hpa_replicas"),
                     value(row, "peak_php_pending"),
@@ -315,8 +332,28 @@ def main() -> None:
             writer.writerows(summaries)
         print(f"Wrote {summary_path.relative_to(ROOT)} ({len(summaries)} runs)")
         latex_path = DATA_DIR / "baseline_summary_table.tex"
-        write_latex_summary(latex_path, summaries)
+        write_latex_summary(
+            latex_path,
+            summaries,
+            "HPA metrics extracted from raw experiment logs",
+            "tab:baseline-generated",
+        )
         print(f"Wrote {latex_path.relative_to(ROOT)}")
+        tuning_path = DATA_DIR / "minikube_tuning_table.tex"
+        tuning_rows = [
+            row
+            for row in summaries
+            if row["environment"] == "minikube" and row["scenario"] != "baseline"
+        ]
+        tuning_order = {"baseline rerun": 0, "aggressive": 1, "fast scale-down": 2}
+        tuning_rows.sort(key=lambda row: tuning_order.get(str(row["scenario"]), 99))
+        write_latex_summary(
+            tuning_path,
+            tuning_rows,
+            "Minikube HPA behavior-tuning comparison",
+            "tab:minikube-tuning",
+        )
+        print(f"Wrote {tuning_path.relative_to(ROOT)}")
 
 
 if __name__ == "__main__":

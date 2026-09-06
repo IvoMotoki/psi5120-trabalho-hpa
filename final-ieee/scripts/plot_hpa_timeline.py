@@ -21,6 +21,9 @@ MARGIN_TOP = 60
 MARGIN_BOTTOM = 90
 COLORS = {
     "minikube_hpa_timeline_20260825_023826": "#1f77b4",
+    "minikube_hpa_timeline_20260906_124119_aggressive": "#9467bd",
+    "minikube_hpa_timeline_20260906_125821_fast_scaledown": "#ff7f0e",
+    "minikube_hpa_timeline_20260906_154758_baseline_rerun": "#1f77b4",
     "eks_hpa_timeline_20260826_005559": "#d62728",
     "eks_hpa_timeline_20260826_010657": "#2ca02c",
 }
@@ -42,6 +45,12 @@ def number(row: dict[str, str], key: str) -> float:
 
 
 def label_for(run_id: str) -> str:
+    if "baseline_rerun" in run_id:
+        return "Minikube baseline rerun"
+    if "aggressive" in run_id:
+        return "Minikube aggressive"
+    if "fast_scaledown" in run_id:
+        return "Minikube fast scale-down"
     if run_id.startswith("minikube"):
         return "Minikube baseline"
     if run_id.endswith("005559"):
@@ -133,6 +142,11 @@ def main() -> None:
     runs = load_runs()
     if not runs:
         raise SystemExit("No parsed CSV files found. Run parse_hpa_timeline.py first.")
+    minikube_tuning_runs = {
+        run_id: rows
+        for run_id, rows in runs.items()
+        if run_id.startswith("minikube") and "20260906" in run_id
+    }
 
     draw_chart(
         runs,
@@ -157,6 +171,14 @@ def main() -> None:
         ylabel="CPU utilization (%)",
         output=FIGURE_DIR / "baseline_cpu_utilization.png",
         y_max=260,
+    )
+    draw_chart(
+        minikube_tuning_runs,
+        metric="hpa_replicas",
+        title="Minikube HPA behavior variants",
+        ylabel="Replicas",
+        output=FIGURE_DIR / "minikube_hpa_tuning_replicas.png",
+        y_max=10,
     )
 
 

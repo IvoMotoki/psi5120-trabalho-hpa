@@ -55,3 +55,12 @@ kubectl apply -f final-ieee/manifests/hpa-fast-scaledown.yaml
 ```
 
 Use a 720 s post-load window so the downscale behavior is captured reliably.
+
+The helper below applies a variant, resets the workload to one replica, runs the
+load test, and renames the generated log with a scenario label:
+
+```bash
+bash final-ieee/scripts/run_minikube_hpa_variant.sh baseline_rerun final-ieee/manifests/hpa-baseline.yaml hpa-2026 240 720 6
+bash final-ieee/scripts/run_minikube_hpa_variant.sh aggressive final-ieee/manifests/hpa-aggressive.yaml hpa-2026 240 720 6
+bash final-ieee/scripts/run_minikube_hpa_variant.sh fast_scaledown final-ieee/manifests/hpa-fast-scaledown.yaml hpa-2026 240 720 6
+```

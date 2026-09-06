@@ -1,4 +1,7 @@
-environment,run_id,samples,duration_s,load_window_s,baseline_replicas,peak_hpa_replicas,peak_php_total,peak_php_pending,peak_cpu_pct,first_above_target_s,first_scale_up_s,time_to_peak_s,load_end_s,scale_down_complete_s,scale_down_after_load_s,replica_seconds,above_target_seconds,below_target_seconds
-minikube,hpa_timeline_20260825_023826,32,392,236,1,10,10,0,192,71,82,212,248,392,144,2450,290,102
-eks,hpa_timeline_20260826_005559,37,595,230,1,5,5,4,250,214,230,264,249,,,1983,100,495
-eks,hpa_timeline_20260826_010657,37,601,232,1,5,5,4,251,32,50,66,250,601,351,2773,284,317
+environment,scenario,run_id,samples,duration_s,load_window_s,baseline_replicas,peak_hpa_replicas,peak_php_total,peak_php_pending,peak_cpu_pct,first_above_target_s,first_scale_up_s,time_to_peak_s,load_end_s,scale_down_complete_s,scale_down_after_load_s,replica_seconds,above_target_seconds,below_target_seconds
+minikube,baseline,hpa_timeline_20260825_023826,32,392,236,1,10,10,0,192,71,82,212,248,392,144,2450,290,102
+minikube,aggressive,hpa_timeline_20260906_124119_aggressive,83,964,238,1,10,10,0,205,59,70,189,251,660,409,5560,296,609
+minikube,fast scale-down,hpa_timeline_20260906_125821_fast_scaledown,83,960,228,1,10,10,0,204,59,70,228,241,594,353,4149,300,660
+minikube,baseline rerun,hpa_timeline_20260906_154758_baseline_rerun,85,962,236,1,10,10,0,248,81,103,199,250,671,421,5581,285,654
+eks,EKS baseline 005559,hpa_timeline_20260826_005559,37,595,230,1,5,5,4,250,214,230,264,249,,,1983,100,495
+eks,EKS baseline 010657,hpa_timeline_20260826_010657,37,601,232,1,5,5,4,251,32,50,66,250,601,351,2773,284,317
